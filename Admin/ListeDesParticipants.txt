@@ -1,0 +1,42 @@
+Liste des participants à la formation à TEI 2017
+
+point commun : tous impliqués dans le projet Testaments de Poilus
+
+Objectif principal de la formation : 
+A l'issue de la formation les stagiaires devraient être capables de :
+1. articuler les règles d'édition définies pour les Testaments de Poilus avec les spécifications du standard TEI ; utiliser la documentation du standard TEI et la documentation du projet pour retrouver la définition formelle d’un élément ou attribut TEI afin de faire les bons choix de balisage  
+2. transcrire et annoter, de façon rigoureuse et adéquate, un testament de Poilu en TEI, via l’interface de la plate-forme de transcription ou via un éditeur XML. 
+3. Relire et corriger la transcription réalisée par un ou plusieurs autres contributeurs (je resterai disponible en dernier recours si eux-mêmes se posent des questions). Expliquer les corrections réalisées à ces contributeurs. 
+4. Echanger avec l’auteur du modèle d’encodage (F. Clavaud) sur de possibles évolutions de ce modèle. 
+5. Co-animer des ateliers d’initiation à la transcription des testaments de Poilus pour les bénévoles volontaires 
+(6. Réfléchir à l’édition en TEI d’autres documents manuscrits, tester les solutions d’encodage possibles, contribuer à la conception d’un modèle et à la production des fichiers.)
+
+
+1. Personnels de services d'archives
+
+- Marie-Françoise Limon-Bonnet, Mélisa Locatelli et Aurélia Rostaing, mes collègues du département du Minutier central des notaires de Paris
+
+MF Limon et Aurélia Rostaing ont la même formation initiale que moi (archivistes-paléographes), elles savent ce que c'est qu'une édition scientifique de manuscrit
+
+- Romain Dugast, Archives départementales des Yvelines
+
+2. Enseignants-chercheurs
+
+- Christine Nougaret, professeure à l'Ecole des chartes, titulaire de la chaire d'archivistique, diplomatique et histoire des institutions contemporaines (http://www.enc-sorbonne.fr/fr/christine-nougaret)
+
+- Emmanuelle de Champs, professeure à l'université de Cergy-Pontoise (https://www.u-cergy.fr/fr/_plugins/mypage/mypage/content/edechamp.html)
+
+Toutes les deux connaissent déjà un tout petit peu TEI
+
+- Boris Bove, maître de conférences en histoire médiévale à l'Université Paris 8 (http://www2.univ-paris8.fr/histoire/?page_id=18)
+
+
+3. Equipe "technique" du projet testaments de Poilus
+
+- Karl Pineau, ingénieur d'études, responsable du développement de la plateforme (https://about.karl-pineau.fr/fr/)
+
+- Sophie Préveyraud, société SoDesign (http://www.sodesign.fr/)
+
+- Pauline Le Pallec (http://www.spidergirl.fr/)
+
+Sophie et Pauline ont déjà réalisé ensemble de nombreuses chartes graphiques (ou plus) pour divers projets d'édition critique de documents en TEI (dont http://www.desgodets.net/ avec EMmanuel Château et http://thalamus.huma-num.fr/ avec moi). Mais n'ont jamais eu droit à une vraie formation à TEI.
