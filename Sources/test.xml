@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <teiHeader>
+    <fileDesc>
+<titleStmt>
+  <title>XSLT pour les nuls</title>
+  <title><lb/>Esquisse d’une initiation aux normes de transformation
+	XML</title>
+  <author>Lou Burnard Consulting</author>
+
+</titleStmt>
+<editionStmt>
+  <edition>
+    <date>mai 2011</date>
+  </edition>
+</editionStmt>
+<publicationStmt>
+  <publisher>Lou Burnard Consulting</publisher>
+  <availability>
+    <p>Freely available for use and derivative works under a Creative Commons Attribution
+	license.</p>
+  </availability>
+</publicationStmt>
+<sourceDesc>
+  <p>Translated and adapted from Rahtz 2009-07-23;  previous talks, TEI Gudeidelines, etc.</p>
+</sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+<change>
+  <date>$LastChangedDate: $.</date>
+  <name>$LastChangedBy:  $</name>
+  <note>$LastChangedRevision:  $</note>
+</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+<titlePage xml:lang="fr">
+  <titlePart>12 – XSLT pour les nuls</titlePart>
+  <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
+  <note><ref target="00-programme.html">Programme</ref></note>
+</titlePage>
+    </front>
+    <body>
+<div type="slide">
+  <head>Objectifs</head>
+  <p rend="box">Ceci n’est pas une formation complète! son objectif est
+de ... </p>
+  <list>
+    <item>vous donner un avant-goût des possibilités offertes par les
+normes XSLT et XPath</item>
+    <item>surtout dans le domaine de traitement des documents
+<q>XML-TEI</q>, principalement donc sortis des sciences
+humaines</item>
+    <item>aborder les concepts fondamentaux et les usages les plus
+répandus du norme XSLT</item>
+    <!--item>vous préparer pour une formation plus approfondie </item-->
+  </list>
+</div>
+
+    
+
+<div type="slide">
+  <head>C’est quoi une arborescence ?</head>
+  <p><graphic height="50%" url="images/arborescence.png"/></p>
+  <list>
+    <item>un ensemble de <term>nœuds</term>, organisé de manière hiérarchique</item>
+    <item>chaque nœud porte un <term>identifiant générique</term> (son "type")</item>
+    <item>il y a un seul <term>nœud racine</term> qui contient (ou domine) tous les
+autres</item>
+    <item>chaque nœud peut contenir (ou dominer)
+<list>
+  <item>un sous-arborescence</item>
+  <item>ou un morceau de texte</item>
+  <!--item>facultativement un ensemble d’<term>attributs</term></item-->
+</list></item>
+    <!--item>chaque attribut comporte un <term>nom</term> et un <term>valeur</term> </item-->
+  </list>
+</div>
+
+    
+<div type="slide">
+  <head>Exemple texte XML ... </head>
+<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
+<body type="anthology">
+  <div type="poem">
+    <head>The SICK ROSE </head>
+    <lg type="stanza">
+<l n="1">O Rose thou art sick.</l>
+<l n="2">The invisible worm,</l>
+<l n="3">That flies in the night </l>
+<l n="4">In the howling storm:</l>
+    </lg>
+    <lg type="stanza">
+<l n="5">Has found out thy bed </l>
+<l n="6">Of crimson joy:</l>
+<l n="7">And his dark secret love </l>
+<l n="8">Does thy life destroy.</l>
+    </lg>
+  </div>
+  <div type="shortpoem">
+    <head>Queen Anne’s tipple</head>
+    <lg type="couplet">
+<l n="1">Here thou Great Anna whom three realms obey</l>
+<l n="2">Doth sometimes council take, and sometimes tea.</l>
+    </lg>
+  </div>
+</body>
+</egXML>
+ </div>
+<div>
+  <head>Ou, par exemple, le Michna </head>
+  <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+    <text>
+<body>
+  <div type="seder" n="zeraim" xml:id="MISH1">
+    <div type="masechet" n="berakhot" xml:id="mish1_1">
+<div type="pereq" n="Me’eïmataï" xml:id="mish1_1_1">
+  <div type="mishnah" n="m001" xml:id="mish1_1_1_1">
+    <!--... -->
+  </div>
+  <div type="mishnah" n="m002" xml:id="mish1_1_1_2">
+    <!--... -->
+  </div>
+  <!-- mishnayot 3 à 9 -->
+</div>
+    </div>
+    <div type="masechet" n="peyah" xml:id="mish1_2">
+      <div type="pereq" n="1" xml:id="mish1_2_1">
+        <div type="mishnah" n="m0nn" xml:id="mish1_2_1_1">
+          <!--... -->
+        </div>
+        <!-- mishnayot 2 à 6 -->
+      </div>
+<!-- chapitres  2 à 8 -->
+    </div>
+    <!-- masechta 3 à 11 -->
+  </div>
+  <div type="seder" n="moed" xml:id="MISH2">
+    <!-- masechta 1 à 12 -->
+  </div>
+  <!-- sederim 3 à 6  -->
+</body>
+    </text></egXML>
+</div>
+<div type="slide">
+  <head>.. ou, en forme d’arborescence: </head>
+  <figure>
+    <graphic url="images/xpath-eg-1.png"/>
+  </figure>
+</div>
+
+<div type="slide">
+  <head>Notre exemple (3)</head>
+  <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+    <text>
+     <!-- ... -->
+<body>
+  <fw>feuillet premier.</fw>
+  <div type="chap" xml:id="C1">
+    <head>Comment le conte Roalt avoit une belle fille nomee Felisse sur- montant en beautee toutes autres dames et damoiselles et envoya querir Guyonet filz de son seneschal pour demeurer en sa court.</head>
+    <figure><graphic url="gdw-p02.png"/></figure>
+    <p><g type="lettrine" ref="#ornE"
+                    >E</g>n icelle honnorable sai- son a regne dudit roy A- thelstã estoit ou royaul- me dangleterre ung tres puissant cont nomme Roalt <abbr>leql</abbr> avoit la sei- gneurie de la conte de waruich ...</p>
+  </div>
+</body>
+    </text></egXML>
+  <cb/>
+  <figure>
+    <graphic url="images/guyDeWarwick-15.jpg" height="98%"/>
+  </figure>
+ 
+</div>
+
+<div>
+  <head>Pour en savoir plus</head>
+  <list>
+
+    <item>A <ref target="http://www.gchagnon.fr/cours/xml/"
+              >http://www.gchagnon.fr/cours/xml/
+</ref> vous trouverez deux cours complets et très clairs</item>
+    <item>Un texte classique : Philippe Rigaux et Bernd Amann <title>Comprendre
+XSLT</title>. O’Reilly, 2002.</item>
+    <item>Beaucoup, beaucoup, d’autres ressources anglophones...</item>
+  </list>
+</div>
+
+    </body>
+  </text>
+</TEI>
