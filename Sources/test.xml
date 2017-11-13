@@ -62,7 +62,8 @@ répandus du norme XSLT</item>
 
 <div type="slide">
   <head>C’est quoi une arborescence ?</head>
-  <p><graphic height="50%" url="images/arborescence.png"/></p>
+  <p><graphic height="50%" url="../../tei-fr/Talks/Graphics/arborescence.png"/></p>
+  <cb/>
   <list>
     <item>un ensemble de <term>nœuds</term>, organisé de manière hiérarchique</item>
     <item>chaque nœud porte un <term>identifiant générique</term> (son "type")</item>
@@ -108,47 +109,26 @@ autres</item>
 </body>
 </egXML>
  </div>
-<div>
-  <head>Ou, par exemple, le Michna </head>
-  <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
-    <text>
-<body>
-  <div type="seder" n="zeraim" xml:id="MISH1">
-    <div type="masechet" n="berakhot" xml:id="mish1_1">
-<div type="pereq" n="Me’eïmataï" xml:id="mish1_1_1">
-  <div type="mishnah" n="m001" xml:id="mish1_1_1_1">
-    <!--... -->
-  </div>
-  <div type="mishnah" n="m002" xml:id="mish1_1_1_2">
-    <!--... -->
-  </div>
-  <!-- mishnayot 3 à 9 -->
-</div>
-    </div>
-    <div type="masechet" n="peyah" xml:id="mish1_2">
-      <div type="pereq" n="1" xml:id="mish1_2_1">
-        <div type="mishnah" n="m0nn" xml:id="mish1_2_1_1">
-          <!--... -->
-        </div>
-        <!-- mishnayot 2 à 6 -->
-      </div>
-<!-- chapitres  2 à 8 -->
-    </div>
-    <!-- masechta 3 à 11 -->
-  </div>
-  <div type="seder" n="moed" xml:id="MISH2">
-    <!-- masechta 1 à 12 -->
-  </div>
-  <!-- sederim 3 à 6  -->
-</body>
-    </text></egXML>
-</div>
+
 <div type="slide">
   <head>.. ou, en forme d’arborescence: </head>
   <figure>
-    <graphic url="images/xpath-eg-1.png"/>
+    <graphic url="../../tei-fr/Talks/Graphics/xpath-eg-1.png"/>
   </figure>
 </div>
+      
+      <div type="slide">
+        <head>Balisage de structure</head>
+        <figure>
+          <graphic url="../../tei-fr/Talks/Graphics/duBellay-bitty.png"/>
+        </figure>
+        <cb/>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples"><div type="dedicace">
+          <head>A MONSEIGNEUR LE REVERENDISSIME CARDINAL DU BELLAY</head>
+          <salute>S<ex>ire</ex></salute>
+          <p><c rend="lettrine">V</c>EU le Personnaige, que tu joues au Spectacle
+            de toute l'Europe... </p>...</div></egXML>
+      </div>
 
 <div type="slide">
   <head>Notre exemple (3)</head>
@@ -158,16 +138,22 @@ autres</item>
 <body>
   <fw>feuillet premier.</fw>
   <div type="chap" xml:id="C1">
-    <head>Comment le conte Roalt avoit une belle fille nomee Felisse sur- montant en beautee toutes autres dames et damoiselles et envoya querir Guyonet filz de son seneschal pour demeurer en sa court.</head>
+    <head>Comment le conte Roalt avoit une belle fille 
+      nomee Felisse sur- montant en beautee toutes autres 
+      dames et damoiselles et envoya querir Guyonet filz 
+      de son seneschal pour demeurer en sa court.</head>
     <figure><graphic url="gdw-p02.png"/></figure>
-    <p><g type="lettrine" ref="#ornE"
-                    >E</g>n icelle honnorable sai- son a regne dudit roy A- thelstã estoit ou royaul- me dangleterre ung tres puissant cont nomme Roalt <abbr>leql</abbr> avoit la sei- gneurie de la conte de waruich ...</p>
+    <p><g type="lettrine" ref="#ornE">E</g>n 
+      icelle honnorable sai-son a regne dudit roy A-thelstã 
+      estoit ou royaul-me dangleterre ung tres puissant cont 
+      nomme Roalt <abbr>leql</abbr> avoit la sei-gneurie de 
+      la conte de waruich ...</p>
   </div>
 </body>
     </text></egXML>
   <cb/>
   <figure>
-    <graphic url="images/guyDeWarwick-15.jpg" height="98%"/>
+    <graphic url="../../tei-fr/Talks/Graphics/guyDeWarwick-15.jpg" height="98%"/>
   </figure>
  
 </div>

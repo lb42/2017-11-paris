@@ -1,29 +1,26 @@
          
-* {
-    box-sizing: border-box;
-}
+* {    box-sizing: border-box; }
 
 body {
     margin: 0;
 }
 
 /* Create two unequal columns that floats next to each other */
-.column {
+.col {
     float: left;
     padding: 10px;
- 
 }
 
 .left {
-  width: 40%;
+  width: 50%;
 }
 
 .right {
-  width: 60%;
+  width: 50%;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.frame:after {
     content: "";
     display: table;
     clear: both;
@@ -47,7 +44,7 @@ div.egXML {
     color:#000000;
     line-height:1.1em;
     font-family:monospace;
-    font-size:12pt;
+    font-size:16pt;
     white-space:pre;
      background-color:#f7f9f6;
     border-color:#c5d8bb;
