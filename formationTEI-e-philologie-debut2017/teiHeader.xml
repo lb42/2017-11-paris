@@ -1,0 +1,828 @@
+<?xml version="1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>L'en-tête TEI : des métadonnées pour le fichier TEI</title>
+        <author>Florence Clavaud</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <date>février 2016</date>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <p/>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Document né numérique</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Document rédigé pour servir pendant la formation sur TEI organisée par PSL et l'EPHE.
+          S'appuie parfois sur plusieurs  autres tutoriels, dont certains rédigés par Lou
+          Burnard et Emmanuel Château.</p>
+      </projectDesc>
+    </encodingDesc>
+    <!--  <revisionDesc>
+         <change when="2010-06-04">LB revised in Oxford</change>
+         <change when="2007-08-14">LB en route to Montreal</change>
+      </revisionDesc>-->
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>TEI et les métadonnées</head>
+        <!--<figure  rend="center">
+<graphic url="../Graphics/pushmi-085plate.jpg" width="60%"/>
+        <head>L'entête TEI: un pouchmi-poulia? </head>
+</figure>-->
+        <p>Les métadonnées peuvent être définies comme des données sur d'autres données ou sources
+          d'information. Elles servent à identifier, retrouver, utiliser et gérer, préserver ces
+          informations.</p>
+        <p>Quelques standards de métadonnées :</p>
+        <p><list type="gloss">
+            <label>DCMI: Dublin Core Metadata Initiative</label>
+            <item>Système très simple pour décrire les ressources : 15 éléments de données</item>
+            <label>RDF: Resource Description Framework</label>
+            <item>Standard W3C pour la représentation de n'importe quelle ressource à l'aide de
+              concepts orientés objet</item>
+            <label>EAD: Encoded Archival Description</label>
+            <item>Standard international pour la description des fonds d'archives</item>
+            <label>METS: Metadata Encoding and Transmission Standard</label>
+            <item>Standard international pour la description des ressources numériques, focalisé sur
+              les aspects administratifs, la structuration physique, etc.</item>
+          </list>
+        </p>
+
+
+        <p>Tout fichier TEI doit avoir un en-tête, qui est utilisé pour stocker deux types de
+          métadonnées : <list>
+            <item>celles qui serviront pour identifier et décrire le fichier, comme on le ferait
+              d'une ressource électronique dans un catalogue de bibliothèque (mentions de titre et
+              de responsabilité, mention d'édition et de collection, adresse bibliographique,
+              collation, etc.)</item>
+            <item>celles qui serviront plus globalement à l'utilisateur du fichier et lui
+              permettront de comprendre comment le texte a été encodé (description de la source
+              éventuelle du fichier, présentation du projet, des règles éditoriales, des propriétés
+              des composants du texte, etc.) </item>
+          </list>
+        </p>
+
+
+        <p>L'en-tête TEI (élément <gi>teiHeader</gi> contient quatre éléments principaux : </p>
+        <list type="ordered">
+          <item><gi>fileDesc</gi> : fournit une description bibliographique complète du fichier et
+            de ses sources</item>
+          <item><gi>encodingDesc</gi> : documente les rapports entre le fichier et la source (ou les
+            sources) dont il dérive (contexte général et motivations, règles éditoriales...)</item>
+          <item><gi>profileDesc</gi> : fournit des informations supplémentaires (non
+            bibliographiques) sur le fichier, telles que les langues utilisées, les modalités de
+            production du fichier, les participants, les thèmes...</item>
+          <item><gi>revisionDesc</gi>: fournit l'historique des modifications du fichier.</item>
+        </list>
+        <p rend="box"><gi>fileDesc</gi> est obligatoire, tous les autres éléments sont
+          optionnels.</p>
+
+
+
+        <p>Voici un en-tête TEI minimal : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <teiHeader>
+              <fileDesc>
+                <titleStmt>
+                  <title>Titre de la ressource ?</title>
+                </titleStmt>
+                <publicationStmt>
+                  <p>Qui la diffuse ?</p>
+                </publicationStmt>
+                <sourceDesc>
+                  <p>De quelle autre ressource dérive-t-elle ?</p>
+                </sourceDesc>
+              </fileDesc>
+            </teiHeader>
+          </egXML>
+        </p>
+
+
+        <p>Les éléments constitutifs de l'en-tête peuvent être : <list>
+            <item>en prose libre (des séries de paragraphes ou du texte directement)</item>
+            <item>des éléments englobant des informations relatives au même sujet et fortement
+              structurées</item>
+            <item>des déclarations (éléments dont le nom se termine par "Decl" (comme refsDecl)
+              donnant des informations sur certaines pratiques d'encodage appliquées au texte
+              contenu dans le fichier</item>
+            <item>des descriptions (éléments dont le nom se termine par "Desc" (comme msDesc ou
+              settingDesc) décrivant certaines caractéristiques du fichier, soit en prose, soit à
+              l'aide de sous-éléments</item>
+          </list></p>
+      </div>
+      <div>
+        <head>La description du fichier (<gi>fileDesc</gi>)</head>
+        <div>
+
+          <list>
+            <item>Éléments obligatoires : <list>
+                <item><gi>titleStmt</gi>: le titre de la ressource électronique et la ou les
+                  mentions du ou des responsables de sa création</item>
+                <item><gi>sourceDesc</gi>: renseignements sur la ou les sources dont dérive le
+                  fichier</item>
+                <item><gi>publicationStmt</gi>: précise les modalités de diffusion de la
+                  ressource</item>
+              </list></item>
+            <item>Éléments facultatifs : <list>
+                <item><gi>editionStmt</gi> : la mention d'édition</item>
+                <item><gi>extent</gi> : la taille du fichier, le nombre de supports de stockage, le
+                  nombre de fichiers (si le document TEI est composé de plusieurs fichiers)</item>
+                <item><gi>seriesStmt</gi> : la mention de collection, si la ressource fait partie
+                  d'une série d'éditions électroniques</item>
+                <item><gi>notesStmt</gi>: des notes complémentaires</item>
+              </list></item>
+          </list>
+        </div>
+
+
+        <div>
+          <head>La mention de titre et de responsabilités (<gi>titleStmt</gi>)</head>
+          <p>Une ressource électronique a au moins un titre, et une ou plusieurs mentions de
+            responsabilité, stockées soit dans des éléments spécifiques soit dans l'élément
+            générique <gi>respStmt</gi> répétable :</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <title>Manuscrits d'André-Marie Ampère</title>
+            <title type="subtitle">Une édition numérique</title>
+            <author>André-Marie Ampère</author>
+            <principal>Christine Blondel</principal>
+            <principal>Marco Segala</principal>
+            <funder>ANR Corpus 2012</funder>
+            <respStmt>
+              <name>Delphine Usal, <affiliation>Centre Alexandre Koyré</affiliation></name>
+              <resp>Informatique</resp>
+            </respStmt>
+            <respStmt>
+              <name>Aude Coustumer, <affiliation>Centre Alexandre Koyré</affiliation></name>
+              <resp>Édition web</resp>
+            </respStmt>
+            <respStmt>
+              <name>Philippe Pons, <affiliation>Centre Alexandre Koyré</affiliation></name>
+              <resp>Édition web</resp>
+            </respStmt>
+            <respStmt>
+              <name>Marie-Hélène Wronecki <affiliation>CRHST</affiliation></name>
+              <resp>Édition</resp>
+            </respStmt>
+            <respStmt>
+              <name>Florence Greffe, <affiliation>Archives de l'Académie des
+                sciences</affiliation></name>
+              <resp>Mise en place de la numérisation</resp>
+            </respStmt>
+          </egXML>
+        </div>
+        <div>
+          <head><gi>editionStmt</gi> et <gi>extent</gi></head>
+
+          <p>La mention d'édition est optionnelle lorsqu'il s'agit de la première édition,
+            obligatoire pour les éditions suivantes.... <egXML
+              xmlns="http://www.tei-c.org/ns/Examples">
+              <editionStmt>
+                <edition>1<hi rend="sup">ère</hi> édition</edition>
+              </editionStmt>
+            </egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <extent>Taille du fichier (texte plus balises) : ~1Mo ; texte complet : 567 571
+                caractères, 89 219 mots ; texte source (sans les notes et le paratexte) : 407 746
+                caractères, 65 009 mots.</extent>
+            </egXML>
+          </p>
+
+        </div>
+        <div>
+          <head>L'adresse bibliographique (<gi>publicationStmt</gi>)</head>
+          <p>L'élément <gi>publicationSmt</gi> peut contenir, soit du texte, soit un ou plusieurs
+            éléments <gi>publisher</gi>, <gi>distributor</gi>, <gi>authority</gi>, associés à des
+            éléments <gi>pubPlace</gi>, <gi>address</gi>, <gi>availability</gi>, <gi>idno</gi>,
+              <gi>date</gi>.</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <publicationStmt>
+              <date>2012</date>
+              <publisher>École nationale des chartes</publisher>
+              <address><addrLine>19, rue de la Sorbonne</addrLine>
+              <addrLine>75005 Paris</addrLine><addrLine>tél.: +33 (0)1 55 42 75 00</addrLine>
+              <addrLine>http://www.enc.sorbonne.fr/</addrLine>
+            </address>
+              <availability>
+                <p>L’École nationale des chartes met à disposition cette ressource électronique
+                  structurée, protégée par le code de la propriété intellectuelle sur les bases de
+                  données (<ref
+                    target="http://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006279245&amp;cidTexte=LEGITEXT000006069414"
+                    type="externalLink">L341-1</ref>), selon les termes de la licence Creative
+                  Commons : « <ref target="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/"
+                    type="externalLink">Paternité - Pas d’Utilisation Commerciale - Pas de
+                    Modification ; 2.0 France</ref> ».</p>
+                <p>Pas d’Utilisation Commerciale — Nous souhaitons encourager l’utilisation et
+                  l’amélioration de nos ressources électroniques, pour les intérêts de
+                  l’enseignement et de la recherche. Toute autorisation au-delà du champ de cette
+                  licence doit être obtenue auprès de nous.</p>
+                <p>Pas de Modification — Afin de mieux servir la communauté scientifique, nous nous
+                  engageons à conserver et à toujours offrir publiquement la version la plus à jour
+                  de nos ressources électroniques par une URI pérenne. Nous nous engageons à les
+                  corriger et à les améliorer, à intégrer les contributions qui lui sont soumises
+                  (après validation par un comité scientifique), et à référencer l’origine de ces
+                  contributions. Toute modification de la ressource qui ne serait pas reversée à la
+                  version de référence sous notre autorité éditoriale doit faire l’objet d’un
+                  accord, afin de ne pas disperser les contributions et de permettre les meilleures
+                  conditions possibles de collaboration scientifique.</p>
+                <p>Paternité — L’École nationale des chartes demande à ce que toute publication
+                  dérivée de ses ressources électroniques comporte : <list>
+                    <item>un lien vers l’adresse pérenne de la dernière version de la ressource sur
+                      notre site ;</item>
+                    <item>la date du fichier source utilisé ;</item>
+                    <item>nos noms.</item>
+                  </list></p>
+                <p>Tout litige soulevé par le non respect des termes de cette licence sera soumis à
+                  la juridiction des tribunaux de Paris.</p>
+              </availability>
+            </publicationStmt>
+          </egXML>
+        </div>
+        <div>
+          <head>L'élément <gi>seriesStmt</gi></head>
+          <p>Cet élément est utilisé lorque la ressource fait partie d'un ensemble partageant un
+            même titre (collection), ou bien constitue un ou plusieurs volumes d'un item, ou encore
+            est un numéro distinct d'une publication en série (périodique).</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <seriesStmt>
+              <title>Éditions en ligne de l’École des chartes</title>
+              <idno type="URI">http://elec.enc.sorbonne.fr</idno>
+              <idno type="vol">3</idno>
+            </seriesStmt>
+          </egXML>
+        </div>
+
+        <div>
+          <head>La description des sources (<gi>sourceDesc</gi>)</head>
+          <p>La plupart des textes encodés en TEI n'ont pas été créés sous forme numérique... il
+            faut donc décrire leurs sources, ou encore mentionner qu'ils sont nés numériques.</p>
+          <p>La TEI offre plusieurs solutions pour ce faire, plus ou moins structurées : <list>
+              <item>description en prose dans un élément <gi>p</gi></item>
+              <item>une référence bibliographique dans <gi>bibl</gi>, la même chose sous une forme
+                plus contrainte dans <gi>biblStruct</gi> ou complète dans <gi>biblFull</gi></item>
+              <item>une liste de références bibliographiques comme ci-dessus, dans
+                <gi>listBibl</gi></item>
+              <item>en plus, des éléments spécialisés pour les transcriptions de discours oraux
+                  (<gi>recordingStmt</gi> ou les manuscrits (<gi>msDesc</gi>).</item>
+            </list>
+          </p>
+
+          <p>Exemple de description de source imprimée</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <sourceDesc>
+              <bibl>
+                <title>Linguae vasconum primitiae</title> per dominum <author>Bernardum
+                  Dechepare</author>, rectorem Sancti Michaelis veteris.
+                  <pubPlace>[Bourdeaulx]</pubPlace> : <publisher>[François Morpain,
+                  imprimeur]</publisher>, <date>[1545]</date>. <extent>28 ff. : fig. sur bois ;
+                  in-4</extent>
+                <textLang mainLang="baq">basque</textLang>
+              </bibl>
+            </sourceDesc>
+          </egXML>
+
+
+          <p>Exemple de description d'une source manuscrite</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <sourceDesc>
+              <msDesc>
+                <msIdentifier>
+                  <country>France</country>
+                  <institution>Archives nationales</institution>
+                  <repository>site de Paris</repository>
+                  <collection>Maison du roi</collection>
+                  <idno>O/1/284, n° 525</idno>
+                </msIdentifier>
+                <msContents>
+                  <summary>
+                    <date when="1763-05">1763, mai</date> [Versailles]. En prévision d’un voyage de
+                    la cour à Marly, le gouverneur de Versailles soumet au roi des questions
+                    relatives au logement d’un certain nombre de courtisans et de serviteurs royaux
+                    qui accompagnent le souverain. Le château sera éclairé comme à l’ordinaire et le
+                    roi fournira du bois de chauffage à certains domestiques seulement, ainsi qu’une
+                    demi bougie et de l’argent au personnel ecclésiastique.</summary>
+                  <textLang mainLang="fre">en français</textLang>
+                </msContents>
+                <physDesc>
+                  <objectDesc form="feuillet">
+                    <supportDesc>
+                      <support>
+                        <material>papier</material>
+                      </support>
+                      <extent>
+                        <dimensions unit="mm">
+                          <!-- dimensions non mesurées en fait... -->
+                          <height>250</height>
+                          <width>150</width>
+                        </dimensions>
+                      </extent>
+                      <condition>en bon état</condition>
+                    </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                    <handNote xml:id="secretaire" scope="major">Un secrétaire a couché par écrit une
+                      liste de questions, se faisant le relais de Luthier, employé pour le bois et
+                      la bougie au château de Marly.</handNote>
+                    <handNote xml:id="PDN" scope="minor">Philippe de Noailles (1715-1794), intendant
+                      et gouverneur du château et domaine de Versailles, a porté dans la marge de
+                      gauche les réponses du roi, en paraphant ces réponses. Il a également titré et
+                      signé le document.</handNote>
+                    <handNote xml:id="anonyme" scope="minor">Une autre main a noté la date du
+                      document en haut de la page.</handNote>
+                  </handDesc>
+                  <additions>
+                    <p>Le recto de la page porte l'estampille de la direction générale des Archives
+                      (Empire français).</p>
+                    <p>Un archiviste a également, probablement au XIX<hi rend="super">e</hi> siècle,
+                      noté dans la marge de gauche la cote du document : <quote>0<hi rend="super"
+                          >1</hi> 284 n° 525</quote>.</p>
+                  </additions>
+                </physDesc>
+                <additional>
+                  <adminInfo>
+                    <custodialHist>
+                      <p>Ce document fait partie d'un ensemble de bons du roi datant des années
+                        1741-1792, aujourd'hui conservés dans 7 cartons au sein des archives du
+                        secrétariat de la Maison du Roi.</p>
+                    </custodialHist>
+                  </adminInfo>
+                </additional>
+              </msDesc>
+            </sourceDesc>
+          </egXML>
+
+          <p>Source orale</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <sourceDesc>
+              <recordingStmt>
+                <recording type="audio" dur="P30M">
+                  <respStmt>
+                    <resp>Location recording by</resp>
+                    <name>Sound Services Ltd.</name>
+                  </respStmt>
+                  <equipment>
+                    <p>Multiple close microphones mixed down to stereo Digital Audio Tape, standard
+                      play, 44.1 KHz sampling frequency</p>
+                  </equipment>
+                  <date>12 Jan 1987</date>
+                </recording>
+              </recordingStmt>
+            </sourceDesc>
+          </egXML>
+
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <sourceDesc>
+              <recordingStmt>
+                <recording type="video" when="1989-06-24" dur="P60M">
+                  <p><title>24 Heures</title>: émission télévisée <date>24 juin 1989</date></p>
+                </recording>
+              </recordingStmt>
+            </sourceDesc>
+          </egXML>
+
+
+
+
+          <p>Source née numérique</p>
+
+
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <sourceDesc>
+              <p>Document né numérique</p>
+            </sourceDesc>
+          </egXML>
+
+
+        </div>
+
+
+
+
+
+      </div>
+      <div>
+        <head>Description de l'encodage (<gi>encodingDesc</gi>)</head>
+        <div>
+
+          <p><gi>encodingDesc</gi> regroupe des informations sur les méthodes qui ont régi la
+            création du texte numérisé, soit en texte libre, soit en utilisant des éléments
+            spécifiques, tels que : <list>
+              <item><gi>projectDesc</gi> : les objectifs du projet</item>
+              <item><gi>samplingDecl</gi> : critères et méthodes de sélection du texte</item>
+              <item><gi>editorialDecl</gi> : informations sur les principes éditoriaux, i.e.
+                  <gi>correction</gi>, <gi>normalization</gi>, <gi>quotation</gi>,
+                  <gi>hyphenation</gi>, <gi>segmentation</gi>, <gi>interpretation</gi></item>
+              <item><gi>classDecl</gi> : les systèmes de classification utilisés</item>
+              <item><gi>tagsDecl</gi> : les règles spécifiques applicables à certains
+                éléments</item>
+            </list>
+          </p>
+
+          <p>Par exemple...</p>
+
+
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <encodingDesc>
+              <projectDesc>
+                <p>Édition électronique lancée en avril 2010 dans le cadre du mémoire de recherche
+                  de 2<emph rend="super">e</emph> année du Master "Nouvelles technologies appliquées
+                  à l'histoire" à l’École nationale des chartes de Natalia Pashkeeva.</p>
+                <p>Globalement, le présent projet vise l'édition électronique des carnets de prison
+                  et d'exil d'Henri Delescluze ainsi que sa correspondance écrite associée aux dits
+                  carnets conservés aux Archives nationales dans le fonds de Charles et d'Henri
+                  Delescluze sous le cote 494 AP/1.</p>
+              </projectDesc>
+              <samplingDecl>
+                <p>Seuls les carnets 1 et 2 sont édités. On leur a adjoint la correspondance active
+                  et passive de Henri Delescluze pendant la période de rédaction des 2 carnets.</p>
+              </samplingDecl>
+            </encodingDesc>
+          </egXML>
+
+        </div>
+
+        <div>
+
+          <p>Des balises plus formalisées sont également disponibles: <list>
+              <item><gi>charDecl</gi> : déclaration des glyphes ou caractères non-UNICODE, a
+                référencer dans le texte par l'élément <gi>g</gi></item>
+              <item><gi>classDecl</gi>: déclaration structurée du système de classification des
+                textes d'un corpus, ou de schéma analytique, à référencer dans le texte par
+                  <att>ana</att> ou <att>decls</att>
+              </item>
+              <item><gi>refsDecl</gi> ou <gi>tagsDecl</gi>: déclarations structurées du système de
+                référence (p.e. <code>I.2.ii</code>) par rapport avec la structuration XML, et de
+                l'usage (fréquence etc.) des balises XML dans le document même</item>
+              <item><gi>geoDecl</gi>, <gi>metDecl</gi>, <gi>fsdDecl</gi>, <gi>variantEncoding</gi> :
+                fournissent des informations utiles pour comprendre et exploiter l'encodage de la
+                géolocalisation, des analyses métriques ou linguistiques, et de la variation
+                textuelle. </item>
+            </list></p>
+
+        </div>
+
+        <div>
+          <head>On peut définir des caractères non-Unicode</head>
+
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <charDecl>
+              <glyph xml:id="z103">
+                <glyphName>LATIN LETTER Z WITH TWO STROKES</glyphName>
+                <mapping type="standardized">Z</mapping>
+                <mapping type="PUA">U+E304</mapping>
+              </glyph>
+            </charDecl>
+          </egXML>
+
+          <p>Dans une transcription, on peut encoder des caractères non-Unicode avec l'élément
+              <gi>g</gi>: <egXML xmlns="http://www.tei-c.org/ns/Examples"><p> ... mulct<g
+                  ref="#z103">z</g> ... </p>
+            </egXML>
+          </p>
+
+        </div>
+
+        <div>
+          <head><gi>classDecl</gi> et <gi>charDecl</gi> : exemples d'utilisation</head>
+
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <encodingDesc>
+              <classDecl>
+                <taxonomy xml:id="types-documents">
+                  <category xml:id="typedoc-001">
+                    <catDesc>bon du roi</catDesc>
+                  </category>
+                  <category xml:id="typedoc-002">
+                    <catDesc>acte royal</catDesc>
+                  </category>
+                </taxonomy>
+              </classDecl>
+              <charDecl>
+                <glyph xml:id="paraphe">
+                  <desc>le paraphe de Philippe de Noailles</desc>
+                  <graphic url="paraphe.jpg"/>
+                </glyph>
+              </charDecl>
+              <geoDecl datum="WGS84"/>
+            </encodingDesc>
+          </egXML>
+
+        </div>
+
+
+
+
+        <div>
+          <head>On peut décrire son propre balisage</head>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <encodingDesc>
+              <!-- ... -->
+              <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                  <tagUsage gi="cit" occurs="410"/>
+                  <tagUsage gi="div" occurs="115"/>
+                  <tagUsage gi="gap" occurs="3"/>
+                  <tagUsage gi="head" occurs="156"/>
+                  <tagUsage gi="hi" occurs="147"/>
+                  <tagUsage gi="l" occurs="2"/>
+                  <tagUsage gi="lg" occurs="1"/>
+                  <tagUsage gi="p" occurs="680"/>
+                  <tagUsage gi="quote" occurs="3"/>
+                  <tagUsage gi="s" occurs="2415"/>
+                  <tagUsage gi="w" occurs="41799"/>
+                </namespace>
+              </tagsDecl>
+            </encodingDesc>
+          </egXML>
+        </div>
+
+
+        <div>
+          <head>On peut definir des styles </head>
+          <p>
+            <list>
+              <item><gi>rendition</gi> : donne des informations structurées sur l'apparence de
+                certains composants du document source</item>
+            </list>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <tagsDecl>
+                <rendition xml:id="r-center" scheme="css">text-align: center;</rendition>
+                <rendition xml:id="r-small" scheme="css">font-size: small;</rendition>
+                <rendition xml:id="r-large" scheme="css">font-size: large;</rendition>
+              </tagsDecl>
+            </egXML>
+          </p>
+        </div>
+
+        <div>
+          <head> L'élément <gi>appInfo</gi></head>
+          <p>
+            <list>
+              <item><gi>appInfo</gi> : donne des informations structurées sur le logiciel qui a
+                servi à produire le fichier</item>
+            </list>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <appInfo>
+                <application version="1.7" ident="ImageMarkupTool" notAfter="2008-06-01">
+                  <label>Image Markup Tool</label>
+                  <ptr target="#P1"/>
+                  <ptr target="#P2"/>
+                </application>
+              </appInfo>
+            </egXML>
+          </p>
+        </div>
+      </div>
+      <div>
+        <head>Description du profil (<gi>profileDesc</gi>)</head>
+        <div>
+
+          <p>Description détaillée des aspects <hi>non bibliographiques</hi> du texte, notamment les
+            langues utilisées et leurs variantes, les circonstances de sa production, les parties
+            prenantes et leur environnement. Les éléments disponibles (membres de la classe
+              <term>model.profileDescPart</term>) comprennent: <list>
+              <item><gi>creation</gi>: informations sur la création de la ressource, comme le lieu,
+                la date</item>
+              <item><gi>langUsage</gi>: informations sur les langues, les registres, les dialectes
+                etc. employés</item>
+              <item><gi>textDesc</gi> et <gi>textClass</gi> : classement(s) thématique ou
+                typologique de la ressource selon une classification interne ou externe</item>
+              <item><gi>particDesc</gi> : informations sur les <q>participants</q> d'une interaction
+                linguistique, comme les locuteurs d'un discours oral, les caractères d'un roman </item>
+              <item><gi>settingDesc</gi> : informations sur l'endroit d'une interaction linguistique
+                comme le lieu d'enregistrement d'un discours oral, la scène d'un drame.</item>
+              <item><gi>handNotes</gi> : informations sur un ou plusieurs style(s) ou main(s)
+                identifié(s) dans le manuscrit</item>
+            </list></p>
+        </div>
+
+        <div>
+          <head>Création </head>
+          <p>On peut donner des informations directement dans un élément <gi>p</gi>, ou, dans le
+            cadre d'une édition génétique, déclarer les différentes étapes d'écriture. Exemple :
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <profileDesc>
+                <creation>
+                  <listChange ordered="true">
+                    <change xml:id="G_10_1.0">primera campaña de escritura: correcciones inmediatas
+                      o "de escritura" (supresiones lineares)</change>
+                    <change xml:id="G_10_1.1">segunda campaña de escritura: correcciones no
+                      inmediatas o "de lectura" (substituciones, añadidos interlineares, marcas de
+                      inversión…)</change>
+                    <change xml:id="G_10_1.2">tercera campaña de escritura: nuevas correcciones no
+                      inmediatas o "de lectura" que invalidan o cambian las correcciones anteriores
+                      (substituciones, añadidos interlineares, marcas de inversión…)</change>
+                    <change xml:id="G_10_1.3">cuarta campaña de escritura: nuevas correcciones no
+                      inmediatas o "de lectura" que invalidan o cambian las correcciones anteriores
+                      (substituciones, añadidos interlineares, marcas de inversión…)</change>
+                  </listChange>
+                </creation>
+                <langUsage>
+                  <language ident="spa">Espagnol</language>
+                </langUsage>
+              </profileDesc>
+            </egXML>
+          </p>
+
+        </div>
+
+
+        <div>
+          <head>Spécification des langues</head>
+          <p>Il faut spécifier la ou les langue(s) du texte en se servant des codes ISO. </p>
+          <p>L'élément <gi>language</gi> (et son attribut associé, <code>xml:lang</code>) peut
+            comprendre un langage, son écriture, et sa région.<egXML
+              xmlns="http://www.tei-c.org/ns/Examples">
+              <langUsage>
+                <language ident="oci">occitan (langue principale du manuscrit)</language>
+                <language ident="lat">latin (langue utilisée dans le manuscrit)</language>
+                <language ident="fre">français contemporain (langue de l'édition)</language>
+                <language ident="frm">français moyen méridional (langue utilisée dans le
+                  manuscrit)</language>
+              </langUsage>
+            </egXML>
+          </p>
+        </div>
+
+
+
+        <div>
+          <head>Classification des textes</head>
+          <p>
+            <gi>textClass</gi> fournit une classification (par sujet, medium, type...) pour un texte
+            entier donné. Plusieurs méthodes sont disponibles : <list type="gloss">
+              <label>avec <gi>catRef</gi></label>
+              <item>pour faire une référence directe à une catégorie définie localement (dans
+                  <gi>classDecl</gi>, voir plus haut)</item>
+              <label>avec <gi>classCode</gi></label>
+              <item>pour faire référence à un système descriptif faisant l'objet d'un consensus et
+                défini à l'externe</item>
+              <label>avec <gi>keywords</gi></label>
+              <item>pour déclarer des mots-clés pris dans un vocabulaire bibliographique contrôlé ou
+                dans un nuage de mots</item>
+            </list>
+          </p>
+        </div>
+
+        <!--
+<div><head></head>
+<p>Dans un corpus, c'est souvent essentiel de caractériser chacun des textes
+selon une classification ou typologie prédéfinie.</p>
+<list>
+<item>la typologie peut être encodée avec un élément <gi>taxonomy</gi>
+(taxinomie) au <gi>textDecl</gi> ou ailleur</item>
+<item>chaque texte peut identifier sa catégorie en pointant sur une
+<gi>category</gi> avec <gi>catRef</gi>  </item>
+</list>
+</div>
+-->
+
+        <div>
+          <head>Exemple</head>
+          <p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <profileDesc>
+                <creation>
+                  <date when="1962"/>
+                </creation>
+                <textClass>
+                  <catRef
+                    target="#WRI #ALLTIM1 #ALLAVA2 #ALLTYP3 #WRIDOM5 #WRILEV2 #WRIMED1 #WRIPP5 #WRISAM3 #WRISTA2 #WRITAS0"/>
+                  <classCode scheme="DLEE">W nonAc: humanities arts</classCode>
+                  <keywords scheme="COPAC">
+                    <term>History, Modern - 19th century</term>
+                    <term>Capitalism - History - 19th century</term>
+                    <term>World, 1848-1875</term>
+                  </keywords>
+                </textClass>
+              </profileDesc>
+            </egXML>
+          </p>
+          <p rend="box">La classification ci-dessus s'appliquer au texte entier. On pourra aussi
+            l'utiliser pour catégoriser une partie du texte, par ex. une division <gi>div</gi>, à
+            l'aide de l'attribut <att>decls</att> de cette division, qui aura pour valeur un
+            pointeur vers un des éléments de classification.</p>
+        </div>
+        <div>
+          <head><gi>textDesc</gi></head>
+          <p><gi>textDesc</gi> fournit une description précise de la situation dans laquelle un
+            texte a été produit, et le caractérise d'une manière relativement indépendante de toute
+            théorie.</p>
+          <p><gi>settingDesc</gi> sert à décrire le(s) contexte(s) dans lesquels se situe une
+            interaction linguistique, soit sous la forme d'une description en prose, soit sous celle
+            d'une série d'éléments décrivant le contexte. </p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <textDesc n="novel">
+              <channel mode="w">print; part issues</channel>
+              <constitution type="single"/>
+              <derivation type="original"/>
+              <domain type="art"/>
+              <factuality type="fiction"/>
+              <interaction type="none"/>
+              <preparedness type="prepared"/>
+              <purpose type="entertain" degree="high"/>
+              <purpose type="inform" degree="medium"/>
+            </textDesc>
+          </egXML>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <settingDesc>
+              <p>Pierre Mendès France, Entretiens avec Jean Lacouture (1980-1981 )</p>
+            </settingDesc>
+          </egXML>
+        </div>
+        <div>
+          <head><gi>particDesc</gi></head>
+          <p>Cet élément décrit les locuteurs ou autres participants à la production d'un texte.</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+            <particDesc>
+              <listPerson>
+                <person xml:id="P-1234" sex="2" age="mid">
+                  <p>Female informant, well-educated, born in Shropshire UK, 12 Jan 1950, of unknown
+                    occupation. Speaks French fluently. Socio-Economic status B2.</p>
+                </person>
+                <person xml:id="P-4332" sex="1">
+                  <persName>
+                    <surname>Hancock</surname>
+                    <forename>Antony</forename>
+                    <forename>Aloysius</forename>
+                    <forename>St John</forename>
+                  </persName>
+                  <residence notAfter="1959">
+                    <address>
+     <street>Railway Cuttings</street>
+     <settlement>East Cheam</settlement>
+    </address>
+                  </residence>
+                  <occupation>comedian</occupation>
+                </person>
+                <listRelation>
+                  <relation type="personal" name="spouse" mutual="#P-1234 #P-4332"/>
+                </listRelation>
+              </listPerson>
+            </particDesc>
+          </egXML>
+        </div>
+        <!--
+<div><head>Par exemple...</head>
+<p></p>
+<p>  <egXML xmlns="http://www.tei-c.org/ns/Examples"><profileDesc>
+        <langUsage>
+ <language ident="fr">French</language>
+        </langUsage>
+
+ <textDesc n="novel">
+ <channel mode="w">print; part issues</channel>
+ <constitution type="single"/>
+ <derivation type="original"/>
+ <domain type="art"/>
+ <factuality type="fiction"/>
+ <interaction type="none"/>
+ <preparedness type="prepared"/>
+ <purpose type="entertain" degree="high"/>
+ <purpose type="inform" degree="medium"/>
+        </textDesc>
+        <settingDesc>
+ <setting>
+   <name>Paris, France</name>
+   <time>Late 19th century</time>
+ </setting>
+        </settingDesc>
+</profileDesc>
+</egXML></p></div>
+
+ -->
+
+
+
+      </div>
+
+
+      <div>
+        <head>Description des révisions</head>
+        <p>Et finalement, on utilisera un élément <gi>revisionDesc</gi> pour fournir une liste des
+          modifications apportées à une ressource. Une série d'éléments <gi>change</gi> pourra alors
+          être encodé, dans l'ordre chronologique inverse des révisions du texte.</p>
+        <p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <revisionDesc>
+              <change when="2012-10" who="#OGJ #FC">Quelques corrections</change>
+              <change when="2012-06" who="#FC">Publication</change>
+              <change when="2012-05" who="#FC #OGJ #LG">Relecture</change>
+              <change when="2012-01" who="#LG">Première révision</change>
+              <change when="2011-11" who="#LG">Premier encodage</change>
+            </revisionDesc>
+          </egXML>
+        </p>
+      </div>
+
+
+
+    </body>
+  </text>
+</TEI>
