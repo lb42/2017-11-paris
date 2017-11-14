@@ -125,33 +125,21 @@
       <div type="slide">
         <head>2<hi rend="superscript">ème</hi> journée (24 nov)</head>
         <list>
-          <label>10h - 13h </label>
-          <!--   <item resp="#LB"><ref target="PDF/ex03-roma.pdf"> Personnalisation TEI avec
-            Roma</ref></item>
-          <label>10h30-10h45</label>-->
-          <item resp="#FC"><ref target="04-transcriptionManuscrits.html"> Édition critique ou
-              transcription</ref>; exercice sur un testament de poilu, FC a proposer</item>
-          <!--  <label>11h15-11h45</label>
-          <item resp="#LB"><ref target="PDF/ex04-oulipo.pdf">TP Création d’un ODD et
-              personnalisation </ref></item>
-          <label>11h45–12h15</label>-->
-          <label>14h– 14h45 </label>
+          <label>10h - 11h </label>
+          <item resp="#FC">Eléments TEI pour la transcription des sources
+            primaires <ref target="transcriptionManuscrits.xml">Source</ref>
+            </item>
+          <label>11h - 12h </label>
+          <item resp="#LB">Exercice sur un testament de poilu, FC a proposer</item>
+                <label>14h– 14h45 </label>
           <item>: Fin de l'exercice</item>
           <label>- 15h– 16 h :</label>
-          <item> Encoder l'apparat critique </item>
+          <item resp="#FC">Eléments TEI pour l'encodage de l'apparat critique 
+            <ref target="apparatCritique.xml">Source</ref></item>
           <label> 16h– 17 h </label>
           <item resp="#LB">TEI Header ( <ref target="Diapos/teiHeader.pdf">PDF</ref>; <ref
             target="Sources/teiHeader.xml">Source</ref>)</item>
-          <!-- <label>11h45–12h15</label>
-          <item resp="#FC"><ref target="PDF/ex05-header.pdf">TP TEI Header</ref></item>
-          <label>13h30–14h30</label>
-          <item resp="#LB"><ref target="06-msdesc.html">TEI Msdescription</ref></item>
-          <label>14h30–15h30</label>
-          <item resp="#LB">
-            <ref target="PDF/ex06-msdesc.pdf">TP TEI Msdescription</ref></item>
-          <label>16h00–17h</label>
-          <item>Présentation projets avec la TEI</item>-->
-          <label>devoirs</label>
+                <label>devoirs</label>
           <item> Exercice à faire à la maison : ajouter des notes d'apparat critique et compléter
             l'en-tête pour le fichier TEI d'encodage du testament</item>
         </list>
@@ -167,7 +155,9 @@
           <label>11h45 – 12h45 </label>
           <item>exercice de description des manuscrits (a faire)</item>
           <label>14h-14h45</label>
-          <item resp="#FC"> encoder des notes (historiques, explicatives) + TP </item>
+          <item resp="#FC"> encoder des notes (historiques, explicatives) 
+            <ref target="Sources/notes-et-indexation.pdf">PDF source</ref>
+          </item>
           <label>14h45-15h30</label>
           <item resp="#LB"><ref target="07-entitesNommees.html">Entités nommées</ref></item>
           <label>15h30-16h15</label>
