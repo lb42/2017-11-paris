@@ -104,18 +104,21 @@
             <ref target="Diapos/01-principes.pdf">PDF</ref>)
           </item>
           <label>11h30–12h00</label>
-          <item><ref target="PDF/ex01-analyse.pdf"> TP Modélisation</ref></item>
+          <item>TP Modélisation  (<ref target="PDF/ex01-analyse.pdf">PDF</ref> <ref
+            target="Sources/ex01-analyse.xml">source</ref>)  </item>
           <label>12h00–12h30</label>
           <item resp="#FC">Introduction XML (<ref target="Sources/introductionXML.xml">Source</ref>,
             <ref target="Diapos/introductionXML.html">HTML</ref>) </item>
           <label>12h30–13h30</label>
           <item>Pause déjeuner</item>
           <label>14h–15h</label>
-          <item><ref target="PDF/ex02-oxygen.pdf">À la découverte d’oXygen</ref>
+          <item>À la découverte d’oXygen (<ref target="PDF/ex02-oxygen.pdf">PDF</ref>, <ref
+            target="Sources/ex02-oxygen.xml">source</ref>)
           </item>
           <label>15h00-17h</label>
           <item>
-            <ref target="richessesTEI.html">Introduction aux richesses de la TEI</ref>
+            Introduction aux richesses de la TEI (<ref target="Diapos/richessesTEI.pdf">PDF</ref>;
+            <ref target="Sources/richessesTEI.xml">source</ref>)
           </item>
         </list>
       </div>
@@ -137,7 +140,8 @@
           <label>- 15h– 16 h :</label>
           <item> Encoder l'apparat critique </item>
           <label> 16h– 17 h </label>
-          <item resp="#LB"><ref target="Sources/teiHeader-LB.xml"> TEI Header </ref></item>
+          <item resp="#LB">TEI Header ( <ref target="Diapos/teiHeader.pdf">PDF</ref>; <ref
+            target="Sources/teiHeader.xml">Source</ref>)</item>
           <!-- <label>11h45–12h15</label>
           <item resp="#FC"><ref target="PDF/ex05-header.pdf">TP TEI Header</ref></item>
           <label>13h30–14h30</label>
