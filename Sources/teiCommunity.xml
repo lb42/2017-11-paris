@@ -3,8 +3,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>La communauté TEI vous accueille! </title>
-  
+        <title>La communauté TEI vous accueille! </title> 
       </titleStmt>
       <publicationStmt>
         <publisher>MEET</publisher>
@@ -180,7 +179,7 @@
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <bibl xml:id="MK_73">Sturm, U. &amp; Drang, F. : <title>Musikalische Katastrophe</title>.
             (Berlin, W. de Gruyter, 1973)</bibl>
-        
+        </egXML><egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
           <bibl xml:id="MK73"><author key="U. Sturm (1884-1919)"><persName>
             <surname>>Sturm</surname><forename>Ulbricht</forename></persName></author>
               <author>Drang, F.</author>

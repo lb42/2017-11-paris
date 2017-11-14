@@ -6,7 +6,6 @@
         <title>Formation à l'utilisation de TEI pour l'édition scientifique de manuscrits</title>
         <author>Florence Clavaud</author>
         <author>Lou Burnard</author>
-        
       </titleStmt>
       <publicationStmt>
         <publisher>LBC</publisher>
@@ -26,16 +25,17 @@
   </teiHeader>
   <text>
     <body>
-      <div type="slide"><head>Informations pratiques</head>
-        <p><label>Dates</label>: 4 journées, les 23 et 24 novembre et les 4 et 5 décembre
-        </p><p>  
-         <label> Lieu</label> Archives nationales, site de Paris (salle informatique au 1er étage du CARAN, 11 rue des Quatre-Fils, 75003 Paris)
-          </p><p>
-         <label> Horaires </label>
-          - 10 h – 13 h le matin 
-          - 14 h – 17 h l'après-midi (ou 14 h 30 – 17 h 30 si jugé préférable par une majorité)
-          Soit 6 h par jour</p>
-      </div><div type="slide">
+      <div type="slide">
+        <head>Informations pratiques</head>
+        <p><label>Dates</label>: 4 journées, les 23 et 24 novembre et les 4 et 5 décembre </p>
+        <p>
+          <label> Lieu</label> Archives nationales, site de Paris (salle informatique au 1er étage
+          du CARAN, 11 rue des Quatre-Fils, 75003 Paris) </p>
+        <p>
+          <label> Horaires </label> - 10 h – 13 h le matin  - 14 h – 17 h l'après-midi (ou 14 h 30 –
+          17 h 30 si jugé préférable par une majorité) Soit 6 h par jour</p>
+      </div>
+      <div type="slide">
         <head>Objectifs</head>
         <p>Cette première formation à TEI aux Archives nationales réunira la plupart des membres de
           l'équipe projet de plateforme collaborative de transcription des testaments de Poilus.</p>
@@ -47,28 +47,28 @@
           <item>Travaux pratiques d’encodage en TEI XML (éditions critiques)</item>
           <item>Introduction aux chaînes de traitement de documents TEI XML</item>
         </list>
-        
         <p>A l'issue de la formation les participants seront capables :</p>
         <list rend="ordered">
           <item>d'articuler les règles d'édition définies pour les Testaments de Poilus avec les
             spécifications du standard TEI ; d'utiliser la documentation du standard TEI et la
             documentation du projet pour retrouver la définition formelle d’un élément ou attribut
             TEI afin de faire les bons choix de balisage ; </item>
-          <item>de transcrire et d'annoter, de façon rigoureuse et adéquate, un testament de
-            Poilu en TEI, via l’interface de la plate-forme de transcription ou via un éditeur XML ; </item>
+          <item>de transcrire et d'annoter, de façon rigoureuse et adéquate, un testament de Poilu
+            en TEI, via l’interface de la plate-forme de transcription ou via un éditeur XML ; </item>
           <item>de relire et de corriger la transcription réalisée par un ou plusieurs autres
             contributeurs ; d'expliquer les corrections réalisées à ces contributeurs ; </item>
           <item>d'échanger avec l’auteur du modèle d’encodage (F. Clavaud) sur de possibles
             évolutions de ce modèle ; </item>
-          <item>de co-animer des ateliers d’initiation à la transcription des testaments de
-            Poilus pour les bénévoles volontaires ; </item>
-          <item>(pour celles et ceux qui auraient en tête d'autres projets, de réfléchir à
-            l’édition en TEI d’autres documents manuscrits, de tester les solutions d’encodage
-            possibles, de contribuer à la conception d’un modèle et à la production des fichiers
-            TEI) </item>
-        </list></div><div type="slide"><head>Formateurs</head>
-        <p>La formation  est assuree par deux
-          formateurs, qui proposent tout les deux des <list>
+          <item>de co-animer des ateliers d’initiation à la transcription des testaments de Poilus
+            pour les bénévoles volontaires ; </item>
+          <item>(pour celles et ceux qui auraient en tête d'autres projets, de réfléchir à l’édition
+            en TEI d’autres documents manuscrits, de tester les solutions d’encodage possibles, de
+            contribuer à la conception d’un modèle et à la production des fichiers TEI) </item>
+        </list>
+      </div>
+      <div type="slide">
+        <head>Formateurs</head>
+        <p>La formation est assuree par deux formateurs, qui proposent tout les deux des <list>
             <item>exposés introductifs</item>
             <item>méthodes démonstratives</item>
             <item>méthodes actives ou de découverte</item>
@@ -79,20 +79,20 @@
         <p>Une participation active est requise! n’hésitez pas à nous interrompre ou à nous poser
           des questions. L’accent sera mis sur les exercices pratiques et les situations réelles.
           Les supports de cours seront mis à votre disposition à l'issue de la formation.</p>
-          <p><label>Florence Clavaud</label> est 
-            Conservateur en chef du patrimoine aux Archives nationales, membre du Centre Jean-Mabillon de l'Ecole nationale des chartes.
-            Responsable informatique (et le plus souvent co-auteur et développeur) de plusieurs éditions numériques de documents très divers en TEI, achevées ou en cours, statiques ou dynamiques ; consultante sur d'autres projets ; auteur de nombreuses formations sur ce sujet, en formation initiale ou continue, spécifiques ou génériques
-            Voir, pour un aperçu non exhaustif des projets, les rubriques « Projets en cours » et « Publications » de la page http://www.enc-sorbonne.fr/fr/florence-clavaud
-          </p><p><label>Lou Burnard</label>  
-            anciennement directeur adjoint aux services informatiques de l'Université d'Oxford, 
-            actuellement consultant, est un des co-fondateurs de la Text Encoding Initiative, actif
-            dans le domaine depuis
-            les 1980s. Il a contribué 
-           à de très nombreux projets en humanités numériques, et est responsable de nombreuses
-           formations sur ce sujet, notamment en France depuis 2010 
-           au CESR de l'université Francois Rabelais de Tours, et à l'Ecole Nationale Des Chartes
-           depuis 2014. 
-          </p>  
+        <p><label>Florence Clavaud</label> est Conservateur en chef du patrimoine aux Archives
+          nationales, membre du Centre Jean-Mabillon de l'Ecole nationale des chartes. Responsable
+          informatique (et le plus souvent co-auteur et développeur) de plusieurs éditions
+          numériques de documents très divers en TEI, achevées ou en cours, statiques ou
+          dynamiques ; consultante sur d'autres projets ; auteur de nombreuses formations sur ce
+          sujet, en formation initiale ou continue, spécifiques ou génériques Voir, pour un aperçu
+          non exhaustif des projets, les rubriques « Projets en cours » et « Publications » de la
+          page http://www.enc-sorbonne.fr/fr/florence-clavaud </p>
+        <p><label>Lou Burnard</label> anciennement directeur adjoint aux services informatiques de
+          l'Université d'Oxford, actuellement consultant, est un des co-fondateurs de la Text
+          Encoding Initiative, actif dans le domaine depuis les 1980s. Il a contribué à de très
+          nombreux projets en humanités numériques, et est responsable de nombreuses formations sur
+          ce sujet, notamment en France depuis 2010 au CESR de l'université Francois Rabelais de
+          Tours, et à l'Ecole Nationale des Chartes depuis 2014. </p>
       </div>
       <div type="slide">
         <head>Premier jour (23 nov)</head>
@@ -100,12 +100,14 @@
           <label>10h-10h45 </label>
           <item> Présentation des participants et discussion des objets de la formation</item>
           <label>11h–11h30</label>
-          <item><ref target="Sources/01-principes.xml">Principes et enjeux du balisage</ref>
+          <item>Principes et enjeux du balisage (<ref target="Sources/01-principes.xml">Source</ref>
+            <ref target="Diapos/01-principes.pdf">PDF</ref>)
           </item>
           <label>11h30–12h00</label>
           <item><ref target="PDF/ex01-analyse.pdf"> TP Modélisation</ref></item>
           <label>12h00–12h30</label>
-          <item><ref target="02-introductionXML.html">Introduction XML</ref></item>
+          <item resp="#FC">Introduction XML (<ref target="Sources/introductionXML.xml">Source</ref>,
+            <ref target="Diapos/introductionXML.html">HTML</ref>) </item>
           <label>12h30–13h30</label>
           <item>Pause déjeuner</item>
           <label>14h–15h</label>
@@ -199,22 +201,25 @@
           <label>10h-11h30</label>
           <item resp="#LB"><ref target="09-personnalisation.html">Personnalisation avec ODD</ref>;
               <ref target="PDF/ex03-roma.pdf"> Personnalisation TEI avec Roma</ref></item>
+          
           <label>11h30-13h</label>
           <item resp="#FC"><ref target="11-traitementTEI.html">Chaînes de traitement TEI</ref>
+            <ref target="14-outils.html">L’outillage TEI</ref>              
           </item>
+          
           <label>14h-15h</label>
           <item resp="#LB"><ref target="12-xsltNuls.xml">XSLT Pour les nuls</ref>
             <ref target="PDF/ex12-xslt.pdf">Un peu de XPath, un peu de XSLT</ref></item>
           <!-- <label>11h30-12h30</label>
           <item resp="#FC"><ref target="13-xsltParesseux.html">XSLT pour les paresseux </ref></item>
           <label>13h30-14h30</label>
-          <item resp="#FC"><ref target="14-outils.html">L’outillage TEI</ref></item>    -->
+            -->
           <label>15h–15h30</label>
-          <item resp="#LB">Welcome to the TEI community
-            (<ref target="Sources/teiCommunity.xml">source</ref>; <ref
-              target="Diapos/teiCommunity.html">HTML</ref>;  <ref target="Diapos/teiCommunity.pdf">PDF</ref> ) </item>
+          <item resp="#LB">Welcome to the TEI community (<ref target="Sources/teiCommunity.xml"
+              >source</ref>; <ref target="Diapos/teiCommunity.html">HTML</ref>; <ref
+              target="Diapos/teiCommunity.pdf">PDF</ref> ) </item>
           <label>15h30 – 16h30 </label>
-          <item>prise en main de l'interface de transcription de la plateforme collaborative</item>
+          <item resp="#fc">prise en main de l'interface de transcription de la plateforme collaborative</item>
           <label>16h30 – 17 h</label>
           <item> bilan, discussion, évaluation</item>
         </list>
