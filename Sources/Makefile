@@ -9,8 +9,11 @@ ECHO=
 
 HTMLSLIDES= \
 	../programme \
-    introductionXML 
-    
+    introductionXML \
+	apparatCritique \
+	transcriptionManuscrit \
+	notesIndexations
+
 EXERCISES= \
 	ex01-analyse \
 	ex02-oxygen \
@@ -28,13 +31,9 @@ DIAPOS= \
 	01-principes \
 	richessesTEI \
 	teiHeader \
-	06-msdesc \
-	07-entitesNommees \
-	08-organisation \
-	09-personnalisation \
-	11-traitementTEI.xml \
-	12-xsltNuls \
-	14-outils \
+	msdesc \
+	xsltNuls \
+	outils \
 	teiCommunity
 
 default: exercises htmlslides pdfslides
