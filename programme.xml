@@ -127,7 +127,7 @@
         <list>
           <label>10h - 11h </label>
           <item resp="#FC">Eléments TEI pour la transcription des sources
-            primaires <ref target="transcriptionManuscrits.xml">Source</ref>
+            primaires <ref target="Sources/transcriptionManuscrits.xml">Source</ref>
             </item>
           <label>11h - 12h </label>
           <item resp="#LB">Exercice sur un testament de poilu, FC a proposer</item>
@@ -135,7 +135,7 @@
           <item>: Fin de l'exercice</item>
           <label>- 15h– 16 h :</label>
           <item resp="#FC">Eléments TEI pour l'encodage de l'apparat critique 
-            <ref target="apparatCritique.xml">Source</ref></item>
+            <ref target="Sources/apparatCritique.xml">Source</ref></item>
           <label> 16h– 17 h </label>
           <item resp="#LB">TEI Header ( <ref target="Diapos/teiHeader.pdf">PDF</ref>; <ref
             target="Sources/teiHeader.xml">Source</ref>)</item>
@@ -151,42 +151,24 @@
           <item>examen rapide des fichiers d'exercice faits à la maison ; rappel du contenu des 2
             journées précédentes (pour remettre tout le monde dans le bain)</item>
           <label> 10h45 – 11h45</label>
-          <item resp="#LB"><ref target="06-msdesc.html">TEI Msdescription</ref></item>
+          <item resp="#LB">Description des manuscrits (et autres TBOs)<ref
+            target="Sources/msdesc.xml">Source</ref></item>
           <label>11h45 – 12h45 </label>
           <item>exercice de description des manuscrits (a faire)</item>
-          <label>14h-14h45</label>
-          <item resp="#FC"> encoder des notes (historiques, explicatives) 
-            <ref target="Sources/notes-et-indexation.pdf">PDF source</ref>
+          <label>14h-15h</label>
+          <item resp="#FC"> encoder des notes (historiques, explicatives); encodage des entités nommées
+            <ref target="Sources/notesIndexation.xml">source</ref>
           </item>
-          <label>14h45-15h30</label>
-          <item resp="#LB"><ref target="07-entitesNommees.html">Entités nommées</ref></item>
+         <!-- <label>14h45-15h30</label>
+          <item resp="#LB"><ref target="07-entitesNommees.html"></ref></item>-->
           <label>15h30-16h15</label>
-          <item resp="#FC">un aperçu rapide des méthodes d'analyse textuelle (je veux dire, de
+          <item resp="#LB">un aperçu rapide des méthodes d'analyse textuelle (je veux dire, de
             balisage d'expressions renvoyant à un vocabulaire, avec @ana et <gi>interprGrp</gi> ; on
             va s'en servir dans le projet) et du balisage linguistique</item>
           <label>16h15-17h </label>
           <item>Exercice d'enrichissement (les participants sont invites d’enrichir leurs testaments
             avec des notes, des entites nommes, des analyses etc)</item>
-          <!--<item resp="#FC"><ref target="PDF/ex07-entites.pdf">Création et gestion des Entités
-              nommées</ref></item>
-          <label>11h30-12h</label>
-          <item resp="#LB"><ref target="08-organisation.html">Modalités d’organisation des documents
-              TEI</ref></item>
-          <label>12h–12h30</label>
-          <item resp="#FC"><ref target="PDF/ex08-organisation.pdf">Cas d’étude : organisation du
-              projet Oulipo</ref>
-  -->
-          <!--<label>13h30–14h</label>
-          <item resp="#LB"><ref target="09-personnalisation.html">Personnalisation avec
-            ODD</ref></item>
-          <label>14h–15h </label>
-          <item resp="#LB"><ref target="PDF/ex09-odd.pdf">TP Traitement d’un ODD personnalisé avec
-              oXygen</ref></item>
-          <label>15h30–16h15</label>
-          <item resp="#FC"><ref target="10-TEIflorilege.html">Florilège de projets TEI </ref></item>
-          <label>16h15–17h </label>
-          <item><ref target="PDF/ex10-explorations.pdf">TP Explorations </ref></item>
--->
+        
         </list>
       </div>
       <div type="slide">
@@ -204,10 +186,7 @@
           <label>14h-15h</label>
           <item resp="#LB"><ref target="12-xsltNuls.xml">XSLT Pour les nuls</ref>
             <ref target="PDF/ex12-xslt.pdf">Un peu de XPath, un peu de XSLT</ref></item>
-          <!-- <label>11h30-12h30</label>
-          <item resp="#FC"><ref target="13-xsltParesseux.html">XSLT pour les paresseux </ref></item>
-          <label>13h30-14h30</label>
-            -->
+        
           <label>15h–15h30</label>
           <item resp="#LB">Welcome to the TEI community (<ref target="Sources/teiCommunity.xml"
               >source</ref>; <ref target="Diapos/teiCommunity.html">HTML</ref>; <ref
