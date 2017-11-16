@@ -35,7 +35,7 @@ version PDF d'un originel perdu</p>
 (École nationale des chartes, mars 2011) — Le travail de l’éditeur, suite : les notes, l’indexation</head><p>
 Florence Clavaud (École nationale des chartes)</p>
 <div><head>1. Introduction</head><p>
-Après avoir établi le texte et fourni les premiers éléments de paratexte (une analyse, et la description du manuscrit), l’éditeur va enrichir le paratexte en ajoutant au fichier des notes (commentaires  explicatifs,  précisions  sur  le  contexte...).  Puis,  si  c’est  utile  pour  le  projet d’édition, il balisera diverses informations pour en préparer l’indexation ; certains des mots ou expressions indexés dans le corps de la transcription pourront être liés à des notices décrivant les &#34;objets&#34; indexés (personnes, lieux, organismes, événements...). 
+Après avoir établi le texte et fourni les premiers éléments de paratexte (une analyse, et la description du manuscrit), l’éditeur va enrichir le paratexte en ajoutant au fichier des notes (commentaires  explicatifs,  précisions  sur  le  contexte...).  Puis,  si  c’est  utile  pour  le  projet d’édition, il balisera diverses informations pour en préparer l’indexation ; certains des mots ou expressions indexés dans le corps de la transcription pourront être liés à des notices décrivant les "objets" indexés (personnes, lieux, organismes, événements...). 
 </p></div><div><head>2. Les notes</head><p>
 On va parler ici des notes génériques, qui sont à distinguer des notes d’apparat critique, qu’on parle d’une édition critique imprimée ou d’une édition structurée en TEI. 
 Habituellement, dans une édition imprimée, le texte des notes figure après la transcription, 
@@ -47,12 +47,12 @@ note </item></list></p>
 <div>
 <head>2.1. Encoder les notes dans le texte</head><p>
 Un exemple suffira pour comprendre comment on procède (extrait simplifié de la première version de l’édition du chapitre de Beaurain du Cartulaire blanc de Saint-Denis, acte 5): <egXML xmlns="http://www.tei-c.org/ns/Examples"> [...] Universitati vestre notum 
-                        facimus quod nos partem nostram foreste desuper &lt;foreign xml:lang=&#34;fro&#34; 
-                &gt;Ivete&lt;/foreign&gt; 
-                        &lt;note n=&#34;1&#34; 
-                &gt;Le nom se rapporte sans doute non au cours d’eau, mais au hameau 
+                        facimus quod nos partem nostram foreste desuper <foreign xml:lang="fro" 
+                >Ivete</foreign> 
+                        <note n="1" 
+                >Le nom se rapporte sans doute non au cours d’eau, mais au hameau 
                             d’Yvette, au bord de la rivière homonyme, sur la commune de 
-                            Lévis-Saint-Nom (Yvelines, cant. Chevreuse).&lt;/note&gt; et partem nostram de 
+                            Lévis-Saint-Nom (Yvelines, cant. Chevreuse).</note> et partem nostram de 
                         nemore [...] </egXML></p><p>
 Cette  solution  est  la  plus  simple  et  la  plus  rapide.  Elle  présente  cependant  quelques 
 inconvénients, parmi lesquels :<list><item>
@@ -73,25 +73,25 @@ dans le texte, poser un élément <gi>ref</gi>, avec un attribut <att>target</at
 pointer vers  la  note  concernée  (la  valeur  de  <att>target</att>  est  une  chaîne  de  caractères constituée du dièse # et de l’identifiant de la note cible). 
 </item></list>Exemple (extrait du dernier état de l’édition du chapitre de Beaurain, même <ref
 target="http://saint-denis.enc.sorbonne.fr/cartulaire.html?chapitre=beaurain&amp;acte=5">acte 5</ref>) : 
-                   <egXML xmlns="http://www.tei-c.org/ns/Examples">     &lt;!--  dans la transcription  --&gt; 
-                        <gi>p</gi>Universitati vestre notum facimus quod nos partem nostram foreste desuper 
-                                &lt;foreign xml:lang=&#34;fro&#34; 
-                &gt;Ivete&lt;/foreign&gt; 
-                            &lt;ref type=&#34;note&#34; 
-                 n=&#34;1&#34; 
-                 target=&#34;#beaurain-acte5-n-1&#34; 
-                /&gt; et partem nostram 
-                            de nemore [...]&lt;/p&gt; 
-                        &lt;!--  plus loin, dans l’élément back  --&gt; 
-                        &lt;div type=&#34;notes&#34; 
-                &gt; 
-                            &lt;note xml:id=&#34;beaurain-acte5-n-1&#34; 
-                &gt;Le nom se rapporte sans doute non au 
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples">     <!--  dans la transcription  --> 
+                        <p>Universitati vestre notum facimus quod nos partem nostram foreste desuper 
+                                <foreign xml:lang="fro" 
+                >Ivete</foreign> 
+                            <ref type="note" 
+                 n="1" 
+                 target="#beaurain-acte5-n-1" 
+                /> et partem nostram 
+                            de nemore [...]</p> 
+                        <!--  plus loin, dans l’élément back  --> 
+                        <div type="notes" 
+                > 
+                            <note xml:id="beaurain-acte5-n-1" 
+                >Le nom se rapporte sans doute non au 
                                 cours d’eau, mais au hameau d’Yvette, au bord de la rivière 
                                 homonyme, sur la commune de Lévis-Saint-Nom (Yvelines, cant. 
-                                Chevreuse).&lt;/note&gt; 
-                            &lt;!--  autres notes  --&gt; 
-                        &lt;/div&gt; </egXML>
+                                Chevreuse).</note> 
+                            <!--  autres notes  --> 
+                        </div> </egXML>
                      
 Cette méthode n’a pas les inconvénients de la première méthode, par contre elle est un peu 
 plus compliquée à mettre en œuvre. </p><p>
@@ -112,44 +112,44 @@ glossaire ou même vers une notice d’autorité. Ces liens seront établis au m
 (<att>ref</att> et <att>key</att>). De tels référentiels pourront être localisés, soit dans le même fichier TEI, soit dans un autre fichier TEI, soit dans une ressource distante (application Web, base de données locale). En ce qui concerne la description des entités nommées (la production de notices d’autorité en TEI), voir les sections ci-après. 
 </p><p>Extrait de l’édition (en cours) d’un corpus de chartes médiévales (indexation, hors du texte 
 transcrit, de la catégorie juridique d’acte): 
-                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> <gi>index</gi> 
-                            &lt;term xml:lang=&#34;fre&#34; 
-                 type=&#34;natureJuridique&#34; 
-                 ref=&#34;typesActes.xml#bail&#34; 
-                &gt;Bail sans aucune 
-                                spécification&lt;/term&gt; 
-                            &lt;term xml:lang=&#34;ita&#34; 
-                 type=&#34;natureJuridique&#34; 
-                 ref=&#34;typesActes.xml#bail&#34; 
-                &gt;Locazione senza alcuna 
-                                specificazione&lt;/term&gt; 
-                        &lt;/index&gt; 
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> <index> 
+                            <term xml:lang="fre" 
+                 type="natureJuridique" 
+                 ref="typesActes.xml#bail" 
+                >Bail sans aucune 
+                                spécification</term> 
+                            <term xml:lang="ita" 
+                 type="natureJuridique" 
+                 ref="typesActes.xml#bail" 
+                >Locazione senza alcuna 
+                                specificazione</term> 
+                        </index> 
                      </egXML></p><p>
 Extrait  simplifié  de  l’édition  des  minutes  du  notaire  P.  Christofle  à  Orléans  en  1437 
 (indexation dans le texte de la minute): 
-                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> <gi>p</gi>Jehan Mignon et Belon sa femme, bourgois d’Orleans, ladicte femme 
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> <p>Jehan Mignon et Belon sa femme, bourgois d’Orleans, ladicte femme 
                             deuement auctorisee etc., baillent a rente annuelle et perpetuelle pour 
                             touz jours a Mahiet Gauchier, paintre demourant a Orleans, qui a pris 
                             d’eulx pour lui, ses hoirs etc. ung jardin ouquel a ung poy de vignes et 
                             arbres, mouvens du propre heritaige de ladicte Belon, assis et seant 
-                            leez l’eglise de &lt;placeName xml:id=&#34;minute-0001-l-002&#34; 
-                 ref=&#34;#l-0235&#34; 
-                &gt; 
-                                Saint Euvertre&lt;/placeName&gt; d’Orleans en la rue appellee la 
-                                &lt;placeName xml:id=&#34;minute-0001-l-003&#34; 
-                 ref=&#34;#l-0079&#34; 
-                &gt;rue du Cimetire 
-                                aux Juifs&lt;/placeName&gt; es foursbours d’Orleans [...]&lt;/p&gt; 
-                        &lt;!--  plus loin, hors de la transcription  --&gt; 
-                        <gi>listPlace</gi> 
-                            &lt;!--  autres notices  --&gt; 
-                            &lt;place xml:id=&#34;l-0235&#34; 
-                &gt; 
-                                <gi>placeName</gi>Saint-Euverte&lt;/placeName&gt; 
-                                &lt;!--  autres éléments  --&gt; 
-                            &lt;/place&gt; 
-                            &lt;!--  etc.  --&gt; 
-                        &lt;/listPlace&gt; </egXML>
+                            leez l’eglise de <placeName xml:id="minute-0001-l-002" 
+                 ref="#l-0235" 
+                > 
+                                Saint Euvertre</placeName> d’Orleans en la rue appellee la 
+                                <placeName xml:id="minute-0001-l-003" 
+                 ref="#l-0079" 
+                >rue du Cimetire 
+                                aux Juifs</placeName> es foursbours d’Orleans [...]</p> 
+                        <!--  plus loin, hors de la transcription  --> 
+                        <listPlace> 
+                            <!--  autres notices  --> 
+                            <place xml:id="l-0235" 
+                > 
+                                <placeName>Saint-Euverte</placeName> 
+                                <!--  autres éléments  --> 
+                            </place> 
+                            <!--  etc.  --> 
+                        </listPlace> </egXML>
                     </p></div><div>
 <head>4. Encodage des informations relatives aux personnes</head><p>
 Les Guidelines TEI fournissent des moyens étendus pour l’encodage de telles informations. Au  départ  ces  dispositifs  ont  été  conçus  dans  l’idée  de  satisfaire  les  besoins  des prosopographes, mais n’importe quel projet TEI peut en avoir besoin. 
@@ -203,36 +203,38 @@ Les éléments spécifiques suivants sont disponibles pour encoder des traits :<
 Dans  <gi>langKnowledge</gi>  on  peut  utiliser  soit  des  paragraphes  soit  des  éléments 
 <gi>langKnown</gi> ; ces deux sous-éléments peuvent avoir un attribut <att>tag</att> (ou <att>tags</att>), qui donne le code normalisé de la langue. L’élément <gi>langKnown</gi> possède aussi un attribut <att>level</att> pour préciser le niveau de compétence de la personne dans la langue concernée. 
 On peut écrire: 
-                      <egXML xmlns="http://www.tei-c.org/ns/Examples">  &lt;langKnowledge tags=&#34;fr wo en&#34; 
-                &gt; 
-                            <gi>p</gi>Speaks fluent Wolof and French. Some knowledge of English.&lt;/p&gt; 
-                        &lt;/langKnowledge&gt; 
+                      <egXML xmlns="http://www.tei-c.org/ns/Examples">  <langKnowledge tags="fr wo en" 
+                > 
+                            <p>Speaks fluent Wolof and French. Some knowledge of English.</p> 
+                        </langKnowledge> 
                      
 ou 
-                        <gi>langKnowledge</gi> 
-                            &lt;langKnown level=&#34;fluent&#34; 
-                 tag=&#34;wo&#34; 
-                &gt;Wolof&lt;/langKnown&gt; 
-                            &lt;langKnown level=&#34;fluent&#34; 
-                 tag=&#34;fr&#34; 
-                &gt;French&lt;/langKnown&gt; 
-                            &lt;langKnown level=&#34;basic&#34; 
-                 tag=&#34;en&#34; 
-                &gt;English&lt;/langKnown&gt; 
-                        &lt;/langKnowledge&gt; </egXML>
+                        <langKnowledge> 
+                            <langKnown level="fluent" 
+                 tag="wo" 
+                >Wolof</langKnown> 
+                            <langKnown level="fluent" 
+                 tag="fr" 
+                >French</langKnown> 
+                            <langKnown level="basic" 
+                 tag="en" 
+                >English</langKnown> 
+                        </langKnowledge> </egXML>
                      </p><p>
 L’élément <gi>sex</gi> possède un attribut <att>value</att> qui doit contient un code choisi dans la 
 liste de valeurs donnée par la norme ISO 5218:1977, i.e. 1 pour masculin, 2 pour féminin, 9 pour non applicable et 0 pour inconnu. 
-                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;sex value=&#34;2&#34; 
-                &gt;féminin&lt;/sex&gt; </egXML>
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> <sex value="2" 
+                >féminin</sex> </egXML>
                      </p> 
 <p>L’élément <gi>trait</gi> possède un attribut <att>type</att> et peut contenir un élément <gi>label</gi>, 
-qui peut être utilisé pour fournir la dénomination (lisible par l’humain) du trait concerné, suivi par un élément <gi>desc</gi>; alternativement, la description du trait peut être donnée au moyen d’un ou plusieurs éléments <gi>p</gi>. 
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;trait type=&#34;ethnicity&#34; 
-                &gt; 
-                        <gi>label</gi>groupe ethnique&lt;/label&gt; 
-                        <gi>desc</gi>Albanais&lt;/desc&gt; 
-                    &lt;/trait&gt; </egXML>
+qui peut être utilisé pour fournir la dénomination (lisible par l’humain) du trait concerné, suivi
+par un élément <gi>desc</gi>; alternativement, la description du trait peut être donnée au moyen
+  d’un ou plusieurs éléments <gi>p</gi>. 
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples"> <trait type="ethnicity" 
+                > 
+                        <label>groupe ethnique</label> 
+                        <desc>Albanais</desc> 
+                    </trait> </egXML>
                  </p></div><div>
 <head>8. Les états</head><p>
 La classe d’éléments utilisable pour les états contient les éléments :<list><item>
@@ -250,231 +252,232 @@ La classe d’éléments utilisable pour les états contient les éléments :<li
 <gi>floruit</gi>, pour spécifier pendant quelle période une personne donnée a été active (à notre
 connaissance), dans le cas où les dates exactes de naissance et de décès sont
 inconnues. </item></list>
-                <egXML xmlns="http://www.tei-c.org/ns/Examples">    &lt;floruit notBefore=&#34;1766&#34; 
-                 notAfter=&#34;1790&#34; 
-                &gt;fl. 1766-1790&lt;/floruit&gt; 
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">    <floruit notBefore="1766" 
+                 notAfter="1790" 
+                >fl. 1766-1790</floruit> 
                  </egXML></p><p>
 L’élément générique <gi>state</gi> a le même modèle de contenu que <gi>trait</gi>. L’exemple 
 ci-après  décrit  le  premier  emploi  occupé  par  le  pasteur  et  poète  islandais  Jón  Oddsson Hjaltalín: 
-             <egXML xmlns="http://www.tei-c.org/ns/Examples">       &lt;state type=&#34;office&#34; 
-                 from=&#34;1777-04-07&#34; 
-                 to=&#34;1780-07-12&#34; 
-                 xml:lang=&#34;en&#34; 
-                &gt; 
-                        <gi>p</gi>Jón’s first living, which he apparently accepted 
+             <egXML xmlns="http://www.tei-c.org/ns/Examples">       <state type="office" 
+                 from="1777-04-07" 
+                 to="1780-07-12" 
+                 xml:lang="en" 
+                > 
+                        <p>Jón’s first living, which he apparently accepted 
                             rather reluctantly, was at  
-                            &lt;name type=&#34;place&#34; 
-                &gt;Háls í Hamarsfirði&lt;/name&gt;, 
-                            &lt;name type=&#34;place&#34; 
-                &gt;Múlasýsla&lt;/name&gt;, to which 
+                            <name type="place" 
+                >Háls í Hamarsfirði</name>, 
+                            <name type="place" 
+                >Múlasýsla</name>, to which 
                             he was presented on 7 April 1777. He was ordained 
                             the following month and spent three 
                             years at Háls, but was never happy there, 
                             due largely to the general penury 
                             in which he was forced to live. In June of 1780 
                             the bishop recommended that Jón should 
-                            &lt;q xml:lang=&#34;da&#34; 
-                &gt;promoveres til andet 
-                            bedre kald, end det hand hidindtil har havt&lt;/q&gt;, 
+                            <q xml:lang="da" 
+                >promoveres til andet 
+                            bedre kald, end det hand hidindtil har havt</q>, 
                             and on 12 July it was agreed that he should 
-                            exchange livings with &lt;name type=&#34;person&#34; 
-                 key=&#34;#ThorJon&#34; 
-                &gt; 
-                            sr. Þórður Jónsson&lt;/name&gt; at  
-                            &lt;name type=&#34;place&#34; 
-                &gt;Kálfafell á Síðu&lt;/name&gt;, 
-                            &lt;name type=&#34;place&#34; 
-                &gt;Skaftafellssýsla&lt;/name&gt;. 
-                            <gi>bibl</gi>ÞÍ, Stms I.15, p. 733.&lt;/bibl&gt; 
-                            <gi>bibl</gi>ÞÍ, Stms I.17, p. 102.&lt;/bibl&gt;&lt;/p&gt; 
-                        &lt;/state&gt; </egXML></p></div>
+                            exchange livings with <name type="person" 
+                 key="#ThorJon" 
+                > 
+                            sr. Þórður Jónsson</name> at  
+                            <name type="place" 
+                >Kálfafell á Síðu</name>, 
+                            <name type="place" 
+                >Skaftafellssýsla</name>. 
+                            <bibl>ÞÍ, Stms I.15, p. 733.</bibl> 
+                            <bibl>ÞÍ, Stms I.17, p. 102.</bibl></p> 
+                        </state> </egXML></p></div>
  <div>
 <head>9. Les noms de personne</head><p>
 L’élément <gi>persName</gi> est répétable et peut, comme tous les éléments TEI, avoir un attribut
 <att>xml:lang</att> pour indiquer la langue du contenu de l’élément, ce qui permet de donner le nom d’une personne en plusieurs langues: 
-                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;person xml:id=&#34;AdMic&#34; 
-                &gt; 
-                        &lt;persName xml:lang=&#34;lt&#34; 
-                &gt;Adomas Mickevi#ius&lt;/persName&gt; 
-                        &lt;persName xml:lang=&#34;be&#34; 
-                &gt;#### ########&lt;/persName&gt; 
-                        &lt;persName xml:lang=&#34;pl&#34; 
-                &gt;Adam Mickiewicz&lt;/persName&gt; 
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> <person xml:id="AdMic" 
+                > 
+                        <persName xml:lang="lt" 
+                >Adomas Mickevi#ius</persName> 
+                        <persName xml:lang="be" 
+                >#### ########</persName> 
+                        <persName xml:lang="pl" 
+                >Adam Mickiewicz</persName> 
 
-                    &lt;/person&gt; </egXML>
+                    </person> </egXML>
     </p><p>             
 De  nombreux  sous-éléments  sont  disponibles  dans  <gi>persName</gi>  pour  encoder  les 
 différentes parties d’un nom de personne. Voici un exemple d’utilisation de certains de ces éléments (extrait de l’édition des minutes notariales de P. Christofle, notaire à Orléans, pour l’année 1437) : 
-                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> <gi>persName</gi> 
-                            <gi>surname</gi>Berche&lt;/surname&gt; 
-                            <gi>nameLink</gi>le&lt;/nameLink&gt; 
-                            <gi>forename</gi>Jean&lt;/forename&gt; 
-                            &lt;addName type=&#34;nickname&#34; 
-                &gt;l’aîné&lt;/addName&gt; 
-                        &lt;/persName&gt; </egXML>
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> <persName> 
+                            <surname>Berche</surname> 
+                            <nameLink>le</nameLink> 
+                            <forename>Jean</forename> 
+                            <addName type="nickname" 
+                >l’aîné</addName> 
+                        </persName> </egXML>
      </p><p>                
 Voici un autre exemple, dans lequel les attributs <att>type</att> et <gi>sort</gi> sont également présents. 
-                 <egXML xmlns="http://www.tei-c.org/ns/Examples">   &lt;persName xml:lang=&#34;bg&#34; 
-                &gt; 
-                        &lt;forename type=&#34;first&#34; 
-                 sort=&#34;2&#34; 
-                &gt;######&lt;/forename&gt; 
-                        &lt;forename type=&#34;middle&#34; 
-                 sort=&#34;3&#34; 
-                &gt;##########&lt;/forename&gt; 
-                        &lt;forename type=&#34;patronym&#34; 
-                 sort=&#34;4&#34; 
-                &gt;########&lt;/forename&gt; 
-                        &lt;surname sort=&#34;1&#34; 
-                &gt;########&lt;/surname&gt; 
-                        &lt;addName type=&#34;nick&#34; 
-                 xml:lang=&#34;bg&#34; 
-                &gt;####&lt;/addName&gt; 
-                        &lt;addName type=&#34;nick&#34; 
-                 xml:lang=&#34;en&#34; 
-                &gt;Alex&lt;/addName&gt; 
-                    &lt;/persName&gt; </egXML>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples">   <persName xml:lang="bg" 
+                > 
+                        <forename type="first" 
+                 sort="2" 
+                >######</forename> 
+                        <forename type="middle" 
+                 sort="3" 
+                >##########</forename> 
+                        <forename type="patronym" 
+                 sort="4" 
+                >########</forename> 
+                        <surname sort="1" 
+                >########</surname> 
+                        <addName type="nick" 
+                 xml:lang="bg" 
+                >####</addName> 
+                        <addName type="nick" 
+                 xml:lang="en" 
+                >Alex</addName> 
+                    </persName> </egXML>
                  </p>
 </div><div><head>10. Les éléments relatifs aux événements</head><p>
 La  classe  des  éléments  relatifs  aux  événements  contient  des  éléments  spécifiques  pour  la naissance (<gi>birth</gi>) et le décès (<gi>death</gi>), et un élément générique <gi>event</gi>. Ce dernier a le même modèle de contenu que <gi>state</gi> et <gi>trait</gi> et peut être utilisé pour décrire tout événement de la vie d’un individu. 
-         <egXML xmlns="http://www.tei-c.org/ns/Examples">           &lt;event type=&#34;marriage&#34; 
-                &gt; 
-                        <gi>label</gi>Marriage&lt;/label&gt; 
-                        <gi>desc</gi>&lt;date when=&#34;1859-04-26&#34; 
-                &gt;26 April 1859&lt;/date&gt; 
-                            &lt;name type=&#34;person&#34; 
-                 ref=&#34;#WM&#34; 
-                &gt;William Morris&lt;/name&gt; and Jane Burden were 
-                            married at &lt;name type=&#34;place&#34; 
-                &gt;St Michael’s Church, Ship Street, 
-                                Oxford&lt;/name&gt; on &lt;date when=&#34;1859-04-26&#34; 
-                &gt;26 April 1859&lt;/date&gt;. The 
+         <egXML xmlns="http://www.tei-c.org/ns/Examples">           <event type="marriage" 
+                > 
+                        <label>Marriage</label> 
+                        <desc><date when="1859-04-26" 
+                >26 April 1859</date> 
+                            <name type="person" 
+                 ref="#WM" 
+                >William Morris</name> and Jane Burden were 
+                            married at <name type="place" 
+                >St Michael’s Church, Ship Street, 
+                                Oxford</name> on <date when="1859-04-26" 
+                >26 April 1859</date>. The 
                             wedding was conducted by Morris’s friend 
-                            &lt;name type=&#34;person&#34; 
-                 ref=&#34;#RWD&#34; 
+                            <name type="person" 
+                 ref="#RWD" 
 
-                &gt; 
-                            R. W. Dixon&lt;/name&gt; with &lt;name type=&#34;person&#34; 
-                 ref=&#34;#CF&#34; 
-                &gt; 
-                            Charles Faulkner&lt;/name&gt; as the best man. 
+                > 
+                            R. W. Dixon</name> with <name type="person" 
+                 ref="#CF" 
+                > 
+                            Charles Faulkner</name> as the best man. 
                             The bride was given away by her 
-                            father, &lt;name type=&#34;person&#34; 
-                 ref=&#34;#RB&#34; 
-                &gt;Robert Burden&lt;/name&gt;. 
+                            father, <name type="person" 
+                 ref="#RB" 
+                >Robert Burden</name>. 
                             According to 
-                            the account that &lt;name type=&#34;person&#34; 
-                 ref=&#34;#EBJ&#34; 
-                &gt;Burne-Jones&lt;/name&gt; gave 
-                                &lt;name type=&#34;person&#34; 
-                 ref=&#34;#JWM&#34; 
-                &gt;Mackail&lt;/name&gt; 
-                            <gi>q</gi>M. said to Dixon beforehand <gi>q</gi>Mind you don’t call her Mary&lt;/q&gt; 
-                            but he did&lt;/q&gt;. The entry in the Register reads: 
-                            <gi>q</gi>William Morris, 25, 
+                            the account that <name type="person" 
+                 ref="#EBJ" 
+                >Burne-Jones</name> gave 
+                                <name type="person" 
+                 ref="#JWM" 
+                >Mackail</name> 
+                            <q>M. said to Dixon beforehand <q>Mind you don’t call her Mary</q> 
+                            but he did</q>. The entry in the Register reads: 
+                            <q>William Morris, 25, 
                                 Bachelor Gentleman, 13 George Street, son of William Morris decd. 
                                 Gentleman. Jane Burden, minor, spinster, 65 Holywell Street, d. of 
-                                Robert Burden, Groom.&lt;/q&gt; The witnesses were Jane’s parents and 
+                                Robert Burden, Groom.</q> The witnesses were Jane’s parents and 
                             Faulkner. None of Morris’s family attended the ceremony. Morris 
                             presented Jane with a plain gold ring bearing the London hallmark for 
-                            1858. She gave her husband a double-handled antique silver cup.&lt;/desc&gt; 
-                        <gi>bibl</gi>J. W. Mackail, <gi>title</gi>The Life of William Morris&lt;/title&gt;, 1899.&lt;/bibl&gt; 
-                    &lt;/event&gt; 
+                            1858. She gave her husband a double-handled antique silver cup.</desc> 
+                        <bibl>J. W. Mackail, <title>The Life of William Morris</title>, 1899.</bibl> 
+                    </event> 
                  </egXML></p></div>
 <div><head>11. Utilisation de l’attribut @ref et de l’élément <gi>relation</gi></head><p>
 Dans notre exemple l’attribut <att>ref</att> posé sur chacun des éléments <gi>name</gi> permet de relier cet élément à un élément <gi>person</gi>, encodé ailleurs dans le fichier, qui décrit la personne concernée.  Ci-dessous  on  voit  qu’on  peut  aussi,  grâce  à  l’élément  <gi>relation</gi>  et  à  ses différents  attributs,  déclarer  une  relation  spécifique  entre  plusieurs  personnes  en  faisant également référence aux mêmes éléments <gi>person</gi>. 
-                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;relation name=&#34;spouse&#34; 
-                 mutual=&#34;#WM #JBM&#34; 
-                /&gt; 
-                    &lt;relation name=&#34;friend&#34; 
-                 mutual=&#34;#WM #RWD&#34; 
-                /&gt; 
-                    &lt;relation name=&#34;parent&#34; 
-                 active=&#34;#RB&#34; 
-                 passive=&#34;#JBM&#34; 
-                /&gt; </egXML></p></div>
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> <relation name="spouse" 
+                 mutual="#WM #JBM" 
+                /> 
+                    <relation name="friend" 
+                 mutual="#WM #RWD" 
+                /> 
+                    <relation name="parent" 
+                 active="#RB" 
+                 passive="#JBM" 
+                /> </egXML></p></div>
                  
 <div><head>12. Affectation de dates à ces éléments</head><p>
 Comme  déjà  indiqué,  tous  ces  éléments,  qu’ils  soient  spécifiques  ou  génériques,  sont membres de la classe d’attributs <ident>datable</ident>, ce qui veut dire que leur contenu peut être daté, comme dans l’exemple ci-après, où l’on lit que la personne d’abord appelée David Jones a changé de nom en 1966 pour s’appeler David Bowie : 
-                    <egXML xmlns="http://www.tei-c.org/ns/Examples">&lt;person xml:id=&#34;DB&#34; 
-                &gt; 
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><person xml:id="DB" 
+                > 
 
-                        &lt;persName notAfter=&#34;1966&#34; 
-                &gt;David Jones&lt;/persName&gt; 
-                        &lt;persName notBefore=&#34;1966&#34; 
-                &gt;David Bowie&lt;/persName&gt; 
-                    &lt;/person&gt; 
+                        <persName notAfter="1966" 
+                >David Jones</persName> 
+                        <persName notBefore="1966" 
+                >David Bowie</persName> 
+                    </person> 
                  </egXML></p>
 </div><div><head>13. Déclaration du degré de certitude et de la responsabilité</head><p>
 Tous les éléments génériques que nous avons vus sont aussi membres de la classe <ident>editLike</ident>, qui,  comme  son  nom  l’indique,  a  originellement  été  conçue  pour  fournir  des  attributs “décrivant la nature de l’intervention éditoriale ou de l’interprétation”. Cette classe fournit les attributs <att>cert</att>, pour indiquer le niveau de certitude, <att>resp</att> pour indiquer le nom de l’entité responsable de l’information, et <att>evidence</att>, pour préciser la nature de la preuve utilisée. Il est ainsi possible, dans le cas de sources multiples et non cohérentes, de fournir plus d’un point de vur sur ce qui est arrivé, comme dans l’exemple ci-après, où un lieu et une date de naissance différents ont été avancés pour le même individu par deux chercheurs, l’un étant considéré comme plus fiable que l’autre : 
-                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;event type=&#34;birth&#34; 
-                 resp=&#34;#Smith2005&#34; 
-                 cert=&#34;high&#34; 
-                &gt; 
-                        <gi>p</gi>Born in &lt;name type=&#34;place&#34; 
-                &gt;Brixton&lt;/name&gt; on 8 January 1947.&lt;/p&gt; 
-                    &lt;/event&gt; 
-                    &lt;event type=&#34;birth&#34; 
-                 resp=&#34;#Watson1996&#34; 
-                 cert=&#34;low&#34; 
-                &gt; 
-                        <gi>p</gi>Born in &lt;name type=&#34;place&#34; 
-                &gt;Berkhamsted&lt;/name&gt; on 9 January 1947.&lt;/p&gt; 
-                    &lt;/event&gt; </egXML>
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> <event type="birth" 
+                 resp="#Smith2005" 
+                 cert="high" 
+                > 
+                        <p>Born in <name type="place" 
+                >Brixton</name> on 8 January 1947.</p> 
+                    </event> 
+                    <event type="birth" 
+                 resp="#Watson1996" 
+                 cert="low" 
+                > 
+                        <p>Born in <name type="place" 
+                >Berkhamsted</name> on 9 January 1947.</p> 
+                    </event> </egXML>
     </p><p>             
 L’attribut <att>resp</att> peut aussi être utilisé pour distinguer des objets qui sont explicitement 
 mentionnés dans la source de ceux qui, même s’ils n’y sont pas explicitement mentionnés, peuvent être déduits des informations disponibles, comme dans l’exemple ci-après, tiré d’un ensemble de données réunies par Sebastian Rahtz sur les personnes enterrées au cimetière protestant de Rome, sur la base des informations trouvées sur leurs tombes : 
-                    <egXML xmlns="http://www.tei-c.org/ns/Examples">&lt;person xml:id=&#34;WHH&#34; 
-                &gt; 
-                        <gi>persName</gi> 
-                            <gi>forename</gi>Winchcombe&lt;/forename&gt; 
-                            <gi>forename</gi>Henry&lt;/forename&gt; 
-                            <gi>surname</gi>Hartley&lt;/surname&gt; 
-                        &lt;/persName&gt; 
-                        &lt;sex value=&#34;1&#34; 
-                 resp=&#34;#SPQR&#34; 
-                /&gt; 
-                        &lt;birth notBefore=&#34;1773-02-22&#34; 
-                 notAfter=&#34;1774-02-21&#34; 
-                 resp=&#34;#SPQR&#34; 
-                /&gt; 
-                        &lt;death when=&#34;1847-02-21&#34; 
-                &gt;21 February 1847&lt;/death&gt; 
-                        <gi>residence</gi> 
-                            <gi>placeName</gi>Belvedere&lt;/placeName&gt;, near <gi>placeName</gi>Bath&lt;/placeName&gt;, <gi>placeName</gi> 
-                                <gi>region</gi>Somersetshire&lt;/region&gt; 
-                            &lt;/placeName&gt; 
-                        &lt;/residence&gt; 
-                        &lt;nationality resp=&#34;#SPQR&#34; 
-                &gt;British&lt;/nationality&gt; 
-                        <gi>occupation</gi>Judge of the Admiralty Court at the Cape of Good 
-                            Hope&lt;/occupation&gt; 
-                        <gi>occupation</gi>Fellow of Merton College, Oxford&lt;/occupation&gt; 
-                        &lt;/person&gt; </egXML></p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><person xml:id="WHH" 
+                > 
+                        <persName> 
+                            <forename>Winchcombe</forename> 
+                            <forename>Henry</forename> 
+                            <surname>Hartley</surname> 
+                        </persName> 
+                        <sex value="1" 
+                 resp="#SPQR" 
+                /> 
+                        <birth notBefore="1773-02-22" 
+                 notAfter="1774-02-21" 
+                 resp="#SPQR" 
+                /> 
+                        <death when="1847-02-21" 
+                >21 February 1847</death> 
+                        <residence> 
+                            <placeName>Belvedere</placeName>, near
+                      <placeName>Bath</placeName>, <placeName> 
+                                <region>Somersetshire</region> 
+                            </placeName> 
+                        </residence> 
+                        <nationality resp="#SPQR" 
+                >British</nationality> 
+                        <occupation>Judge of the Admiralty Court at the Cape of Good 
+                            Hope</occupation> 
+                        <occupation>Fellow of Merton College, Oxford</occupation> 
+                        </person> </egXML></p>
                  
 </div><div><head>14. Un autre exemple de notice descriptive de personne</head><p>
 Notice simplifiée tirée d’un fichier produit dans le cadre d’un projet de la BnF : 
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples">&lt;person xml:id=&#34;f123456&#34; 
-                &gt; 
-                            <gi>persName</gi> 
-                                <gi>surname</gi>Douceur&lt;/surname&gt; 
-                                <gi>forename</gi>Louis&lt;/forename&gt; 
-                            &lt;/persName&gt; 
-                            <gi>residence</gi> 
-                                <gi>placeName</gi><gi>settlement</gi>Paris&lt;/settlement&gt;&lt;/placeName&gt; 
-                            &lt;/residence&gt; 
-                            &lt;birth when=&#34;1700&#34; 
-                 cert=&#34;low&#34; 
-                &gt;?&lt;/birth&gt; 
-                            &lt;death when=&#34;1769-02-17&#34; 
-                &gt;1769&lt;/death&gt; 
-                            <gi>occupation</gi>Relieur-libraire, créateur des reliures à décor de dentelle 
-                                et de mosaïque.&lt;/occupation&gt; 
-                            &lt;floruit notBefore=&#34;1721&#34; 
-                 notAfter=&#34;1766&#34; 
-                &gt;En activité de 1721 à 
-                                1766.&lt;/floruit&gt; 
-                        &lt;/person&gt; </egXML>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><person xml:id="f123456" 
+                > 
+                            <persName> 
+                                <surname>Douceur</surname> 
+                                <forename>Louis</forename> 
+                            </persName> 
+                            <residence> 
+                                <placeName><settlement>Paris</settlement></placeName> 
+                            </residence> 
+                            <birth when="1700" 
+                 cert="low" 
+                >?</birth> 
+                            <death when="1769-02-17" 
+                >1769</death> 
+                            <occupation>Relieur-libraire, créateur des reliures à décor de dentelle 
+                                et de mosaïque.</occupation> 
+                            <floruit notBefore="1721" 
+                 notAfter="1766" 
+                >En activité de 1721 à 
+                                1766.</floruit> 
+                        </person> </egXML>
 </p>                
 </div><div><head>15. Encodage des informations sur les lieux</head><p>
 Les mêmes possibilités existent pour le balisage des lieux géographiques, ce qui permet de normaliser ou d’uniformiser les références aux lieux, en les décrivant puis en associant ces descriptions  avec  une  collection  de  textes  balisés,  par  exemple  des  documents  historiques balisés. 
@@ -496,130 +499,131 @@ un ou plusieurs éléments <gi>placeName</gi>, chacun donnant un nom sous lequel
 un ou plusieurs éléments <gi>location</gi>, précisant la localisation physique du lieu, sous la forme, par exemple, d’un jeu de coordonnées géographiques, d’une adresse, ou de la mention de l’appartenance à une entité géo-politique. 
 </item></list></p></div><div><head>15.2. Où saisir un élément <gi>place</gi></head><p>
 Les éléments <gi>place</gi> sont des enfants de <gi>listPlace</gi>, qui, comme <gi>listPerson</gi>, est  le  plus  souvent  placé  dans  l’en-tête  TEI  (dans  <gi>sourceDesc</gi>),  mais  qui  peut  aussi apparaître  à  tout  point  du  fichier  où  une  liste  ordinaore  (un  élément  <gi>list</gi>peut  aussi apparaître. 
-                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;place type=&#34;lake&#34; 
-                 xml:id=&#34;Skadar&#34; 
-                &gt; 
-                        &lt;placeName xml:lang=&#34;sr-Latn&#34; 
-                &gt;Skadarsko jezero&lt;/placeName&gt; 
-                        &lt;placeName xml:lang=&#34;sr-Cyrl&#34; 
-                &gt;######### ######&lt;/placeName&gt; 
-                        &lt;placeName xml:lang=&#34;sq&#34; 
-                &gt;Liqeni i Shkodrës&lt;/placeName&gt; 
-                        &lt;placeName xml:lang=&#34;en&#34; 
-                &gt;Skadar Lake&lt;/placeName&gt; 
-                        <gi>location</gi> 
-                            <gi>geo</gi>42.166389 -19.325833&lt;/geo&gt; 
-                        &lt;/location&gt; 
-                        <gi>location</gi> 
-                            <gi>desc</gi>The lake is on the border between 
-                                &lt;name type=&#34;place&#34; 
-                 key=&#34;ME&#34; 
-                &gt;Montenegro&lt;/name&gt; 
-                                and &lt;name type=&#34;place&#34; 
-                 key=&#34;AL&#34; 
-                &gt;Albania&lt;/name&gt;, 
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples"> <place type="lake" 
+                 xml:id="Skadar" 
+                > 
+                        <placeName xml:lang="sr-Latn" 
+                >Skadarsko jezero</placeName> 
+                        <placeName xml:lang="sr-Cyrl" 
+                >######### ######</placeName> 
+                        <placeName xml:lang="sq" 
+                >Liqeni i Shkodrës</placeName> 
+                        <placeName xml:lang="en" 
+                >Skadar Lake</placeName> 
+                        <location> 
+                            <geo>42.166389 -19.325833</geo> 
+                        </location> 
+                        <location> 
+                            <desc>The lake is on the border between 
+                                <name type="place" 
+                 key="ME" 
+                >Montenegro</name> 
+                                and <name type="place" 
+                 key="AL" 
+                >Albania</name>, 
                                 with about two-thirds of it lying in the 
-                                territory of the former, one-third in the latter.&lt;/desc&gt; 
-                        &lt;/location&gt; 
-                    &lt;/place&gt; 
+                                territory of the former, one-third in the latter.</desc> 
+                        </location> 
+                    </place> 
                  
-                    &lt;place xml:id=&#34;l-0093&#34; 
-                &gt; 
-                        <gi>placeName</gi>Corroy&lt;/placeName&gt; 
-                        <gi>location</gi> 
-                            &lt;district type=&#34;departement&#34; 
-                &gt;Loiret&lt;/district&gt; 
-                            &lt;district type=&#34;canton&#34; 
-                &gt;Saint-Jean-de-la-Ruelle&lt;/district&gt; 
-                            &lt;settlement type=&#34;commune&#34; 
-                &gt;Ormes&lt;/settlement&gt; 
-                        &lt;/location&gt; 
-                    &lt;/place&gt; 
+                    <place xml:id="l-0093" 
+                > 
+                        <placeName>Corroy</placeName> 
+                        <location> 
+                            <district type="departement" 
+                >Loiret</district> 
+                            <district type="canton" 
+                >Saint-Jean-de-la-Ruelle</district> 
+                            <settlement type="commune" 
+                >Ormes</settlement> 
+                        </location> 
+                    </place> 
                  
-                    &lt;place xml:id=&#34;l-0196&#34; 
-                &gt; 
-                        <gi>placeName</gi>Orléans&lt;/placeName&gt; 
-                        <gi>location</gi> 
-                            &lt;district type=&#34;departement&#34; 
-                &gt;Loiret&lt;/district&gt; 
-                        &lt;/location&gt; 
-                        &lt;place xml:id=&#34;d3e4180&#34; 
-                &gt; 
-                            <gi>placeName</gi> 
-                                <gi>term</gi>châtelet&lt;/term&gt; 
-                            &lt;/placeName&gt; 
-                        &lt;/place&gt; 
-                        &lt;place xml:id=&#34;d3e4182&#34; 
-                &gt; 
-                            <gi>placeName</gi> 
-                                <gi>term</gi>duché&lt;/term&gt; 
-                            &lt;/placeName&gt; 
-                        &lt;/place&gt; 
-                        &lt;place xml:id=&#34;d3e4184&#34; 
-                &gt; 
-                            <gi>placeName</gi> 
-                                <gi>term</gi>église&lt;/term&gt; 
-                            &lt;/placeName&gt; 
-                        &lt;/place&gt; 
-                    &lt;/place&gt; </egXML>
+                    <place xml:id="l-0196" 
+                > 
+                        <placeName>Orléans</placeName> 
+                        <location> 
+                            <district type="departement" 
+                >Loiret</district> 
+                        </location> 
+                        <place xml:id="d3e4180" 
+                > 
+                            <placeName> 
+                                <term>châtelet</term> 
+                            </placeName> 
+                        </place> 
+                        <place xml:id="d3e4182" 
+                > 
+                            <placeName> 
+                                <term>duché</term> 
+                            </placeName> 
+                        </place> 
+                        <place xml:id="d3e4184" 
+                > 
+                            <placeName> 
+                                <term>église</term> 
+                            </placeName> 
+                        </place> 
+                    </place> </egXML>
 </p>               
 </div><div><head>15.3. Les traits</head><p>
-Il  existe,  en  plus  d’un  élément  générique  <gi>trait</gi>,  des  éléments  spécialisés  pour  la population (<gi>population</gi>), le climat (<gi>climate</gi>) et le terrain (<gi>terrain</gi>). 
-                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;population when=&#34;2003&#34; 
-                &gt; 
-                            <gi>desc</gi>788,482&lt;/desc&gt; 
-                        &lt;/population&gt; 
-                        <gi>climate</gi> 
-                            <gi>p</gi>Mediterranean climate, hot dry summers and autumns and relatively 
-                                cold winters with heavy snowfalls inland.&lt;/p&gt; 
-                        &lt;/climate&gt; 
-                        <gi>terrain</gi> 
-                            <gi>p</gi>Highly indented coastline with narrow coastal plain backed by rugged 
-                                high limestone mountains and plateaux.&lt;/p&gt; 
-                        &lt;/terrain&gt; 
+Il  existe,  en  plus  d’un  élément  générique  <gi>trait</gi>,  des  éléments  spécialisés  pour  la
+  population (<gi>population</gi>), le climat (<gi>climate</gi>) et le terrain (<gi>terrain</gi>). 
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> <population when="2003" 
+                > 
+                            <desc>788,482</desc> 
+                        </population> 
+                        <climate> 
+                            <p>Mediterranean climate, hot dry summers and autumns and relatively 
+                                cold winters with heavy snowfalls inland.</p> 
+                        </climate> 
+                        <terrain> 
+                            <p>Highly indented coastline with narrow coastal plain backed by rugged 
+                                high limestone mountains and plateaux.</p> 
+                        </terrain> 
    </egXML>      </p>            
 </div><div><head>15.4. Les états</head><p>
 Les états sont traités grâcé à l’élément générique <gi>state</gi>. 
-                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;state type=&#34;legal&#34; 
-                 from=&#34;1983&#34; 
-                &gt; 
-                            <gi>p</gi>The Montenegrin part of the lake and its surrounding area were 
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples"> <state type="legal" 
+                 from="1983" 
+                > 
+                            <p>The Montenegrin part of the lake and its surrounding area were 
                                 declared a national park in 1983. The park is one of the largest 
                                 bird reserves in Europe, having 270 bird species, among which are 
-                                some of the last pelicans in Europe.&lt;/p&gt; 
-     &lt;/state&gt; </egXML>
+                                some of the last pelicans in Europe.</p> 
+     </state> </egXML>
 </p>
 </div><div><head>15.5. Les événements</head><p>
 Il n’existe pas d’éléments spécialisés pour les événements ; on utilisera l’élément générique
 <gi>event</gi> qui peut être doté d’un attribut <att>type</att>: 
-          <egXML xmlns="http://www.tei-c.org/ns/Examples"> &lt;event type=&#34;political&#34; 
-                 when=&#34;2006-06-03&#34; 
-                &gt; 
-              <gi>head</gi>Independence&lt;/head&gt; 
-               <gi>p</gi>On &lt;date when=&#34;2006-05-21&#34; 
-                &gt;21 May 2006&lt;/date&gt; 
+          <egXML xmlns="http://www.tei-c.org/ns/Examples"> <event type="political" 
+                 when="2006-06-03" 
+                > 
+              <head>Independence</head> 
+               <p>On <date when="2006-05-21" 
+                >21 May 2006</date> 
              a referendum was held in Montenegro on whether 
-              the state union with &lt;name type=&#34;place&#34; 
-                 key=&#34;RS&#34; 
-                &gt;Serbia&lt;/name&gt; should be dissolved. 
+              the state union with <name type="place" 
+                 key="RS" 
+                >Serbia</name> should be dissolved. 
               A total of 419,240 
               votes were cast, of which 230,661 
-              were for independence.&lt;/p&gt; 
-              <gi>p</gi>Montenegro’s referendum commission officially confirmed the results 
-              of the referendum on &lt;date when=&#34;2006-05-31&#34; 
-                &gt;31 May&lt;/date&gt;, 
+              were for independence.</p> 
+              <p>Montenegro’s referendum commission officially confirmed the results 
+              of the referendum on <date when="2006-05-31" 
+                >31 May</date>, 
               verifying that 55.5% of the population had voted in favour of 
               independence, narrowly surpassing the threshold requirement of 55% 
-              set by the &lt;name type=&#34;org&#34; 
-                 key=&#34;EU&#34; 
-                &gt;European Union&lt;/name&gt;. The 
-              Montenegrin &lt;name type=&#34;org&#34; 
-                 key=&#34;USRCG&#34; 
-                &gt;Parliament&lt;/name&gt; made a 
+              set by the <name type="org" 
+                 key="EU" 
+                >European Union</name>. The 
+              Montenegrin <name type="org" 
+                 key="USRCG" 
+                >Parliament</name> made a 
               formal declaration of independence on 
-             &lt;date when=&#34;2006-06-03&#34; 
-                &gt;Saturday, 3 June&lt;/date&gt;.&lt;/p&gt; 
-           &lt;/event&gt; 
+             <date when="2006-06-03" 
+                >Saturday, 3 June</date>.</p> 
+           </event> 
                      </egXML></p><p>
 Les  valeurs  des  attributs  <att>key</att>  des  éléments  <gi>name</gi>  établissent  un  lien  vers  d’autres éléments <gi>place</gi>, vers des éléments <gi>org</gi> ou <gi>person</gi>. 
 </p></div></div><div><head>16. Listes d’événements</head><p>
@@ -849,7 +853,7 @@ TODO : listOrg, org, et ses sous-éléments
           <div>
             <head>Éléments biographiques et prosopographiques</head>
             <p>Ce module fournit également des éléments pour la représentation d’information à caractère biographique, historique ou proposographique sur la personne, les lieux, ou l’organisation à laquelle un nom fait référence.</p>
-            <p> &gt; production de fichier d’autorité ou collection d’information biographiques</p>
+            <p> > production de fichier d’autorité ou collection d’information biographiques</p>
             <list>
               <item></item>
             </list>
