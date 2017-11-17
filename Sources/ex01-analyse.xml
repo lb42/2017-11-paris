@@ -96,15 +96,15 @@
         <list>
           <item>Dans votre groupe, sélectionner d’abord un rapporteur</item>
           <item>Regarder bien votre document. Supposer que vous en avez quelques centaines d’autres
-            pareils.</item>
-          <item>Comment est votre document organisé ? </item>
+            de même nature.</item>
+          <item>Comment est organisé votre document ? </item>
           <item>Quels sont ses composants essentiels, commun à tous ces documents ?</item>
-          <item>Quels sont ses composants intéressants, possible dans tous ces documents ?</item>
-          <item>Sauriez vous faire en sorte qu’une autre personne reconnaîtrait les mêmes
+          <item>Quels sont ses composants intéressants, possibles dans tous ces documents ?</item>
+          <item>Sauriez-vous faire en sorte qu’une autre personne reconnaîtrait les mêmes
             objets ?</item>
           <item>Faire une liste de tous les objets et propriétés essentiels de votre document</item>
-          <item>Supposez que le budget de votre projet soit coupé en deux: de quelles distinctions pourriez-vous vous en passer ? </item>
-          <item>Présenter cette liste… et justifier la !</item>
+          <item>Supposez que le budget de votre projet soit coupé en deux: de quelles distinctions pourriez-vous vous passer ? </item>
+          <item>Présentez cette liste… et justifiez-la !</item>
         </list>
       </div>
       
@@ -119,6 +119,7 @@
         <figure>
           <graphic url="../images/acteRoyale.jpg" width="80%"/>
         </figure>
+        <p>Nota bene : ce document, daté de 1763, est conservé aux Archives nationales sous la cote O1 284, n° 525. Il s'agit de l'enregistrement, par le gouverneur du château de Marly, d'ordres du roi relatifs au confort des courtisans. Son édition en TEI, accompagnée d'un commentaire diplomatique et historique, est publiée dans les dossiers documentaires de l'application Theleme (Techniques pour l'Historien en Ligne : Études, Manuels, Exercices, Bibliographies) de l'Ecole nationale des chartes. Vous pouvez la consulter à la page <ref target="http://theleme.enc.sorbonne.fr/dossiers/notice105.php">http://theleme.enc.sorbonne.fr/dossiers/notice105.php</ref>.</p>
       </div>
       <div>
         <head>Document C : un tapuscrit</head>
