@@ -43,7 +43,7 @@ et un appel de note est posé dans le texte à l’endroit auquel la note est as
 on peut encoder les notes directement à l’endroit où elles viennent expliciter ou contextualiser le texte établi 
 </item><item>
 on peut les encoder hors du texte, et poser des liens entre le texte et la
-note </item></list></p>
+note </item></list></p></div>
 <div type="slide">
 <head>2.1. Encoder les notes dans le texte</head><p>
 Un exemple suffira pour comprendre comment on procède (extrait simplifié de la première version de l’édition du chapitre de Beaurain du Cartulaire blanc de Saint-Denis, acte 5): <egXML xmlns="http://www.tei-c.org/ns/Examples"> [...] Universitati vestre notum 
@@ -96,7 +96,8 @@ target="http://saint-denis.enc.sorbonne.fr/cartulaire.html?chapitre=beaurain&amp
 Cette méthode n’a pas les inconvénients de la première méthode, par contre elle est un peu 
 plus compliquée à mettre en œuvre. </p><p>
 On peut noter qu’avec cette méthode, rien n’empêche de préparer la création de un, deux, 
-trois (ou plus, en fait autant qu’on veut) couches d’annotation. </p></div></div><div type="slide">
+trois (ou plus, en fait autant qu’on veut) couches d’annotation. </p></div>
+  <div type="slide">
 <head>3. Indexation d’entités nommées ou d’autres concepts</head><p>
 Toute  expression  contenue  dans  un  texte  encodé  en  TEI,  qu’il  s’agisse  d’une  entité nommée, d’un nom commun, d’une date, d’une catégorie juridique, ou d’un autre segment d’information, peut retenir l’attention de l’éditeur scientifique. Il décidera alors de la baliser au moyen d’un élément approprié. </p><p>
 Ce  travail  permettra,  dans  la  page  Web  (ou  la  page  imprimable)  produite  à  partir  du 
@@ -491,7 +492,7 @@ comme les circonstances d’une fondation, de catastrophes naturelles ou causée
 </item></list></p>
 <p>Et comme pour les déclarations relatives aux personnes, chacune de celles-ci doit pouvoir 
 être documentée, être inscrite dans un cadre temporel et être reliée à d’autres de même nature ou d’autre nature. 
-</p>
+</p></div>
 <div type="slide"><head>15.1. L’élément <gi>place</gi></head><p>
 L’élément <gi>place</gi> possède un attribut <att>type</att> qui permet de caractériser brièvement le lieu, par exemlpe de dire qu’il s’agit d’une ville, d’une rue, d’un immeuble, d’un objet naturel tel qu’un lac ou une montagne, ou un lieu célèbre comme un champ de bataille. L’élément <gi>place</gi> contient:<list><item>
 un ou plusieurs éléments <gi>placeName</gi>, chacun donnant un nom sous lequel le lieu est ou a été connu (les éléments TEI <gi>country</gi>, <gi>bloc</gi>, <gi>geogName</gi>, <gi>region</gi> et <gi>settlement</gi> sont des spécialisations de l’élément générique <gi>placeName</gi>, et peuvent être utilisés à la place de <gi>placeName</gi> ou dans <gi>placeName</gi>). 
@@ -626,7 +627,7 @@ Il n’existe pas d’éléments spécialisés pour les événements ; on utilis
            </event> 
                      </egXML></p><p>
 Les  valeurs  des  attributs  <att>key</att>  des  éléments  <gi>name</gi>  établissent  un  lien  vers  d’autres éléments <gi>place</gi>, vers des éléments <gi>org</gi> ou <gi>person</gi>. 
-</p></div></div><div type="slide"><head>16. Listes d’événements</head><p>
+</p></div><div type="slide"><head>16. Listes d’événements</head><p>
 Les  événements,  comme  les  personnes,  les  lieux  -  et  les  organismes  -,  peuvent  être considérés comme des objets à décrire pour eux-mêmes. Dans ce cas, on utilisera l’élément <gi>listEvent</gi> pour englober une série d’éléments <gi>event</gi>. 
 </p></div><div type="slide"><head>17. Encodage des informations sur les organismes</head><p>
 TODO : listOrg, org, et ses sous-éléments 
