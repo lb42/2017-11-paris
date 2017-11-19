@@ -27,7 +27,7 @@
     </teiHeader>
     <text>
         <body>
-            <div>
+            <div type="slide">
                 <head>Rappels sur l'apparat critique</head>
                 
                 <p>On parle ici de l’ensemble des notes éditoriales relatives aux différentes variantes existantes pour
@@ -54,7 +54,7 @@
                 
             </div>
 
-            <div>
+            <div type="slide">
                 <head>TEI et l'apparat critique</head>
                
                 
@@ -70,7 +70,7 @@
                     
                 
             </div>
-                <div>
+                <div type="slide">
                     <head>La liste des témoins (<gi>listWit</gi>)</head>
                     
                     <p>La liste des témoins est encodée à l’aide de l’élément <gi>listWit</gi>. Cet élément devrait
@@ -85,7 +85,7 @@
                     <p>Dans tous les cas, il sera indispensable d’affecter à chacun des éléments servant à décrire
                         les témoins un identifiant, à l’aide de l’attribut <att>xml:id</att>, afin de pouvoir faire référence aux
                         témoins dans les notes d’apparat critique.</p>
-                    <div><head>Contenu de l’élément <gi>witness</gi></head>
+                    <div type="slide"><head>Contenu de l’élément <gi>witness</gi></head>
                         
                         <p>Selon le niveau de précision que l’éditeur souhaite atteindre en décrivant les témoins, selon
                             ses besoins en matière d’affichage ou d’exploitation des informations, il pourra choisir :<list>
@@ -97,7 +97,7 @@
                                     <gi>bibl</gi> ou <gi>biblStruct</gi>.</item></list>
                             Il faut noter aussi que <gi>witness</gi> peut à son tour contenir <gi>listWit</gi> pour grouper
                             une série de témoins.</p></div>
-                    <div>
+                    <div type="slide">
                         <head><gi>listWit</gi> : exemples</head>
                         
                         <p>Extrait de l’<ref target="http://elec.enc.sorbonne.fr/editsdepacification/edit_12">édition des édits de pacification</ref> (édit de Nantes de 1598) :
@@ -196,7 +196,7 @@
                         
                     </div>
                 </div>
-                 <div>
+                 <div type="slide">
                      <head>Les notes d'apparat critique</head>
                      <p>Les notes d’apparat critique elles-mêmes sont encodées à l’aide d’un élément de note
                          spécialisé, <gi>app</gi>.</p>
@@ -223,7 +223,7 @@
                                  <gi>subst</gi>, <gi>choice</gi>, <gi>gap</gi>, etc.).</p>
                      <p>Dans l'élément <gi>app</gi>, on peut encoder, à l'aide de <gi>note</gi>, une note pour apporter des précisions sur les variantes retenues.</p>
                  </div> 
-            <div>
+            <div type="slide">
                 <head><gi>app</gi> : exemples</head>
                 <p>Extrait simplifié de l’édition critique du Cartulaire blanc de Saint-Denis, acte Beaurain 46 :
                 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -265,12 +265,12 @@
                     </app>
                 </egXML></p>
             </div>
-            <div><head>Mise en relation des notes d’apparat critique
+            <div type="slide"><head>Mise en relation des notes d’apparat critique
                 avec le texte édité</head>
                 <p>Les guidelines TEI présentent trois méthodes pour l’ajout des notes d’apparat critique à
                     l’édition. Deux d’entre elles sont utilisables hors du texte édité, la dernière ne peut être utilisée
                     que dans ce texte.</p>
-                <div>
+                <div type="slide">
                     <head>La méthode dite "Location-referenced Method"</head>
                     <p>Cette méthode consiste à encoder les notes d’apparat critique dans des éléments <gi>app</gi>
                         hors du texte, en renvoyant à l’aide de l’attribut <att>loc</att> de <gi>app</gi> vers le bloc du texte où
@@ -278,14 +278,14 @@
                     <p>Pour reprendre l’exemple ci-dessus, en employant cette méthode, on aurait procédé ainsi :
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <!-- d’abord on aurait encodé le texte -->
-                        <div n="04"
+                        <div type="slide" n="04"
                             ><!-- début de la transcription -->
                             et à faulte d’en convenir, leur
                             en sera pourveu par les juges des lieux, sauf
                             ausd. possesseurs leur recours
                             contre qui il appartiendra. </div>
                         <!-- plus loin, par ex. dans un élément <gi>back</gi>, on aurait écrit : -->
-                        <div type="critapp"
+                        <div type="slide" type="critapp"
                             >
                             <app loc="04"
                                 >
@@ -310,7 +310,7 @@
                     <p>Cette méthode est simple à mettre en oeuvre, mais la localisation des variantes reste
                         imprécise.</p>
                 </div>
-                <div><head>Méthode dite "Double End-Point Attachment Method"</head>
+                <div type="slide"><head>Méthode dite "Double End-Point Attachment Method"</head>
                     <p>Cette méthode utilise des éléments de type milestone comme <gi>anchor</gi>, et des attributs de
                         <gi>app</gi> (<att>from</att> et <att>to</att> dans le cas où la note est saisie dans le corps du texte édité) pour
                             localiser le début et la fin de la leçon de base dans le texte.</p>
@@ -334,7 +334,7 @@
                                 >Aurelianis</rdg>
                         </app>
                     </egXML></p></div>
-                <div>
+                <div type="slide">
                     <head>La méthode dite de segmentation parallèle</head>
                     <p>Cette méthode ne peut être employée qu’à l’intérieur du texte édité. Elle consiste à relever
                         systématiquement et à encoder dans <gi>app</gi> toutes les leçons distinctes des témoins retenus.</p>
@@ -364,7 +364,7 @@
                             >Opinel</foreign>,
                         Richeldis et Sedilia filie dicte Aelesie [...]</egXML></p>
                 </div>
-                <div><head>Documenter la méthode employée</head>
+                <div type="slide"><head>Documenter la méthode employée</head>
                     <p>Le nom de la méthode employée pour saisir les notes d’apparat critique devrait normalement
                         être consigné dans l’en-tête TEI, dans l’élément <gi>encodingDesc</gi>, à l’aide d’un élément
                             <gi>variantEncoding</gi>.</p>

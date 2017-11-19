@@ -32,7 +32,7 @@
   </teiHeader>
   <text>
     <body>
-      <div>
+      <div type="slide">
         <head>TEI et les métadonnées</head>
         <!--<figure  rend="center">
 <graphic url="../Graphics/pushmi-085plate.jpg" width="60%"/>
@@ -56,7 +56,7 @@
           </list>
         </p>
 
-</div><div>
+</div><div type="slide">
         <p>Tout fichier TEI doit avoir un en-tête, qui est utilisé pour stocker deux types de
           métadonnées : <list>
             <item>celles qui serviront pour identifier et décrire le fichier, comme on le ferait
@@ -70,7 +70,7 @@
           </list>
         </p>
 
-</div><div>
+</div><div type="slide">
         <p>L'en-tête TEI (élément <gi>teiHeader</gi> contient quatre éléments principaux : </p>
         <list type="ordered">
           <item><gi>fileDesc</gi> : fournit une description bibliographique complète du fichier et
@@ -85,7 +85,7 @@
         <p rend="box"><gi>fileDesc</gi> est obligatoire, tous les autres éléments sont
           optionnels.</p>
 
-</div><div>
+</div><div type="slide">
 
         <p>Voici un en-tête TEI minimal : <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <teiHeader>
@@ -104,7 +104,7 @@
           </egXML>
         </p>
 
-</div><div>
+</div><div type="slide">
         <p>Les éléments constitutifs de l'en-tête peuvent être : <list>
             <item>en prose libre (des séries de paragraphes ou du texte directement)</item>
             <item>des éléments englobant des informations relatives au même sujet et fortement
@@ -117,7 +117,7 @@
               l'aide de sous-éléments</item>
           </list></p>
       </div>
-      <div>
+      <div type="slide">
         <head>La description du fichier (<gi>fileDesc</gi>)</head>
         
           <list>
@@ -141,7 +141,7 @@
         </div>
 
 
-        <div>
+        <div type="slide">
           <head>La mention de titre et de responsabilités (<gi>titleStmt</gi>)</head>
           <p>Une ressource électronique a au moins un titre, et une ou plusieurs mentions de
             responsabilité, stockées soit dans des éléments spécifiques soit dans l'élément
@@ -176,7 +176,7 @@
             </respStmt>
           </egXML>
         </div>
-        <div>
+        <div type="slide">
           <head><gi>editionStmt</gi> et <gi>extent</gi></head>
 
           <p>La mention d'édition est optionnelle lorsqu'il s'agit de la première édition,
@@ -194,7 +194,7 @@
           </p>
 
         </div>
-        <div>
+        <div type="slide">
           <head>L'adresse bibliographique (<gi>publicationStmt</gi>)</head>
           <p>L'élément <gi>publicationSmt</gi> peut contenir, soit du texte, soit un ou plusieurs
             éléments <gi>publisher</gi>, <gi>distributor</gi>, <gi>authority</gi>, associés à des
@@ -243,7 +243,7 @@
             </publicationStmt>
           </egXML>
         </div>
-        <div>
+        <div type="slide">
           <head>L'élément <gi>seriesStmt</gi></head>
           <p>Cet élément est utilisé lorque la ressource fait partie d'un ensemble partageant un
             même titre (collection), ou bien constitue un ou plusieurs volumes d'un item, ou encore
@@ -257,7 +257,7 @@
           </egXML>
         </div>
 
-        <div>
+        <div type="slide">
           <head>La description des sources (<gi>sourceDesc</gi>)</head>
           <p>La plupart des textes encodés en TEI n'ont pas été créés sous forme numérique... il
             faut donc décrire leurs sources, ou encore mentionner qu'ils sont nés numériques.</p>
@@ -271,7 +271,7 @@
                   (<gi>recordingStmt</gi> ou les manuscrits (<gi>msDesc</gi>).</item>
             </list>
           </p>
-</div><div>
+</div><div type="slide">
           <p>Exemple de description de source imprimée</p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <sourceDesc>
@@ -285,7 +285,7 @@
               </bibl>
             </sourceDesc>
           </egXML>
-</div><div>
+</div><div type="slide">
 
           <p>Exemple de description d'une source manuscrite</p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -355,7 +355,7 @@
               </msDesc>
             </sourceDesc>
           </egXML>
-</div><div>
+</div><div type="slide">
           <p>Source orale</p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <sourceDesc>
@@ -386,7 +386,7 @@
           </egXML>
 
 
-</div><div>
+</div><div type="slide">
 
           <p>Source née numérique</p>
 
@@ -405,7 +405,7 @@
 
 
       
-      <div>
+      <div type="slide">
         <head>Description de l'encodage (<gi>encodingDesc</gi>)</head>
         
 
@@ -423,7 +423,7 @@
             </list>
           </p>
 </div>
-      <div>
+      <div type="slide">
           <p>Par exemple...</p>
 
 
@@ -447,7 +447,7 @@
 
         </div>
 
-        <div>
+        <div type="slide">
 
           <p>Des balises plus formalisées sont également disponibles: <list>
               <item><gi>charDecl</gi> : déclaration des glyphes ou caractères non-UNICODE, a
@@ -467,7 +467,7 @@
 
         </div>
 
-        <div>
+        <div type="slide">
           <head>On peut définir des caractères non-Unicode</head>
 
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -488,7 +488,7 @@
 
         </div>
 
-        <div>
+        <div type="slide">
           <head><gi>classDecl</gi> et <gi>charDecl</gi> : exemples d'utilisation</head>
 
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -518,7 +518,7 @@
 
 
 
-        <div>
+        <div type="slide">
           <head>On peut décrire son propre balisage</head>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <encodingDesc>
@@ -543,7 +543,7 @@
         </div>
 
 
-        <div>
+        <div type="slide">
           <head>On peut definir des styles </head>
           <p>
             <list>
@@ -560,7 +560,7 @@
           </p>
         </div>
 
-        <div>
+        <div type="slide">
           <head> L'élément <gi>appInfo</gi></head>
           <p>
             <list>
@@ -579,7 +579,7 @@
           </p>
         </div>
    
-      <div>
+      <div type="slide">
         <head>Description du profil (<gi>profileDesc</gi>)</head>
        
 
@@ -602,7 +602,7 @@
             </list></p>
         
       </div>
-        <div>
+        <div type="slide">
           <head>Création </head>
           <p>On peut donner des informations directement dans un élément <gi>p</gi>, ou, dans le
             cadre d'une édition génétique, déclarer les différentes étapes d'écriture. Exemple :
@@ -633,7 +633,7 @@
         </div>
 
 
-        <div>
+        <div type="slide">
           <head>Spécification des langues</head>
           <p>Il faut spécifier la ou les langue(s) du texte en se servant des codes ISO. </p>
           <p>L'élément <gi>language</gi> (et son attribut associé, <code>xml:lang</code>) peut
@@ -652,7 +652,7 @@
 
 
 
-        <div>
+        <div type="slide">
           <head>Classification des textes</head>
           <p>
             <gi>textClass</gi> fournit une classification (par sujet, medium, type...) pour un texte
@@ -671,7 +671,7 @@
         </div>
 
         <!--
-<div><head></head>
+<div type="slide"><head></head>
 <p>Dans un corpus, c'est souvent essentiel de caractériser chacun des textes
 selon une classification ou typologie prédéfinie.</p>
 <list>
@@ -683,7 +683,7 @@ selon une classification ou typologie prédéfinie.</p>
 </div>
 -->
 
-        <div>
+        <div type="slide">
           <head>Exemple</head>
           <p>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -709,7 +709,7 @@ selon une classification ou typologie prédéfinie.</p>
             l'aide de l'attribut <att>decls</att> de cette division, qui aura pour valeur un
             pointeur vers un des éléments de classification.</p>
         </div>
-        <div>
+        <div type="slide">
           <head><gi>textDesc</gi></head>
           <p><gi>textDesc</gi> fournit une description précise de la situation dans laquelle un
             texte a été produit, et le caractérise d'une manière relativement indépendante de toute
@@ -736,7 +736,7 @@ selon une classification ou typologie prédéfinie.</p>
             </settingDesc>
           </egXML>
         </div>
-        <div>
+        <div type="slide">
           <head><gi>particDesc</gi></head>
           <p>Cet élément décrit les locuteurs ou autres participants à la production d'un texte.</p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
@@ -769,7 +769,7 @@ selon une classification ou typologie prédéfinie.</p>
           </egXML>
         </div>
         <!--
-<div><head>Par exemple...</head>
+<div type="slide"><head>Par exemple...</head>
 <p></p>
 <p>  <egXML xmlns="http://www.tei-c.org/ns/Examples"><profileDesc>
         <langUsage>
@@ -803,7 +803,7 @@ selon une classification ou typologie prédéfinie.</p>
       
 
 
-      <div>
+      <div type="slide">
         <head>Description des révisions</head>
         <p>Et finalement, on utilisera un élément <gi>revisionDesc</gi> pour fournir une liste des
           modifications apportées à une ressource. Une série d'éléments <gi>change</gi> pourra alors

@@ -34,9 +34,9 @@ version PDF d'un originel perdu</p>
 <head>Formation à l’utilisation de TEI pour l’édition critique de manuscrits
 (École nationale des chartes, mars 2011) — Le travail de l’éditeur, suite : les notes, l’indexation</head><p>
 Florence Clavaud (École nationale des chartes)</p>
-<div><head>1. Introduction</head><p>
+<div type="slide"><head>1. Introduction</head><p>
 Après avoir établi le texte et fourni les premiers éléments de paratexte (une analyse, et la description du manuscrit), l’éditeur va enrichir le paratexte en ajoutant au fichier des notes (commentaires  explicatifs,  précisions  sur  le  contexte...).  Puis,  si  c’est  utile  pour  le  projet d’édition, il balisera diverses informations pour en préparer l’indexation ; certains des mots ou expressions indexés dans le corps de la transcription pourront être liés à des notices décrivant les "objets" indexés (personnes, lieux, organismes, événements...). 
-</p></div><div><head>2. Les notes</head><p>
+</p></div><div type="slide"><head>2. Les notes</head><p>
 On va parler ici des notes génériques, qui sont à distinguer des notes d’apparat critique, qu’on parle d’une édition critique imprimée ou d’une édition structurée en TEI. 
 Habituellement, dans une édition imprimée, le texte des notes figure après la transcription, 
 et un appel de note est posé dans le texte à l’endroit auquel la note est associée. Dans un fichier TEI, il y a deux manières d’encoder des notes :<list><item>
@@ -44,7 +44,7 @@ on peut encoder les notes directement à l’endroit où elles viennent explicit
 </item><item>
 on peut les encoder hors du texte, et poser des liens entre le texte et la
 note </item></list></p>
-<div>
+<div type="slide">
 <head>2.1. Encoder les notes dans le texte</head><p>
 Un exemple suffira pour comprendre comment on procède (extrait simplifié de la première version de l’édition du chapitre de Beaurain du Cartulaire blanc de Saint-Denis, acte 5): <egXML xmlns="http://www.tei-c.org/ns/Examples"> [...] Universitati vestre notum 
                         facimus quod nos partem nostram foreste desuper <foreign xml:lang="fro" 
@@ -60,7 +60,7 @@ dans le cas où la même note devrait servir à plusieurs endroits, il faut en r
 </item><item>
 le texte de la note interrompt le texte transcrit, ce qui rend la relecture difficile par une
 personne (sauf si bien sûr on dispose de moyens appropriés pour
-cette relecture) </item></list></p></div><div>
+cette relecture) </item></list></p></div><div type="slide">
 <head>2.2. Encoder les notes hors du texte</head><p>
 Pour travailler selon cette méthode, il faut :
 <list><item>
@@ -83,7 +83,7 @@ target="http://saint-denis.enc.sorbonne.fr/cartulaire.html?chapitre=beaurain&amp
                 /> et partem nostram 
                             de nemore [...]</p> 
                         <!--  plus loin, dans l’élément back  --> 
-                        <div type="notes" 
+                        <div type="slide" type="notes" 
                 > 
                             <note xml:id="beaurain-acte5-n-1" 
                 >Le nom se rapporte sans doute non au 
@@ -96,7 +96,7 @@ target="http://saint-denis.enc.sorbonne.fr/cartulaire.html?chapitre=beaurain&amp
 Cette méthode n’a pas les inconvénients de la première méthode, par contre elle est un peu 
 plus compliquée à mettre en œuvre. </p><p>
 On peut noter qu’avec cette méthode, rien n’empêche de préparer la création de un, deux, 
-trois (ou plus, en fait autant qu’on veut) couches d’annotation. </p></div></div><div>
+trois (ou plus, en fait autant qu’on veut) couches d’annotation. </p></div></div><div type="slide">
 <head>3. Indexation d’entités nommées ou d’autres concepts</head><p>
 Toute  expression  contenue  dans  un  texte  encodé  en  TEI,  qu’il  s’agisse  d’une  entité nommée, d’un nom commun, d’une date, d’une catégorie juridique, ou d’un autre segment d’information, peut retenir l’attention de l’éditeur scientifique. Il décidera alors de la baliser au moyen d’un élément approprié. </p><p>
 Ce  travail  permettra,  dans  la  page  Web  (ou  la  page  imprimable)  produite  à  partir  du 
@@ -150,7 +150,7 @@ Extrait  simplifié  de  l’édition  des  minutes  du  notaire  P.  Christofle
                             </place> 
                             <!--  etc.  --> 
                         </listPlace> </egXML>
-                    </p></div><div>
+                    </p></div><div type="slide">
 <head>4. Encodage des informations relatives aux personnes</head><p>
 Les Guidelines TEI fournissent des moyens étendus pour l’encodage de telles informations. Au  départ  ces  dispositifs  ont  été  conçus  dans  l’idée  de  satisfaire  les  besoins  des prosopographes, mais n’importe quel projet TEI peut en avoir besoin. 
 
@@ -160,7 +160,7 @@ les caractéristiques physiques telles que couleur des cheveux et des yeux,
 les caractéristiques culturelles telles que le statut social et la religion, 
 </item><item>
 des informations sur les activités et l’éducation, et les événements survenus dans la vie des
-personnes, tels que naissance, mariage ou emploi. </item></list></p></div><div>
+personnes, tels que naissance, mariage ou emploi. </item></list></p></div><div type="slide">
 <head>5. Principes de base</head><p>
 Les  informations  sur  les  personnes,  à  la  base,  sont  regroupées  au  sein  d’un  élément <gi>person</gi>.  Elles  comprennent  tout  d’abord  un  élément  spécialisé  pour  le  nom  de  la personne, <gi>persName</gi>, et une série de déclarations relatives à : 
 <list rend="gloss">
@@ -178,7 +178,7 @@ les événements de la vie d’une personne tels que la naissance, le mariage ou
 l’emploi. De tels événements seront normalement associés avec une date spécifique ou avec une
 fourcherre de dates assez étroite. </item></list></p>
 <p>Toutes ces informations sont susceptibles d’être documentés et reliés à d’autres
-informations de même nature ou d’autre nature. </p></div><div>
+informations de même nature ou d’autre nature. </p></div><div type="slide">
 <head>6. Traits, états et événements</head><p>
 Il existe trois classes d’éléments, en cohérence avec la classification tripartite présentée ci- dessus.  Chacune  de  ces  classes  contient  un  petit  nombre  d’éléments  spécifiques  pour  les catégories  d’information  les  plus  courantes,  et  un  élément  plus  générique  pour  les  autres catégories d’informations définies par l’encodeur. 
 Tous les éléments de ces trois classes appartiennent à la classe d’attributs <ident>datable</ident>, ce qui 
@@ -186,7 +186,7 @@ signifie qu’ils peuvent avoir les attributs<list><item>
 <att>when</att> pour une date unique, 
 </item><item>
 <att>notBefore</att> et <att>notAfter</att>, pour indiquer la date la plus ancienne et la date la plus récente possibles (le <ident>terminus ad quem</ident> et <ident>terminus ante quem</ident>) pour un trait, un état ou un événement. 
-</item></list></p></div><div><head>7. Les traits</head><p>
+</item></list></p></div><div type="slide"><head>7. Les traits</head><p>
 Les éléments spécifiques suivants sont disponibles pour encoder des traits :<list><item>
 <gi>langKnowledge</gi>, 
 </item><item>
@@ -235,7 +235,7 @@ par un élément <gi>desc</gi>; alternativement, la description du trait peut ê
                         <label>groupe ethnique</label> 
                         <desc>Albanais</desc> 
                     </trait> </egXML>
-                 </p></div><div>
+                 </p></div><div type="slide">
 <head>8. Les états</head><p>
 La classe d’éléments utilisable pour les états contient les éléments :<list><item>
 <gi>persName</gi>, 
@@ -290,7 +290,7 @@ ci-après  décrit  le  premier  emploi  occupé  par  le  pasteur  et  poète  
                             <bibl>ÞÍ, Stms I.15, p. 733.</bibl> 
                             <bibl>ÞÍ, Stms I.17, p. 102.</bibl></p> 
                         </state> </egXML></p></div>
- <div>
+ <div type="slide">
 <head>9. Les noms de personne</head><p>
 L’élément <gi>persName</gi> est répétable et peut, comme tous les éléments TEI, avoir un attribut
 <att>xml:lang</att> pour indiquer la langue du contenu de l’élément, ce qui permet de donner le nom d’une personne en plusieurs langues: 
@@ -337,7 +337,7 @@ Voici un autre exemple, dans lequel les attributs <att>type</att> et <gi>sort</g
                 >Alex</addName> 
                     </persName> </egXML>
                  </p>
-</div><div><head>10. Les éléments relatifs aux événements</head><p>
+</div><div type="slide"><head>10. Les éléments relatifs aux événements</head><p>
 La  classe  des  éléments  relatifs  aux  événements  contient  des  éléments  spécifiques  pour  la naissance (<gi>birth</gi>) et le décès (<gi>death</gi>), et un élément générique <gi>event</gi>. Ce dernier a le même modèle de contenu que <gi>state</gi> et <gi>trait</gi> et peut être utilisé pour décrire tout événement de la vie d’un individu. 
          <egXML xmlns="http://www.tei-c.org/ns/Examples">           <event type="marriage" 
                 > 
@@ -383,7 +383,7 @@ La  classe  des  éléments  relatifs  aux  événements  contient  des  éléme
                         <bibl>J. W. Mackail, <title>The Life of William Morris</title>, 1899.</bibl> 
                     </event> 
                  </egXML></p></div>
-<div><head>11. Utilisation de l’attribut @ref et de l’élément <gi>relation</gi></head><p>
+<div type="slide"><head>11. Utilisation de l’attribut @ref et de l’élément <gi>relation</gi></head><p>
 Dans notre exemple l’attribut <att>ref</att> posé sur chacun des éléments <gi>name</gi> permet de relier cet élément à un élément <gi>person</gi>, encodé ailleurs dans le fichier, qui décrit la personne concernée.  Ci-dessous  on  voit  qu’on  peut  aussi,  grâce  à  l’élément  <gi>relation</gi>  et  à  ses différents  attributs,  déclarer  une  relation  spécifique  entre  plusieurs  personnes  en  faisant également référence aux mêmes éléments <gi>person</gi>. 
                    <egXML xmlns="http://www.tei-c.org/ns/Examples"> <relation name="spouse" 
                  mutual="#WM #JBM" 
@@ -396,7 +396,7 @@ Dans notre exemple l’attribut <att>ref</att> posé sur chacun des éléments <
                  passive="#JBM" 
                 /> </egXML></p></div>
                  
-<div><head>12. Affectation de dates à ces éléments</head><p>
+<div type="slide"><head>12. Affectation de dates à ces éléments</head><p>
 Comme  déjà  indiqué,  tous  ces  éléments,  qu’ils  soient  spécifiques  ou  génériques,  sont membres de la classe d’attributs <ident>datable</ident>, ce qui veut dire que leur contenu peut être daté, comme dans l’exemple ci-après, où l’on lit que la personne d’abord appelée David Jones a changé de nom en 1966 pour s’appeler David Bowie : 
                     <egXML xmlns="http://www.tei-c.org/ns/Examples"><person xml:id="DB" 
                 > 
@@ -407,7 +407,7 @@ Comme  déjà  indiqué,  tous  ces  éléments,  qu’ils  soient  spécifiques
                 >David Bowie</persName> 
                     </person> 
                  </egXML></p>
-</div><div><head>13. Déclaration du degré de certitude et de la responsabilité</head><p>
+</div><div type="slide"><head>13. Déclaration du degré de certitude et de la responsabilité</head><p>
 Tous les éléments génériques que nous avons vus sont aussi membres de la classe <ident>editLike</ident>, qui,  comme  son  nom  l’indique,  a  originellement  été  conçue  pour  fournir  des  attributs “décrivant la nature de l’intervention éditoriale ou de l’interprétation”. Cette classe fournit les attributs <att>cert</att>, pour indiquer le niveau de certitude, <att>resp</att> pour indiquer le nom de l’entité responsable de l’information, et <att>evidence</att>, pour préciser la nature de la preuve utilisée. Il est ainsi possible, dans le cas de sources multiples et non cohérentes, de fournir plus d’un point de vur sur ce qui est arrivé, comme dans l’exemple ci-après, où un lieu et une date de naissance différents ont été avancés pour le même individu par deux chercheurs, l’un étant considéré comme plus fiable que l’autre : 
                    <egXML xmlns="http://www.tei-c.org/ns/Examples"> <event type="birth" 
                  resp="#Smith2005" 
@@ -455,7 +455,7 @@ mentionnés dans la source de ceux qui, même s’ils n’y sont pas expliciteme
                         <occupation>Fellow of Merton College, Oxford</occupation> 
                         </person> </egXML></p>
                  
-</div><div><head>14. Un autre exemple de notice descriptive de personne</head><p>
+</div><div type="slide"><head>14. Un autre exemple de notice descriptive de personne</head><p>
 Notice simplifiée tirée d’un fichier produit dans le cadre d’un projet de la BnF : 
                         <egXML xmlns="http://www.tei-c.org/ns/Examples"><person xml:id="f123456" 
                 > 
@@ -479,7 +479,7 @@ Notice simplifiée tirée d’un fichier produit dans le cadre d’un projet de 
                                 1766.</floruit> 
                         </person> </egXML>
 </p>                
-</div><div><head>15. Encodage des informations sur les lieux</head><p>
+</div><div type="slide"><head>15. Encodage des informations sur les lieux</head><p>
 Les mêmes possibilités existent pour le balisage des lieux géographiques, ce qui permet de normaliser ou d’uniformiser les références aux lieux, en les décrivant puis en associant ces descriptions  avec  une  collection  de  textes  balisés,  par  exemple  des  documents  historiques balisés. 
 </p><p>Tout comme pour les personnes, les informations sur les lieux géographiques consistent 
 en une série de déclarations concernant:<list><item>
@@ -492,12 +492,12 @@ comme les circonstances d’une fondation, de catastrophes naturelles ou causée
 <p>Et comme pour les déclarations relatives aux personnes, chacune de celles-ci doit pouvoir 
 être documentée, être inscrite dans un cadre temporel et être reliée à d’autres de même nature ou d’autre nature. 
 </p>
-<div><head>15.1. L’élément <gi>place</gi></head><p>
+<div type="slide"><head>15.1. L’élément <gi>place</gi></head><p>
 L’élément <gi>place</gi> possède un attribut <att>type</att> qui permet de caractériser brièvement le lieu, par exemlpe de dire qu’il s’agit d’une ville, d’une rue, d’un immeuble, d’un objet naturel tel qu’un lac ou une montagne, ou un lieu célèbre comme un champ de bataille. L’élément <gi>place</gi> contient:<list><item>
 un ou plusieurs éléments <gi>placeName</gi>, chacun donnant un nom sous lequel le lieu est ou a été connu (les éléments TEI <gi>country</gi>, <gi>bloc</gi>, <gi>geogName</gi>, <gi>region</gi> et <gi>settlement</gi> sont des spécialisations de l’élément générique <gi>placeName</gi>, et peuvent être utilisés à la place de <gi>placeName</gi> ou dans <gi>placeName</gi>). 
 </item><item>
 un ou plusieurs éléments <gi>location</gi>, précisant la localisation physique du lieu, sous la forme, par exemple, d’un jeu de coordonnées géographiques, d’une adresse, ou de la mention de l’appartenance à une entité géo-politique. 
-</item></list></p></div><div><head>15.2. Où saisir un élément <gi>place</gi></head><p>
+</item></list></p></div><div type="slide"><head>15.2. Où saisir un élément <gi>place</gi></head><p>
 Les éléments <gi>place</gi> sont des enfants de <gi>listPlace</gi>, qui, comme <gi>listPerson</gi>, est  le  plus  souvent  placé  dans  l’en-tête  TEI  (dans  <gi>sourceDesc</gi>),  mais  qui  peut  aussi apparaître  à  tout  point  du  fichier  où  une  liste  ordinaore  (un  élément  <gi>list</gi>peut  aussi apparaître. 
                    <egXML xmlns="http://www.tei-c.org/ns/Examples"> <place type="lake" 
                  xml:id="Skadar" 
@@ -566,7 +566,7 @@ Les éléments <gi>place</gi> sont des enfants de <gi>listPlace</gi>, qui, comme
                         </place> 
                     </place> </egXML>
 </p>               
-</div><div><head>15.3. Les traits</head><p>
+</div><div type="slide"><head>15.3. Les traits</head><p>
 Il  existe,  en  plus  d’un  élément  générique  <gi>trait</gi>,  des  éléments  spécialisés  pour  la
   population (<gi>population</gi>), le climat (<gi>climate</gi>) et le terrain (<gi>terrain</gi>). 
                        <egXML xmlns="http://www.tei-c.org/ns/Examples"> <population when="2003" 
@@ -582,7 +582,7 @@ Il  existe,  en  plus  d’un  élément  générique  <gi>trait</gi>,  des  él
                                 high limestone mountains and plateaux.</p> 
                         </terrain> 
    </egXML>      </p>            
-</div><div><head>15.4. Les états</head><p>
+</div><div type="slide"><head>15.4. Les états</head><p>
 Les états sont traités grâcé à l’élément générique <gi>state</gi>. 
                        <egXML xmlns="http://www.tei-c.org/ns/Examples"> <state type="legal" 
                  from="1983" 
@@ -593,7 +593,7 @@ Les états sont traités grâcé à l’élément générique <gi>state</gi>.
                                 some of the last pelicans in Europe.</p> 
      </state> </egXML>
 </p>
-</div><div><head>15.5. Les événements</head><p>
+</div><div type="slide"><head>15.5. Les événements</head><p>
 Il n’existe pas d’éléments spécialisés pour les événements ; on utilisera l’élément générique
 <gi>event</gi> qui peut être doté d’un attribut <att>type</att>: 
           <egXML xmlns="http://www.tei-c.org/ns/Examples"> <event type="political" 
@@ -626,16 +626,16 @@ Il n’existe pas d’éléments spécialisés pour les événements ; on utilis
            </event> 
                      </egXML></p><p>
 Les  valeurs  des  attributs  <att>key</att>  des  éléments  <gi>name</gi>  établissent  un  lien  vers  d’autres éléments <gi>place</gi>, vers des éléments <gi>org</gi> ou <gi>person</gi>. 
-</p></div></div><div><head>16. Listes d’événements</head><p>
+</p></div></div><div type="slide"><head>16. Listes d’événements</head><p>
 Les  événements,  comme  les  personnes,  les  lieux  -  et  les  organismes  -,  peuvent  être considérés comme des objets à décrire pour eux-mêmes. Dans ce cas, on utilisera l’élément <gi>listEvent</gi> pour englober une série d’éléments <gi>event</gi>. 
-</p></div><div><head>17. Encodage des informations sur les organismes</head><p>
+</p></div><div type="slide"><head>17. Encodage des informations sur les organismes</head><p>
 TODO : listOrg, org, et ses sous-éléments 
 </p></div>
 </body></text></TEI>
 <!-- suit la version de l'ENC -->
 <!-- 
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Entités nommées définition</head>
             <p>unités lexicales sélectionnées pour leur intérêt sémantique</p>
             <list type="unordered">
@@ -644,7 +644,7 @@ TODO : listOrg, org, et ses sous-éléments
               <item>objets, etc.</item>
             </list>
           </div>
-          <div>
+          <div type="slide">
             <head>Entités nommées définition</head>
             <p>Les entités nommées sont des unités lexicales sélectionnées pour leur intérêt sémantique : <list>
                 <item>noms de lieux,</item>
@@ -654,8 +654,8 @@ TODO : listOrg, org, et ses sous-éléments
             <p>LB : La TEI se positionne avec Frege dans la grande discussion philosophique autour de la théorie de référence : elle cherche à encoder ce qu’il appelle <foreign>das bedeutung</foreign> (signification)</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Pourquoi s’en occuper ?</head>
             <list>
               <item>Construction d’index</item>
@@ -663,7 +663,7 @@ TODO : listOrg, org, et ses sous-éléments
               <item>Exposition dans le LOD</item>
             </list>
           </div>
-          <div>
+          <div type="slide">
             <head>Pourquoi s’en occuper ?</head>
             <list>
               <item>Utiliser les textes comme une base de données</item>
@@ -674,10 +674,10 @@ TODO : listOrg, org, et ses sous-éléments
             <p>en perspective : le web sémantique</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Ce que propose la TEI pour les entités-nommées</head>
-            <div>
+            <div type="slide">
               <head>Balisage générique</head>
               <p>Pour signaler la présence des noms propres ou de références nominales dans un texte</p>
               <list>
@@ -687,7 +687,7 @@ TODO : listOrg, org, et ses sous-éléments
               <p>Où des attributs tels que <att>ref</att> permettent de pointer vers une description de rérence.</p>
             </div>
           </div>
-          <div>
+          <div type="slide">
             <head>Balisage plus spécifique</head>
             <list>
               <item><gi>persName</gi> nom de personne</item>
@@ -696,8 +696,8 @@ TODO : listOrg, org, et ses sous-éléments
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>La classe <ident>model.nameLike</ident></head>
             <p>Regroupe les éléments qui se rapportent tous à un nom de personne ou de lieu</p>
             <list>
@@ -706,7 +706,7 @@ TODO : listOrg, org, et ses sous-éléments
             </list>
             <p>Chacun avec des propriétés de nommage, des traits, des états, des événements, des relations.</p>
           </div>
-          <div>
+          <div type="slide">
             <head>La classe <ident>model.nameLike</ident></head>
             <p>L’élément <gi>person</gi> peut être instancié à l’intérieur d’un élément <gi>persList</gi> pour créer par exemple un fichier d’autorité dans le cadre d’un projet.</p>
             <p>La classe <ident>model.namelike</ident> (comme un nom) regroupe des éléments qui se rapportent tous à un nom de personne ou de lieu. Les éléments appartenant à cette classe y figurent. On peut voir que c’est une super-classe qui est composée de plusieurs classes qui comprennent des éléments comme <gi>persname</gi>, <gi>name</gi>, etc.</p>
@@ -714,10 +714,10 @@ TODO : listOrg, org, et ses sous-éléments
           </div>
         </div>
       </div>
-      <div type="part" xml:id="par2">
+      <div type="slide" type="part" xml:id="par2">
         <head>Les formes du nom</head>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Les formes du nom</head>
             <p>exemple de personne</p>
             <list>
@@ -736,7 +736,7 @@ TODO : listOrg, org, et ses sous-éléments
   ref="tag:projectname.org,2012:PAS1">Pennsyla. Abolition Society</orgName>
 </egXML>
           </div>
-          <div>
+          <div type="slide">
             <head>Les formes du nom</head>
             <p>L’association avec la classe <gi>person</gi> est basée sur la hiérarchie de l’élément XML (inclusion). L’association est implicite.</p>
             <p>Pour indiquer plusieurs formes du nom distinctes, cet élément est répétable. Agrégation : une instance de la classe <gi>person</gi> possède une ou plusieurs instances (ou "composants") de la classe cible, ici <gi>persName</gi></p>
@@ -747,8 +747,8 @@ TODO : listOrg, org, et ses sous-éléments
             <p>Ou au contraire autoriser son absence.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Composantes du nom</head>
             <list>
               <item><code>forename</code> prénom</item>
@@ -765,7 +765,7 @@ TODO : listOrg, org, et ses sous-éléments
               </persName>
             </egXML>
             </div>
-          <div>
+          <div type="slide">
             <head>Composantes du nom</head>
             <p>De la même façon que tout à l’heure, il peut y avoir plusieurs manières de traiter les composantes du nom :</p>
             <p><gi>forename</gi>, <gi>surname</gi>, etc.</p>
@@ -790,8 +790,8 @@ TODO : listOrg, org, et ses sous-éléments
 </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Liens vers des données d’autorité</head>
             <list>
               <item><att>key</att> pour fournir un identifiant externe</item>
@@ -812,7 +812,7 @@ TODO : listOrg, org, et ses sous-éléments
 </person>
 </egXML>
           </div>
-          <div>
+          <div type="slide">
             <head>Liens vers des données d’autorité</head>
             <p><ident>att.canonical</ident> provides attributes which can be used to associate a representation such as a name or title with canonical information about the object being named or referenced.</p>
             <p><att>key</att> provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind.</p>
@@ -826,10 +826,10 @@ TODO : listOrg, org, et ses sous-éléments
           </div>
         </div>
       </div>
-      <div type="part" xml:id="part3">
+      <div type="slide" type="part" xml:id="part3">
         <head>Le modèle de conceptuel</head>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Le modèle conceptuel</head>
             <p>La TEI fournit trois éléments génériques, et quelques-uns plus spécifiques. Elle identifie trois classes principales d’information :</p>
             <list>
@@ -838,7 +838,7 @@ TODO : listOrg, org, et ses sous-éléments
               <item><hi>event</hi> des événements qui peuvent conduire à un changement d’état</item>
             </list>
           </div>
-          <div>
+          <div type="slide">
             <head>Le modèle conceptuel</head>
             <p>Le périmètres des caractéristiques pouvant affecter une entité nommée est très vaste.</p>
             <p>La TEI fournit trois éléments génériques, et quelques-uns plus spécifiques. Elle identifie trois classes principales d’information :</p>
@@ -849,8 +849,8 @@ TODO : listOrg, org, et ses sous-éléments
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Éléments biographiques et prosopographiques</head>
             <p>Ce module fournit également des éléments pour la représentation d’information à caractère biographique, historique ou proposographique sur la personne, les lieux, ou l’organisation à laquelle un nom fait référence.</p>
             <p> > production de fichier d’autorité ou collection d’information biographiques</p>
@@ -858,7 +858,7 @@ TODO : listOrg, org, et ses sous-éléments
               <item></item>
             </list>
           </div>
-          <div>
+          <div type="slide">
             <head>Éléments biographiques et prosopographiques</head>
             <p>Là encore, TEI propose une stratégie flexible où l’encodeur peut puiser selon selon l’approche adaptée à ses besoins.</p>
             <p>Principes de base</p>
@@ -868,7 +868,7 @@ TODO : listOrg, org, et ses sous-éléments
               <item>à des caractéristiques ou <hi rend="italic">états (states)</hi> qui sont seulement vrai une période de temps donnée</item>
               <item>des <hi rend="italic">événements (events)</hi> ou incidents qui peuvent conduire à un changement d’état ou moins fréquemment de trait.</item>
             </list>
-            <div>
+            <div type="slide">
               <head>Traits</head>
               <p>Traits, typiquement indépendants du vouloir de la personne, ou de ses actions. Peuvent être d’ordre physiques, sexe, couleur des yeux, ou culturels, ethniques, croyance…</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -878,7 +878,7 @@ TODO : listOrg, org, et ses sous-éléments
   </trait>
 </egXML>
             </div>
-            <div>
+            <div type="slide">
               <head>États</head>
               <p>Les états incluent par exemple le statut marital, le lieu de résidence et la position ou l’occupation.</p>
               <p>Durée définie, c’est-à-dire un début et une fin.</p>
@@ -889,8 +889,8 @@ TODO : listOrg, org, et ses sous-éléments
             </div>
           </div>
         </div>
-        <div type="slide">
-          <div>
+        <div type="slide" type="slide">
+          <div type="slide">
             <head>Traits</head>
             <p>Contiennent une description du statut ou de la qualité attribuée à une personne, un lieu ou une organisation qui typiquement, mais pas nécessairement, est indépendante du vouloir ou de l’action du porteur et habituellement n’est pas spécifique à une période de temps.</p>
             <list>
@@ -899,12 +899,12 @@ TODO : listOrg, org, et ses sous-éléments
             </list>
             
           </div>
-          <div>
+          <div type="slide">
             <p><gi>trait</gi> contient une description de statut ou de qualité d’une personne, d’un lieu ou typiquement d’une organisation, mais pas nécessairement, indépendamment des actions de la personne, et habituellement indépendant du temps.</p>
           </div>
         </div>
-        <div type="slide">
-          <div>
+        <div type="slide" type="slide">
+          <div type="slide">
             <head>États</head>
             <p>Les <hi>états</hi> décrivent certains statuts ou qualités attribuées à une personne, à des lieux, ou des organisations généralement à un moment donné ou spécifique à une période de temps.</p>
             <list>
@@ -919,14 +919,14 @@ TODO : listOrg, org, et ses sous-éléments
               <item><gi>education</gi> contient une description du niveau d’éducation d’une personne</item>
             </list>
           </div>
-          <div>
+          <div type="slide">
             <p><gi>state</gi> contient une description de statut ou de qualité attribuée à une personne, un lieu ou une organisation, souvent à un moment spécifique dans le temps ou dans une période de temps.</p>
             <p>La classe <ident>model.persStateLike</ident> contient des éléments décrivant des caractéristiques physiques ou sociales construites.</p>
             
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Événements</head>
             <list>
               <item><gi>birth</gi></item>
@@ -935,7 +935,7 @@ TODO : listOrg, org, et ses sous-éléments
               <item><gi>listeEvent</gi></item>
             </list>
           </div>
-          <div>
+          <div type="slide">
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
   <person xml:id="WM">
     <event type="marriage" when="1859-04-26">
@@ -968,7 +968,7 @@ TODO : listOrg, org, et ses sous-éléments
 </egXML>
             <p>Contiennent des données relatives à n’importe quelle événement significatif associé à une personne, un lieu ou une organisation.</p>
           </div>
-          <div>
+          <div type="slide">
             <p><att>where</att> pour indiquer le lieu en pointant vers un élément <gi>place</gi></p>
             <p><gi>listEvent</gi> pour structurer</p>
             
@@ -981,8 +981,8 @@ TODO : listOrg, org, et ses sous-éléments
             <p><att>source</att> provides a pointer to the bibliographical source from which a quotation or citation is drawn.</p>
           </div>
         </div>
-        <div type="slide">
-          <div>
+        <div type="slide" type="slide">
+          <div type="slide">
             <head>Exemple d’événement</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <event xml:id="eMBB" from="1955-12-01"
@@ -996,8 +996,8 @@ TODO : listOrg, org, et ses sous-éléments
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
-          <div>
+        <div type="slide" type="slide" xml:lang="fr">
+          <div type="slide">
             <head>Relations</head>
             <p>
               <gi>listRelation</gi> fournit des informations sur les relations identifiées parmi les personnes, les lieux et les organisations, soit informellement en prose, soit exprimées formellement sous forme de liens de relation.</p>
