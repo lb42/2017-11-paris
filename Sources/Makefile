@@ -18,13 +18,8 @@ EXERCISES= \
 	ex01-analyse \
 	ex02-oxygen \
 	ex03-roma \
-	ex04-oulipo \
 	ex05-header \
 	ex06-msdesc \
-	ex07-entites \
-	ex08-organisation \
-	ex09-odd \
-	ex10-explorations \
 	ex12-xslt
 
 DIAPOS= \
@@ -60,7 +55,8 @@ slides: pdfslides
 
 pdfslides:  
 	for i in $(DIAPOS) ; do \
-		teitoslides --profile=tei $$i.xml ../Diapos/$$i.pdf; \
+		teitoslides --profile=tei $$i.xml; \
+		mv $$i.xml.slides ../Diapos/$$i.pdf; \
 	done
 
 

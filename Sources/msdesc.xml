@@ -29,8 +29,8 @@
         <body xml:lang="fra">
             <div type="slide">
                 <head>Objectifs</head>
-                <p><graphic url="../images/morrisCatalog.jpg" height="50%"/>
-                    <graphic url="../images/catalogCard.jpg" height="50%"/>
+                <p><graphic url="../../tei-fr/Talks/Graphics/morrisCatalog.jpg" height="50%"/>
+                    <graphic url="../../tei-fr/Talks/Graphics/catalogCard.jpg" height="50%"/>
                     <!-- William-Morris-autograph-calligraphic-manuscript-catalogue-of-his-library-ca.1890.--></p>
                 <list type="unordered">
                     <item>découvrir les balises spécifiques pour l’encodage de descriptions des manuscrits</item>
