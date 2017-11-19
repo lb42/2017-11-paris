@@ -78,7 +78,9 @@
                     
                 
             </div>
+
             <div  type="slide">
+
                     <head>La liste des témoins (<gi>listWit</gi>)</head>
                     
                     <p>La liste des témoins est encodée à l’aide de l’élément <gi>listWit</gi>. Cet élément devrait
@@ -93,7 +95,9 @@
                     <p>Dans tous les cas, il sera indispensable d’affecter à chacun des éléments servant à décrire
                         les témoins un identifiant, à l’aide de l’attribut <att>xml:id</att>, afin de pouvoir faire référence aux
                         témoins dans les notes d’apparat critique.</p>
+
             </div>
+
                     <div type="slide"><head>Contenu de l’élément <gi>witness</gi></head>
                         
                         <p>Selon le niveau de précision que l’éditeur souhaite atteindre en décrivant les témoins, selon
@@ -204,8 +208,9 @@
                             </egXML></p>
                         
                     </div>
-               
+         
             <div  type="slide">
+
                      <head>Les notes d'apparat critique</head>
                      <p>Les notes d’apparat critique elles-mêmes sont encodées à l’aide d’un élément de note
                          spécialisé, <gi>app</gi>.</p>
@@ -275,26 +280,28 @@
                 </egXML></p>
             </div>
             <div type="slide"><head>Mise en relation des notes d’apparat critique
+
                 avec le texte édité (1) : la méthode dite "Location-referenced Method"</head>
                 <p>Les guidelines TEI présentent trois méthodes pour l’ajout des notes d’apparat critique à
                     l’édition. Deux d’entre elles sont utilisables hors du texte édité, la dernière ne peut être utilisée
                     que dans ce texte.</p>
                 
-                <p><hi rend="bold">La méthode dite "Location-referenced Method"</hi> consiste à encoder les notes d’apparat critique dans des éléments <gi>app</gi>
-                        hors du texte, en renvoyant à l’aide de l’attribut <att rend="italic">loc</att> de <gi>app</gi> vers le bloc du texte où
+               
+               
+                    <p>Cette méthode consiste à encoder les notes d’apparat critique dans des éléments <gi>app</gi>
+                        hors du texte, en renvoyant à l’aide de l’attribut <att>loc</att> de <gi>app</gi> vers le bloc du texte où
                             apparaissent les variantes concernées.</p>
                     <p>Pour reprendre l’exemple ci-dessus, en employant cette méthode, on aurait procédé ainsi :
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <!-- d’abord on aurait encodé le texte -->
-                        <div n="04"
+                        <div type="slide" n="04"
                             ><!-- début de la transcription -->
                             et à faulte d’en convenir, leur
                             en sera pourveu par les juges des lieux, sauf
                             ausd. possesseurs leur recours
                             contre qui il appartiendra.</div>
                         <!-- plus loin, par ex. dans un élément <gi>back</gi>, on aurait écrit : -->
-                        <div type="critapp"
-                            >
+                        <div type="slide">
                             <app loc="04"
                                 >
                                 <rdg wit="#edit_12_v1"
@@ -320,6 +327,7 @@
             </div>
                 <div type="slide"><head>Mise en relation des notes d’apparat critique
                     avec le texte édité (2) : méthode dite "Double End-Point Attachment Method"</head>
+               
                     <p>Cette méthode utilise des éléments de type milestone comme <gi>anchor</gi>, et des attributs de
                         <gi>app</gi> (<att rend="italic">from</att> et <att rend="italic">to</att> dans le cas où la note est saisie dans le corps du texte édité) pour
                             localiser le début et la fin de la leçon de base dans le texte.</p>
@@ -344,8 +352,10 @@
                         </app>
                     </egXML></p></div>
                 <div type="slide">
+
                     <head>Mise en relation des notes d’apparat critique
                         avec le texte édité (3) : la méthode dite de segmentation parallèle</head>
+
                     <p>Cette méthode ne peut être employée qu’à l’intérieur du texte édité. Elle consiste à relever
                         systématiquement et à encoder dans <gi>app</gi> toutes les leçons distinctes des témoins retenus.</p>
                     <p>De ce fait il n’y a pas d’ambiguité sur le début ou la fin d’une leçon de référence, et finalement
