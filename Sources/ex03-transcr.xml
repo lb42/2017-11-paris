@@ -30,25 +30,26 @@
     <div>
         <head>Ex 1: balisage d'un testament</head>
         <list>
-            <item>Visualisez les trois fichiers <ident>jeanne-1.jpg</ident>,
-                    <ident>jeanne-2.jpg</ident> et <ident>jeanne-3.jpg</ident></item>
-            <item>Ouvrez le fichier <ident>jeanne-0.xml</ident> avec oXyGen </item>
+            <item>Visualisez les deux fichiers <ident>herpin-1.jpg</ident> et <ident>herpin-2.jpg</ident></item>
+            <item>Ouvrez le fichier <ident>herpin-0.xml</ident> avec oXyGen </item>
             <item>Enlevez les balises &lt;-- et --&gt; : qu'est-ce qui arrive?</item>
             <item>Avec CTRL-F, cherchez tous les &amp; et les remplacez par des &amp;amp; :
                 qu'est-ce qui arrive?</item>
-            <item>Séléctionnez tout le texte et tapez CTRL-E pour le baliser avec un seul <gi>p</gi>
+            <item>Séléctionnez tout le texte et tapez CTRL-E pour le baliser avec un seul <gi>div</gi>
                 d'abord</item>
-            <item>Divisez le texte en plusieurs <gi>p</gi> en utilisant ALT-MAJ-D</item>
-            <item>Séléctionnez les mots en Latin ou en Grecque : utilisez CTRL-E pour les baliser
-                    <gi>foreign</gi></item>
-            <item>Ajoutez un attribut <code>xml:lang='la'</code> pour les phrases latines, ou
+            <item>Divisez ce div en deux, pour separer l'enveloppe</item>
+            <item>Divisez le testament en plusieurs <gi>p</gi> en utilisant ALT-MAJ-D</item>
+            <item>Identifiez les mots qui vous semble incorrectes de point de vue orthographie
+                moderne : utilisez CTRL-E pour les baliser
+                    <gi>sic</gi></item>
+           <!-- <item>Ajoutez un attribut <code>xml:lang='la'</code> pour les phrases latines, ou
                     <code>xml:lang='gr-la'</code> pour les phrases grecques</item>
             <item>Retrouvez les mots qui sont biffés dans l'originel : utilisez CTRL-E pour les
                 baliser <gi>del</gi>
             </item>
             <item>En comparaisant soigneusement images et transcription, retrouvez des mots qui ont
                 étés développés d'un mot abrégé en l'originel ; balisez ces mots avec
-                <gi>expan</gi></item>
+                <gi>expan</gi></item>-->
             <item>Utilisez CTRL-F pour rendre explicites toutes les coupures de ligne en ajoutant
                 une balise <tag>lb/</tag>. Astuce: vous pouvez signaler une coupure de ligne en
                 tapant CTRL+RETOUR</item>
