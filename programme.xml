@@ -127,15 +127,19 @@
         <list>
           <label>10h - 11h </label>
           <item resp="#FC">Eléments TEI pour la transcription des sources
-            primaires <ref target="Sources/transcriptionManuscrit.xml">Source</ref>
+            primaires (<ref target="Diapos/transcriptionManuscrit.html">HTML</ref>; <ref
+              target="Sources/transcriptionManuscrit.xml">Source</ref>)
             </item>
           <label>11h - 12h </label>
-          <item resp="#LB">Exercice sur un testament de poilu, FC a proposer </item>
+          <item resp="#LB">Exercices sur la transcription des sources <ref
+            target="PDF/ex03-transcr.pdf">PDF</ref>; <ref
+              target="Sources/ex03-transcr.xml">Source</ref> </item>
                 <label>14h– 14h45 </label>
-          <item>: Fin de l'exercice</item>
+          <item>: Fin de l'exercice <hi>C'est quoi ?????????</hi></item>
           <label>- 15h– 16 h :</label>
           <item resp="#FC">Eléments TEI pour l'encodage de l'apparat critique 
-            <ref target="Sources/apparatCritique.xml">Source</ref></item>
+            <ref target="Sources/apparatCritique.xml">Source</ref> <ref
+              target="Diapos/apparatCritique.html">HTML</ref></item>
           <label> 16h– 17 h </label>
           <item resp="#LB">TEI Header ( <ref target="Diapos/teiHeader.pdf">PDF</ref>; <ref
             target="Sources/teiHeader.xml">Source</ref>)</item>

@@ -3,13 +3,13 @@
 STYLESHEET=../teislidy.xsl
 
 # Makefile
-# needs to be copied to and run from source directory 
-# assumes that folders PDF and Diapos exist
+# needs to be run from Sources directory 
+# assumes that folders Travaux and Diapos exist
 ECHO=
 
 HTMLSLIDES= \
 	../programme \
-    introductionXML \
+	introductionXML \
 	apparatCritique \
 	transcriptionManuscrit \
 	notesIndexations
@@ -17,10 +17,12 @@ HTMLSLIDES= \
 EXERCISES= \
 	ex01-analyse \
 	ex02-oxygen \
-	ex03-roma \
-	ex05-header \
-	ex06-msdesc \
-	ex12-xslt
+	ex03-transcr 
+#	ex03-roma \
+#	ex05-header \
+#	ex06-msdesc \
+#	ex12-xslt
+
 
 DIAPOS= \
 	01-principes \
@@ -33,11 +35,6 @@ DIAPOS= \
 
 default: exercises htmlslides pdfslides
 
-setup:
-	mkdir ../PDF ../Diapos
-
-# should empty dir if it exists
-# need to copy js and themes to diapos
 
 htmlslides: 
 	for f in $(HTMLSLIDES); do echo $$f; \
@@ -48,10 +45,10 @@ htmlslides:
 exercises:
 	for i in $(EXERCISES) ; do \
 		teitopdf $$i.xml ; \
-		mv $$i.xml.pdf ../PDF/$$i.pdf; \
+		mv $$i.xml.pdf ../Travaux/$$i.pdf; \
 	done
 
-slides: pdfslides 
+slides: pdfslides htmlslides
 
 pdfslides:  
 	for i in $(DIAPOS) ; do \
@@ -72,17 +69,5 @@ clean:
 	-rm -f *.eps *.dvi
 	-rm -f *.xhtml
 	-rm -f *~
-
-
-validate:
-	-for i in $(TALKS) ; do onvdl ../teitalks.nvdl `basename $$i .xml`.xml \
-	 | grep -v ': error: unfinished element$$' \
-	 | grep -v ': error: unfinished element .* required to finish the element$$'; done
-
-driver:
-	cp corpHeaderStart.txt driver.tei;\
-		for f in *.xml ; do \
-		echo "<xi:include href='$$f'/>" >> driver.tei; \
-	done; echo "</teiCorpus>" >> driver.tei
 
 
