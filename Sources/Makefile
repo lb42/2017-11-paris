@@ -31,8 +31,8 @@ DIAPOS= \
 	teiHeader \
 	msdesc \
 	xsltNuls \
-	outils \
 	teiCommunity
+#	outils \
 
 default: exercises htmlslides pdfslides
 
