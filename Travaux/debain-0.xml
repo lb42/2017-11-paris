@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="testaments.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T60">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament olographe de Lucien Pierre Armand Debain, mort pour la France à Vitry-le-François (Marne), le 16 novembre 1915.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Papier à lettre blanc, 4 pages, dim. 18 x 14 cm, encre ; enveloppe, dim. 10 x 14,5 cm, encre.                    
+                    Cote aux Archives nationales :  MC/ET/LXXXIX/2343, minute du 13 janvier 1916 </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body><div type="will">
+           <!-- Première page
+            
+            Nevers, le 12 août 1914
+            (trait horizontal)
+            
+            Ceci est mon testament, écrit en
+            toute sérénité, la veille de mon
+            départ pour la guerre contre l’Allemagne.
+            (trait horizontal)
+            
+            Je soussigné, Debain Lucien Pierre
+            Armand laisse à ma femme née Helene
+            Cartault toute notre fortune ainsi
+            constituée 1°) Un lot d’obligations de chemin de
+            fer Français, placées au nominatif
+            et déposées à la Banque de France
+            à Nevers. Ces obligations ont
+            été apportées en dot par ma femme. 2°) Quelques valeurs (Russe, Roumaine  [...] 
+            Panama, etc.) déposées au 
+            
+            Deuxième page 
+            
+            Comptoir d’escompte à Nevers. 
+            3°) Quelques valeurs à mon compte
+            chez Monsieur Chabert agent de
+            change à Paris, 10 rue Vivienne.
+            
+            A Nevers, 12 août 1914
+            
+            A. Debain
+            Capitaine au bataillon d’Infanterie.
+          
+            Enveloppe
+            
+            Ci-inclus mon testament
+            
+            A. Debain
+        
+            -->
+        </div>           </body>
+    </text>
+</TEI>

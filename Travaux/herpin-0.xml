@@ -17,12 +17,10 @@
         </fileDesc>
     </teiHeader>
     <text>
-      <body><div type="will">
-  <!--        
+        <body><div type="will">
+            <!--        
 Première page
-
 Paris le 2 Aout 1914
-
 Ceci est mais dernières
 volonté, en cas de décès.
 Je lègue toute ma
@@ -32,19 +30,15 @@ sof tout mes éfets qui
 me conserne que je lègue
 a mon cousin Marcel
 Aumasson.
-
 C. Herpin
-
 Fait a Paris le 2 Aout
 1914
-
 Enveloppe
-
 Testament à
 C. Herpin
 A ouvrire après décès
 Paris 2 Aout 1914
             -->
-</div>           </body>
+        </div>           </body>
     </text>
 </TEI>

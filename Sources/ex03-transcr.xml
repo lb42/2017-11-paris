@@ -3,12 +3,12 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Anti-seche : TP sur les manuscrits TEI-XML</title>
+                <title>Encodage des testaments : exercices pratiques</title>
                 <author>Lou Burnard Consulting</author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>janvier 2016</date>
+                    <date>novembre 2017</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -29,7 +29,7 @@
     <text>
         <body>
             <div>
-                <head>Ex 1: balisage d'un testament</head>
+                <head>Balisage de la structure d'un testament</head>
                 <list>
                     <item>Visualisez les deux fichiers <ident>herpin-1.jpg</ident> et
                             <ident>herpin-2.jpg</ident></item>
@@ -37,91 +37,102 @@
                         partie en vert : nous avons mis la transcription du testament en commentaire
                         pour l'instant.</item>
                     <item>Notez l'erreur qui s'affiche en bas de page <q>element "div" incomplete :
-                            expected "pb" or "note"</q>. C'est a dire: selon le schema que nous
+                            expected "pb" or "note"</q>. C'est à dire: selon le schéma que nous
                         utilisons, un <gi>div</gi> doit commencer par soit un <gi>pb</gi>, soit un
-                            <gi>note</gi>. Nous allons regler cela tout a l'heure. </item>
+                            <gi>note</gi>. Nous allons régler cela tout a l'heure. </item>
                     <item>Enlevez les balises &lt;-- et --&gt; : qu'est-ce qui arrive?</item>
-                    <item>Ne desesperez pas! Notons d'abord qu'il y a deux morceaux de texte qui ne
+                    <item>Ne déséspèrez pas! Notons d'abord qu'il y a deux morceaux de texte qui ne
                         figurent pas dans l'originel: les mentions <soCalled>Première
                             page</soCalled> et <soCalled>Enveloppe</soCalled>
                     </item>
                     <item>Remplacez la mention <soCalled>Première page</soCalled> par une balise
-                            <tag>pb facs="Herpin-1.jpg"/</tag>
+                            <tag>pb facs="herpin-1.jpg"/</tag>
                     </item>
-                    <item>Séléctionnez tout le texte qui suit (jusqu'a la balise <tag>/div</tag>) et
+                    <item>Séléctionnez tout le texte qui suit (jusqu'à la balise <tag>/div</tag>) et
                         tapez CTRL-E pour le baliser avec un seul <gi>p</gi> d'abord</item>
                     <item>Divisez le testament en plusieurs <gi>p</gi> en utilisant ALT-MAJ-D : il
                         faut commencer un nouveau <gi>p</gi> devant chacun des lignes <soCalled>Ceci
                             est mais dernières</soCalled>, <soCalled>C. Herpin</soCalled>,
                             <soCalled>Fait a Paris le 2 Aout</soCalled>, et
                             <soCalled>Enveloppe</soCalled></item>
-                    <item>Identifiez les mots qui vous semblent incorrect du point de vue
-                        d'orthographe moderne : utilisez CTRL-E pour les baliser <gi>sic</gi></item>
                     <item>Le mot <soCalled>enveloppe</soCalled> signale que le texte qui le suit ne
                         fait pas partie du testament, mais de l'enveloppe. Il devrait donc
-                        apparaitre dans un element distinct et d'un autre type. Comment faire?
+                        apparaitre dans un élément distinct et d'un autre type. Comment faire?
                         D'abord supprimez le mot <soCalled>Enveloppe</soCalled></item>
                     <item>Ensuite, mettez le curseur <emph>entre</emph> les deux balises
-                            <tag>/p</tag> et <tag>p</tag>sur le ligne precedent et tapez ALT-MAJ-D
+                            <tag>/p</tag> et <tag>p</tag> de la ligne précédente et tapez ALT-MAJ-D
                         pour couper en deux le <gi>div</gi> englobant</item>
-                    <item>Comme avant, notre schema exige la presence d'un <gi>pb</gi> au debut du
-                        <gi>div</gi> nouveau. Ajouter donc une balise <tag>pb
-                            facs="herpin-2.jpg"/</tag>. </item><item>Et pour finir, il faut corriger la valeur de
-                        l'attribut <att>type</att> sur notre nouveau <gi>div</gi>. Supprimez </item>
-                    <!-- <item>Ajoutez un attribut <code>xml:lang='la'</code> pour les phrases latines, ou
-                    <code>xml:lang='gr-la'</code> pour les phrases grecques</item>
-            <item>Retrouvez les mots qui sont biffés dans l'originel : utilisez CTRL-E pour les
-                baliser <gi>del</gi>
-            </item>
-            <item>En comparaisant soigneusement images et transcription, retrouvez des mots qui ont
-                étés développés d'un mot abrégé en l'originel ; balisez ces mots avec
-                <gi>expan</gi></item>-->
-                    <item>Utilisez CTRL-F pour rendre explicites toutes les coupures de ligne en
+                    <item>Comme avant, notre schéma exige la présence d'un <gi>pb</gi> au debut du
+                            <gi>div</gi> nouveau. Ajouter donc une balise <tag>pb
+                            facs="herpin-2.jpg"/</tag>. </item>
+                    <item>Et pour finir, il faut corriger la valeur de l'attribut <att>type</att>
+                        sur notre nouveau <gi>div</gi>. Supprimez le texte <code>"will"</code> (avec
+                        les guillemets); tapez un seul guillemet. oXygen vous propose un menu des
+                        valeurs valides. Selectionnez le bon et tapez RETOUR pour
+                        l'insérer.</item></list></div>
+            <div><head>Enrichissement de la structure</head>
+            <list>
+               <item>Utilisez CTRL-F pour rendre explicites toutes les coupures de ligne en
                         ajoutant une balise <tag>lb/</tag>. Astuce: vous pouvez signaler une coupure
-                        de ligne en tapant CTRL+RETOUR</item>
+                        de ligne a l'editeur en tapant CTRL+RETOUR. </item>
+                    <item>Maintenant, nous vous invitons à identifier les mots ou les phrases qui vous semblent
+                        incorrect du point de vue d'orthographe moderne : utilisez CTRL-E pour les
+                        baliser <gi>sic</gi>; notre schéma exige que vous fournissez en même temps
+                        une correction (<gi>corr</gi>), et que vous englobez les deux dans un
+                        element <gi>choice</gi>. Par exemple, la ligne 30
+                        pourrait être balisé ainsi :
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice>
+                            <sic>sof tout mes éfets</sic>
+                            <corr>sauf tous mes effets</corr>
+                        </choice></egXML>
+                    </item><item>Ameliorez le balisage des phrases liminaires par ex <soCalled>Paris le 2 Aout
+                        1914</soCalled> en replacent la balise <gi>p</gi> par la balise
+                        <gi>dateline</gi>; pareille pour la signature <q>C Herpin</q> qui
+                        deviendrait <gi>signed</gi>. Et pourquoi pas encoder les dates d'une maniere
+                        plus precise, en utilisant l'element <gi>date</gi> et son attribut
+                        <att>when</att> pour les normaliser?
+                    
+                </item>
                 </list>
             </div>
-         <!--   <div>
-                <head>Ex 2: Lettre de Vinet</head>
-                <list>
-                    <item>Visualisez le fichier <ident>vinet.jpg</ident> et ouvrez le fichier
-                            <ident>vinet-0.xml</ident> avec oXyGen </item>
-                    <item>Enlevez les balises &lt;-\- et -\-&gt; </item>
-                    <item>Ajoutez d'abord de la structure : <list>
-                            <item>balisez le mot initiale <q>Monsieur</q> comme <gi>salute</gi>; </item>
-                            <item>balisez la phrase finale <q>Vostre humble serviteur Elie Vinet</q>
-                                comme <gi>signed</gi>; </item>
-                            <item>balisez tout la reste (entre les deux) avec <gi>p</gi>. </item>
-                        </list></item>
-                    <item>Indiquez que <q>Cadinal</q> serait une erreur (avec <gi>sic</gi>)</item>
-                    <item>Indiquez que <q>par</q> est un ajout (en dessus de ligne) avec <tag>add
-                            place="above"</tag>
-                    </item>
-                    <item>Indiquez les ratures avec <gi>del</gi> ; si vous n'etes pas certain/e des
-                        mots raturés vous pouvez l'indiquer avec <gi>unclear</gi>; si vous n'arrivez
-                        pas de tout à les lire, il faut le signaller avec <gi>gap</gi> ; en tout cas
-                        supprimez les asterix</item>
-                    <item>Traitez quelques abréviations avec <gi>expan</gi>, <gi>abbr</gi>, et
-                            <gi>choice</gi></item>
-                    <item>Indiquez que la phrase <q>apud Medulos</q> est du latin avec la balise
-                            <tag>foreign xml:lang="lat"</tag></item>
-                    <item>N'oubliez pas de prendre le crédit pour vos travaux en modifiant l'entête
-                        ! Il s'agit d'ajouter encore un élément <gi>change</gi> au sein du
-                            <gi>revisionDesc</gi>. </item>
-                </list>
-            </div>
--->            <div>
-                <head>Ex 3 : Visualisation</head>
-                <list>
-                    <item>Revenez sur votre version de la lettre de Vinet, ou la version que je vous
-                        propose dans <ident>vinet-corr.xml</ident>
-                    </item>
-                    <item>Ajoutez un lien vers le fichier page image, en inserant une balise
-                            <code>&lt;pb n="1" facs="vinet.jpg"/></code> devant le premier
-                            <gi>lb</gi> du fichier</item>
-                    <item>La mode Auteur permet de visualiser l'effet de quelques uns des balises,
-                        mais pas tous</item>
-                    <item>Essayez d'autres transformations avec Oxygen <list>
+           
+           <div><head>Continuation</head>
+           <p>Votre dossier <ident>Travaux</ident> contient trois autres testaments, qui peuvent
+           chacun etre traité de la même manière. En supplement aux démarches proposes ci-dessus,
+           nous vous invitons de baliser .... </p>
+               <list>
+                   <item>Dans le testament de Simmonet, à la ligne 5 on voit <q>Je legs à ma
+                       f[biffé]Madame</q>. Il s'agit d'une substitution: Simmonet avait
+                       commencé en écrivant <soCalled>a ma f</soCalled>, puis il s'est decidé plutot pour <soCalled>a Madame..</soCalled>.
+                   Il a biffe lé f, mais il n'a pas supprimé le "ma". Ca se balise ainsi:
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                       <subst>
+                           <sic><surplus>ma</surplus> f</sic>
+                           <corr>Madame</corr>
+                       </subst>
+                   </egXML>
+                   </item><item>Dans le même testament, deux lignes plus tard on voit une
+                       substitution pareille: le mot <q>et</q> étant remplacé par un virgule                   
+                   </item>
+               </list>
+<list><item>Les testaments de Simmon et de Debain contiennent des listes. Vous pourriez les baliser en
+    utilisant la balise <gi>list</gi> pour englober une série d'éléments <gi>item</gi>, au lieu de
+    les traiter comme des paragraphes. </item><item>N'hesitez pas à experimenter d'autres
+        possibilités de balisage ! oXygen vous propose les choix disponibles à tout moment dans
+        votre document si vous
+    tapez un chevron ... </item></list>
+           
+           </div>
+           
+            <div>
+                <head>Visualisation</head>
+                <p>Pour voir rapidement l'effet de vos efforts, vous pouvez visualiser
+                   n'importe quel document valide de plusieures manieres</p><list>
+                    
+                    <item>oXygen dispose de la mode Auteur: cela permet de visualiser l'effet de quelques uns des balises,
+                        mais pas tous </item>
+                    <item>oXygen vous permet aussi de transformer votre document directement dans
+                        des formats tels que HTML ou DOCX. <list>
                             <item>Ouvrez le dialog <ident>Configurer les Scénario(s) de
                                     Transformation</ident></item>
                             <item>Dans la liste des scénarios qui s'affiche, selectionnez TEI P5
@@ -130,6 +141,9 @@
                         </list></item>
                 </list>
             </div>
+            
+            
+            
         </body>
     </text>
 </TEI>

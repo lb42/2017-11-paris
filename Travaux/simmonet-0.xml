@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="testaments.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T27">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament olographe d’Émile Simonnet, mort pour la France à Zeitenlik (Grèce), le 30 juin 1916.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Papier à lettre blanc, 2 pages, dim. 17,7 x 10,5 cm, encre.                    
+                    Cote aux Archives nationales :  MC/ET/LXXXIX/2370, minute du 9 avril 1919 </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body><div type="will">
+            <!--        
+
+Première page
+
+Partant à la guerre et si
+en cas de non retour, je désire
+que mes dernières volontés soient
+respectées.
+
+Je legs à ma  f[biffé] Madame
+Emilie Simonnet (ma femme
+légitime) 1° tous meubles et[biffé] , objets et accessoires
+de ménage dans mon logement
+du 3, Rue de l’Annonciation. 2° tous mes titres qui sont en mon
+nom et en dépôt à l’Agence
+B du Crédit Lyonnais à Paris
+31, Rue Vivienne.
+
+Paris, le 2 Août 1914
+
+Emil Simonnet 
+            -->
+        </div>           </body>
+    </text>
+</TEI>

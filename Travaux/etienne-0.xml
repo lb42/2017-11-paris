@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="testaments.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T96">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament olographe de Marcel Étienne, mort pour la France à Dugny (Meuse), le 3 mai 1916.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Papier à lettre quadrillé, 2 pages, dim. 12,3 x 19,4 cm, encre ; enveloppe, dim. 10 x 14,7 cm, encre, 5 cachets.
+                    Cote aux Archives nationales :  MC/ET/XXXIII/1865, minute du 7 novembre 1916 </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body><div type="will">
+           <!-- Première page
+Première page
+
+Chartres 25 Juin 1915
+
+Ceci est mon testament.
+
+
+Je lègue tout mes biens meubles et
+immeubles à Mesdemoiselles Blanche
+Adrien et Marguerite Adrien.
+
+
+Fait à Chartres le 25 Juin 1915
+
+
+Etienne Marcel
+
+Enveloppe
+
+À ouvrir après décès
+et devant notaire (croix) 
+
+Mesdemoiselles
+Blanche & Marguerite Adrien
+    -->
+        </div>           </body>
+    </text>
+</TEI>
