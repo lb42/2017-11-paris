@@ -17,8 +17,8 @@
         </fileDesc>
     </teiHeader>
     <text>
-        <body>
-        <!--       
+      <body><div type="will">
+  <!--        
 Première page
 
 Paris le 2 Aout 1914
@@ -44,8 +44,7 @@ Testament à
 C. Herpin
 A ouvrire après décès
 Paris 2 Aout 1914
-            
             -->
-      </body>
+</div>           </body>
     </text>
 </TEI>

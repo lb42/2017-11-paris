@@ -24,25 +24,51 @@
         </fileDesc>
         <revisionDesc>
             <change when="2016-01-12"><name>Lou</name>first draft</change>
-           
         </revisionDesc>
-    </teiHeader><text><body>
-    <div>
-        <head>Ex 1: balisage d'un testament</head>
-        <list>
-            <item>Visualisez les deux fichiers <ident>herpin-1.jpg</ident> et <ident>herpin-2.jpg</ident></item>
-            <item>Ouvrez le fichier <ident>herpin-0.xml</ident> avec oXyGen </item>
-            <item>Enlevez les balises &lt;-- et --&gt; : qu'est-ce qui arrive?</item>
-            <item>Avec CTRL-F, cherchez tous les &amp; et les remplacez par des &amp;amp; :
-                qu'est-ce qui arrive?</item>
-            <item>Séléctionnez tout le texte et tapez CTRL-E pour le baliser avec un seul <gi>div</gi>
-                d'abord</item>
-            <item>Divisez ce div en deux, pour separer l'enveloppe</item>
-            <item>Divisez le testament en plusieurs <gi>p</gi> en utilisant ALT-MAJ-D</item>
-            <item>Identifiez les mots qui vous semble incorrectes de point de vue orthographie
-                moderne : utilisez CTRL-E pour les baliser
-                    <gi>sic</gi></item>
-           <!-- <item>Ajoutez un attribut <code>xml:lang='la'</code> pour les phrases latines, ou
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <head>Ex 1: balisage d'un testament</head>
+                <list>
+                    <item>Visualisez les deux fichiers <ident>herpin-1.jpg</ident> et
+                            <ident>herpin-2.jpg</ident></item>
+                    <item>Ouvrez le fichier <ident>herpin-0.xml</ident> avec oXyGen et lisez bien la
+                        partie en vert : nous avons mis la transcription du testament en commentaire
+                        pour l'instant.</item>
+                    <item>Notez l'erreur qui s'affiche en bas de page <q>element "div" incomplete :
+                            expected "pb" or "note"</q>. C'est a dire: selon le schema que nous
+                        utilisons, un <gi>div</gi> doit commencer par soit un <gi>pb</gi>, soit un
+                            <gi>note</gi>. Nous allons regler cela tout a l'heure. </item>
+                    <item>Enlevez les balises &lt;-- et --&gt; : qu'est-ce qui arrive?</item>
+                    <item>Ne desesperez pas! Notons d'abord qu'il y a deux morceaux de texte qui ne
+                        figurent pas dans l'originel: les mentions <soCalled>Première
+                            page</soCalled> et <soCalled>Enveloppe</soCalled>
+                    </item>
+                    <item>Remplacez la mention <soCalled>Première page</soCalled> par une balise
+                            <tag>pb facs="Herpin-1.jpg"/</tag>
+                    </item>
+                    <item>Séléctionnez tout le texte qui suit (jusqu'a la balise <tag>/div</tag>) et
+                        tapez CTRL-E pour le baliser avec un seul <gi>p</gi> d'abord</item>
+                    <item>Divisez le testament en plusieurs <gi>p</gi> en utilisant ALT-MAJ-D : il
+                        faut commencer un nouveau <gi>p</gi> devant chacun des lignes <soCalled>Ceci
+                            est mais dernières</soCalled>, <soCalled>C. Herpin</soCalled>,
+                            <soCalled>Fait a Paris le 2 Aout</soCalled>, et
+                            <soCalled>Enveloppe</soCalled></item>
+                    <item>Identifiez les mots qui vous semblent incorrect du point de vue
+                        d'orthographe moderne : utilisez CTRL-E pour les baliser <gi>sic</gi></item>
+                    <item>Le mot <soCalled>enveloppe</soCalled> signale que le texte qui le suit ne
+                        fait pas partie du testament, mais de l'enveloppe. Il devrait donc
+                        apparaitre dans un element distinct et d'un autre type. Comment faire?
+                        D'abord supprimez le mot <soCalled>Enveloppe</soCalled></item>
+                    <item>Ensuite, mettez le curseur <emph>entre</emph> les deux balises
+                            <tag>/p</tag> et <tag>p</tag>sur le ligne precedent et tapez ALT-MAJ-D
+                        pour couper en deux le <gi>div</gi> englobant</item>
+                    <item>Comme avant, notre schema exige la presence d'un <gi>pb</gi> au debut du
+                        <gi>div</gi> nouveau. Ajouter donc une balise <tag>pb
+                            facs="herpin-2.jpg"/</tag>. </item><item>Et pour finir, il faut corriger la valeur de
+                        l'attribut <att>type</att> sur notre nouveau <gi>div</gi>. Supprimez </item>
+                    <!-- <item>Ajoutez un attribut <code>xml:lang='la'</code> pour les phrases latines, ou
                     <code>xml:lang='gr-la'</code> pour les phrases grecques</item>
             <item>Retrouvez les mots qui sont biffés dans l'originel : utilisez CTRL-E pour les
                 baliser <gi>del</gi>
@@ -50,56 +76,60 @@
             <item>En comparaisant soigneusement images et transcription, retrouvez des mots qui ont
                 étés développés d'un mot abrégé en l'originel ; balisez ces mots avec
                 <gi>expan</gi></item>-->
-            <item>Utilisez CTRL-F pour rendre explicites toutes les coupures de ligne en ajoutant
-                une balise <tag>lb/</tag>. Astuce: vous pouvez signaler une coupure de ligne en
-                tapant CTRL+RETOUR</item>
-         
-        </list>
-    </div>
-    <div>
-        <head>Ex 2: Lettre de Vinet</head>
-        <list>
-            <item>Visualisez le fichier <ident>vinet.jpg</ident> et ouvrez le fichier
-                    <ident>vinet-0.xml</ident> avec oXyGen </item>
-            <item>Enlevez les balises &lt;-- et --&gt; </item>
-            <item>Ajoutez d'abord de la structure : <list><item>balisez le mot initiale
-                            <q>Monsieur</q> comme <gi>salute</gi>; </item><item>balisez la phrase
-                        finale <q>Vostre humble serviteur Elie Vinet</q> comme <gi>signed</gi>;
-                        </item><item>balisez tout la reste (entre les deux) avec <gi>p</gi>.
-                    </item></list></item>
-            <item>Indiquez que <q>Cadinal</q> serait une erreur (avec <gi>sic</gi>)</item>
-            <item>Indiquez que <q>par</q> est un ajout (en dessus de ligne) avec <gi>add place="above"</gi> </item>
-            <item>Indiquez les ratures avec <gi>del</gi> ; si vous n'etes pas certain/e des mots raturés
-               vous pouvez l'indiquer avec <gi>unclear</gi>; si vous n'arrivez pas de tout à les lire,
-                il faut le signaller avec <gi>gap</gi> ; en tout cas supprimez les asterix</item>
-            <item>Traitez quelques abréviations avec <gi>expan</gi>, <gi>abbr</gi>, et
-                    <gi>choice</gi></item>
-            <item>Indiquez que la phrase <q>apud Medulos</q> est du latin avec la balise <tag>foreign
-                xml:lang="lat"</tag></item>
-          
-            <item>N'oubliez pas de prendre le crédit pour vos travaux en modifiant l'entête ! Il
-                s'agit d'ajouter encore un élément <gi>change</gi> au sein du <gi>revisionDesc</gi>.
-            </item>
-        </list>
-    </div>
-        <div>
-            <head>Ex 3 : Visualisation</head>
-            <list>
-                <item>Revenez sur votre version de la lettre de Vinet, ou la version que je vous propose
-                    dans <ident>vinet-corr.xml</ident>
-                </item>
-                <item>Ajoutez un lien vers le fichier page image, en inserant une balise <code>&lt;pb
-                    n="1" facs="vinet.jpg"/></code> devant le premier <gi>lb</gi> du fichier</item>
-                <item>La mode Auteur permet de visualiser l'effet de quelques uns des balises, mais pas
-                    tous</item>
-                <item>Essayez d'autres transformations avec Oxygen <list>
-                    <item>Ouvrez le dialog <ident>Configurer les Scénario(s) de
-                        Transformation</ident></item>
-                    <item>Dans la liste des scénarios qui s'affiche, selectionnez TEI P5 XHTML et TEI P5
-                        DOCX</item>
-                    <item>Cliquez sur <ident>Appliquer associés (2)</ident></item>
-                </list></item>
-            </list>
-        </div>
-</body></text>
+                    <item>Utilisez CTRL-F pour rendre explicites toutes les coupures de ligne en
+                        ajoutant une balise <tag>lb/</tag>. Astuce: vous pouvez signaler une coupure
+                        de ligne en tapant CTRL+RETOUR</item>
+                </list>
+            </div>
+         <!--   <div>
+                <head>Ex 2: Lettre de Vinet</head>
+                <list>
+                    <item>Visualisez le fichier <ident>vinet.jpg</ident> et ouvrez le fichier
+                            <ident>vinet-0.xml</ident> avec oXyGen </item>
+                    <item>Enlevez les balises &lt;-\- et -\-&gt; </item>
+                    <item>Ajoutez d'abord de la structure : <list>
+                            <item>balisez le mot initiale <q>Monsieur</q> comme <gi>salute</gi>; </item>
+                            <item>balisez la phrase finale <q>Vostre humble serviteur Elie Vinet</q>
+                                comme <gi>signed</gi>; </item>
+                            <item>balisez tout la reste (entre les deux) avec <gi>p</gi>. </item>
+                        </list></item>
+                    <item>Indiquez que <q>Cadinal</q> serait une erreur (avec <gi>sic</gi>)</item>
+                    <item>Indiquez que <q>par</q> est un ajout (en dessus de ligne) avec <tag>add
+                            place="above"</tag>
+                    </item>
+                    <item>Indiquez les ratures avec <gi>del</gi> ; si vous n'etes pas certain/e des
+                        mots raturés vous pouvez l'indiquer avec <gi>unclear</gi>; si vous n'arrivez
+                        pas de tout à les lire, il faut le signaller avec <gi>gap</gi> ; en tout cas
+                        supprimez les asterix</item>
+                    <item>Traitez quelques abréviations avec <gi>expan</gi>, <gi>abbr</gi>, et
+                            <gi>choice</gi></item>
+                    <item>Indiquez que la phrase <q>apud Medulos</q> est du latin avec la balise
+                            <tag>foreign xml:lang="lat"</tag></item>
+                    <item>N'oubliez pas de prendre le crédit pour vos travaux en modifiant l'entête
+                        ! Il s'agit d'ajouter encore un élément <gi>change</gi> au sein du
+                            <gi>revisionDesc</gi>. </item>
+                </list>
+            </div>
+-->            <div>
+                <head>Ex 3 : Visualisation</head>
+                <list>
+                    <item>Revenez sur votre version de la lettre de Vinet, ou la version que je vous
+                        propose dans <ident>vinet-corr.xml</ident>
+                    </item>
+                    <item>Ajoutez un lien vers le fichier page image, en inserant une balise
+                            <code>&lt;pb n="1" facs="vinet.jpg"/></code> devant le premier
+                            <gi>lb</gi> du fichier</item>
+                    <item>La mode Auteur permet de visualiser l'effet de quelques uns des balises,
+                        mais pas tous</item>
+                    <item>Essayez d'autres transformations avec Oxygen <list>
+                            <item>Ouvrez le dialog <ident>Configurer les Scénario(s) de
+                                    Transformation</ident></item>
+                            <item>Dans la liste des scénarios qui s'affiche, selectionnez TEI P5
+                                XHTML et TEI P5 DOCX</item>
+                            <item>Cliquez sur <ident>Appliquer associés (2)</ident></item>
+                        </list></item>
+                </list>
+            </div>
+        </body>
+    </text>
 </TEI>
