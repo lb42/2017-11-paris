@@ -10,6 +10,7 @@ ECHO=
 HTMLSLIDES= \
 	../programme \
 	introductionXML \
+	teiHeader \
 	apparatCritique \
 	transcriptionManuscrit \
 	notesIndexations

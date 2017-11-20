@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="testaments.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T22">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament olographe de Céleste Camille Herpin, mort pour la France à Carency (Pas-de-Calais), le 27 décembre 1914.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Papier timbré, 2 pages, dim. 24,9 x 17,8 cm, encre ; enveloppe, dim. 11,2 x 14,5 cm, encre.                   
+                    Cote aux Archives nationales :  MC/ET/XXXIII/1848, minute du 29 juillet 1915</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+        <!--       
+Première page
+
+Paris le 2 Aout 1914
+
+Ceci est mais dernières
+volonté, en cas de décès.
+Je lègue toute ma
+chambre a Mademoiselle
+Clémence Pradayrolle
+sof tout mes éfets qui
+me conserne que je lègue
+a mon cousin Marcel
+Aumasson.
+
+C. Herpin
+
+Fait a Paris le 2 Aout
+1914
+
+Enveloppe
+
+Testament à
+C. Herpin
+A ouvrire après décès
+Paris 2 Aout 1914
+            
+            -->
+      </body>
+    </text>
+</TEI>

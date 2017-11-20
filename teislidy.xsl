@@ -44,6 +44,21 @@
         <xsl:comment>This otherwise redundant comment ensures egXMLs format nicely</xsl:comment>
     </xsl:template>
     
+    
+    <xsl:template match="t:body">
+        
+      <div class="slide cover"> 
+          <img src="http://www.tei-c.org/About/Logos/TEI-175.jpg" 
+            alt="Cover page images (keys)" class="cover" /> 
+        <br clear="all" />            
+          <h1>          <xsl:value-of select="//t:titleStmt/t:title[1]"/>
+          </h1> 
+        <p></p> 
+    </div> 
+    <xsl:apply-templates/>
+    </xsl:template>
+    
+    
     <xsl:template match="t:body/t:div[@type='slide']">
         <div class="slide">
             <h2>
