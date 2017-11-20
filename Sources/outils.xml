@@ -25,7 +25,7 @@
       </titlePage>
     </front>-->
     <body>
-      <div type="part" xml:id="part1">
+
             <div type="title">
                <head>Quelques outils pour travailler avec ses données</head>
             </div>
@@ -424,25 +424,14 @@
                   <p>Wikisource propose un cadre d’édition collaboratif basé sur le logiciel wikimédia, mais ses fonctionnalités sont relativement limitées en matière de balisage du texte.</p>
                </div>
             </div>
-         </div>
+       <div type="slide">
+          <head>Conclusion</head>
+          <p>Les solutions de publications en environnement LAMP se caractérisent généralement par leur limitation. Celles-ci sont d’abord contraintes par des questions techniques. Les autres suites logicielles développées pour la publication de sources XML-TEI ont le plus généralement été développées en environnement Java. Elles ont le plus souvent été développée dans le cadre de bibliothèques numériques ou d’initiatives d’ampleur nationale. Ces sont habituellement des solutions lourdes qui articulent des composants logiciels nombreux autour d’une base de données XML-native.</p>
+          <p>Il peut certainement exister une voie médiane entre d’une part les solutions de publication légères en environnement LAMP et ces grandes suites logicielles pour la publication. Il y a quelques années, le framework Cocoon a beaucoup servi à construire de telles applications conçues sur des filières de traitement XSLT. Ce projet est depuis en perte de vitesse et a beaucoup été supplanté par les bases de données XML-natives. Ces bases de données proposent depuis plusieurs années des solutions simples pour construire des applications web à partir de sources XML. Au cours de la conférence Prague XML 2012, Adam Retter a présenté une proposition de normalisation pour des applications REST exprimées au moyen d’annotations XQuery. Ce projet de spécification a depuis été implémenté chez la plupart des fabriquants de base de données XML natives et permet d’envisager des applications portables entre les différents systèmes de base de données.</p>
+          <!--<p>[au besoin : produire un tableau récapitulatif les promoteurs et les financeurs, et des rubriques comme les licence, le développement actif, l’ouverture à des collaborations.]</p>-->
+       </div>  
       </body>
-      <back>
-         <div type="title">
-            <div>
-               <head>Conclusion</head>
-            </div>
-            <div>
-               <head>Conclusions</head>
-               <p>Les solutions de publications en environnement LAMP se caractérisent généralement par leur limitation. Celles-ci sont d’abord contraintes par des questions techniques. Les autres suites logicielles développées pour la publication de sources XML-TEI ont le plus généralement été développées en environnement Java. Elles ont le plus souvent été développée dans le cadre de bibliothèques numériques ou d’initiatives d’ampleur nationale. Ces sont habituellement des solutions lourdes qui articulent des composants logiciels nombreux autour d’une base de données XML-native.</p>
-               <p>Il peut certainement exister une voie médiane entre d’une part les solutions de publication légères en environnement LAMP et ces grandes suites logicielles pour la publication. Il y a quelques années, le framework Cocoon a beaucoup servi à construire de telles applications conçues sur des filières de traitement XSLT. Ce projet est depuis en perte de vitesse et a beaucoup été supplanté par les bases de données XML-natives. Ces bases de données proposent depuis plusieurs années des solutions simples pour construire des applications web à partir de sources XML. Au cours de la conférence Prague XML 2012, Adam Retter a présenté une proposition de normalisation pour des applications REST exprimées au moyen d’annotations XQuery. Ce projet de spécification a depuis été implémenté chez la plupart des fabriquants de base de données XML natives et permet d’envisager des applications portables entre les différents systèmes de base de données.</p>
-               <!--<p>[au besoin : produire un tableau récapitulatif les promoteurs et les financeurs, et des rubriques comme les licence, le développement actif, l’ouverture à des collaborations.]</p>-->
-            </div>
-         </div>
-         <div type="title">
-            <head>
-            </head>
-            <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.html">programme</ref></note>
-         </div>
-      </back>
+     
+          
   </text>
 </TEI>

@@ -25,14 +25,14 @@
   <text>
     <body>
       <!-- ceci n’est pas une pipe -->
-      <div type="slide">
+     <!-- <div type="slide">
         <head>Magritte nous rappelle</head>
         <figure>
-          <graphic url="../images/ceci-nest-pas-une-pipe.jpg" width="80%"/>
+          <graphic url="../../tei-fr/Talks/Graphics/ceci-nest-pas-une-pipe.jpg" width="80%"/>
         </figure>
-        <!--        <note><p>Qu’à chaque fois que l’on créée une représentation d’un texte ou d’autre chose, une image n’est pas réductible à la réalité.</p></note>
-    -->
-      </div>
+        <!-\-        <note><p>Qu’à chaque fois que l’on créée une représentation d’un texte ou d’autre chose, une image n’est pas réductible à la réalité.</p></note>
+    -\->
+      </div>-->
       <div>
         <head>Numériser et encoder…</head>
         <p>La numérisation nous propose une <emph>image</emph>, une représentation d’un objet déjà
