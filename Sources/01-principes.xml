@@ -17,7 +17,7 @@
     <text>
         <body>
           
-                <div>
+                <div type="slide">
                     <head>Texte et texte numérique</head>
                     <p>Un texte peut être considéré selon trois axes : <list>
                         <item>Un texte a une existence physique, ayant des <hi>traits visuels</hi> qu'on
@@ -27,7 +27,7 @@
                             qu'on ne peut transcrire, traduire, ou transmettre qu'avec une compréhension
                             humaine</item>
                         <item>Un texte présente des <hi>informations sur le monde réel</hi>, qu'on peut
-                            comprendre (ou non) ou annoter, et qui nous permet de générer de nouveaux
+                            comprendre (ou non) ou annoter, et qui nous permettent de générer de nouveaux
                             textes</item>
                     </list></p>
                     <p rend="box">Un balisage effectif devrait donc opérer dans tous ces trois axes.</p>
@@ -50,33 +50,42 @@
                 </figure>
             </div>
             -->
-            <div>
-                <head>Traîtements numériques du texte</head>
+            <div type="slide">
+                <head>Traitements numériques du texte</head>
                 <p><graphic height="90%" url="../../tei-fr/Talks/Graphics/txttrin.png"/></p>
             </div>
            
-            <div>
-                <head>(Or maybe it's more than a trinity)</head>
+            <div type="slide">
+                <!--<head>(Or maybe it's more than a trinity)</head>-->
+                <head>(C'est peut-être plus qu'un triptyque)</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/vogeler-4-638.jpg"/>
                 </figure>
             </div>
-            <div>
-                <head>Software families</head>
+            <div type="slide">
+                <!--<head>Software families</head>-->
+                <head>Les familles de logiciels</head>
             <!--    <figure>
                     <graphic url="textualTrin.png" height="60%"/>
                 </figure>-->
-                <p>Existing software systems tend to specialize ... <list>
+               <!-- <p>Existing software systems tend to specialize ... <list>
                         <item>document management and production systems</item>
                         <item>image management and production systems</item>
                         <item>linguistic analysis and management</item>
                         <item>database systems</item>
                     </list>
+                </p>-->
+                <p>Les logiciels existants ont tendance à se spécialiser... <list>
+                    <item>outils de gestion et de production de documents</item>
+                    <item>de gestion et de production d'images</item>
+                    <item>outils d'analyse et de gestion linguistique</item>
+                    <item>systèmes de gestion de bases de données</item>
+                </list>
                 </p>
             </div>
-            <div>
-                <head>Convergence</head>
-                <p>But convergence is now on everyone's digital agenda. When you make a mashup
+            <div type="slide">
+                <head>La convergence</head>
+                <!--<p>But convergence is now on everyone's digital agenda. When you make a mashup
                     combining <list>
                         <item>a GIS database about places in the Aegean sea</item>
                         <item> a historical gazeteer of placenames in the same area</item>
@@ -88,15 +97,27 @@
                         <item>http://www.mappingpaintings.org</item>
                         <item>https://mapoflondon.uvic.ca/map.htm</item>
                     </list>
+                </p>-->
+                <p>Cependant la convergence fait désormais partie du quotidien numérique de chacun d'entre nous. Lorsqu'on fait un "mashup" qui articule <list>
+                        <item>une base de données de type système d'information géographique sur les lieux de la mer Egée</item>
+                        <item>un index des noms de lieux situés dans la même aire géographique</item>
+                        <item>un corpus de textes qui mentionnent ces lieux</item>
+                    </list> on a besoin de combienr la puissance d'une base de données avec des outils d'analyse linguistique et de restitution spatiale de l'information. </p>
+                <p>Quelques exemples : <list>
+                    <item>https://pleiades.stoa.org/places/109236</item>
+                    <item>http://www.mappingpaintings.org</item>
+                    <item>https://mapoflondon.uvic.ca/map.htm</item>
+                </list>
                 </p>
             </div>
-            <div>
-                <head>The problem </head>
+            <div type="slide">
+                <!--<head>The problem </head>-->
+                <head>Le problème</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/beowulf-ipad.png"/>
                 </figure>
                 <cb/>
-                <list>
+                <!--<list>
                     <item>Today's digital library applications still focus on serving up virtual
                         pages for the reader: the metaphor of the book is so pervasive that we can
                         barely see it. </item>
@@ -105,89 +126,122 @@
                     <item>But this is not enough... digital texts should aim to go <q>beyond the
                             page</q>
                     </item>
+                </list>-->
+                <list>
+                    <item>Les applications actuelles des bibliothèques numériques se concentrent encore sur la fourniture de pages virtuelles pour le lecteur : la métaphore du livre est tellement omniprésente que nous pouvons tout juste la voir</item>
+                    <item>Il est évident que la numérisation permet d'offrir des susbtituts moins chers et plus accessibles des pages imprimées ou manuscrites.</item>
+                    <item>Mais ce n'est pas assez... les textes numériques devraient aller <q>au-delà de la page</q>
+                    </item>
                 </list>
             </div>
-            <div>
-                <head>What use is a digital text ?</head>
-                <p>Digital applications enable us to do more with a text, and especially with a
+            <div type="slide">
+                <!--<head>What use is a digital text ?</head>-->
+                <head>A quoi sert un texte numérique ?</head>
+                <!--<p>Digital applications enable us to do more with a text, and especially with a
                     collection of texts!<list>
                         <item>more than simply read it from beginning to end</item>
                         <item>more than attach annotations to it for others to read, </item>
                         <item>more than perform brute-force “text mining” on it.</item>
                     </list>
-                </p>
-                <p rend="box">The content of the digital library must therefore be enriched, even if
-                    this requires the use of techniques which are not currently automatable.</p>
+                </p>-->
+                <p>Les applications numériques permettent de faire plus avec un texte, en particulier avec une collection de textes !
+                <list><item>plus que simplement lire le texte du début à la fin</item>
+                <item>plus que lui associer des annotatins pour que les autres les lisent</item>
+                <item>plus qu'exécuter une fouille de texte brute</item></list></p>
+               <!-- <p rend="box">The content of the digital library must therefore be enriched, even if
+                    this requires the use of techniques which are not currently automatable.</p>-->
+                <p rend="box">Le contenu de la bibliothèque numérique doit donc être enrichi, même si cela requiert l'utilisation de techniques qui ne sont pas automatisables aujourd'hui.</p>
             </div>
-            <div>
-                <head>What's that noise in the digital library?</head>
+            <div type="slide">
+                <!--<head>What's that noise in the digital library?</head>-->
+                <head>Que se passe-t-il dans la bibliothèque numérique ?</head>
                 <p><graphic url="../../tei-fr/Talks/Graphics/otlet-lib.png" height="50%"/></p>
                 <list>
-                    <item>A digital edition should capture the intentions and meaning of a text, not
-                        simply its appearance </item>
-                    <item>Otherwise, there can be no analysis beyond the documentary level, no
-                            <q>conversation between books</q></item>
+                    <!--<item>A digital edition should capture the intentions and meaning of a text, not
+                        simply its appearance </item>-->
+                    <item>Une édition numérique devrait capturer les intentions et le sens d'un texte, non seulement son apparence</item>
+                  <!--  <item>Otherwise, there can be no analysis beyond the documentary level, no
+                            <q>conversation between books</q></item>-->
+                    <item>Sans quoi, il ne peut y avoir d'analyse au-delà du niveau documentaire, pas de <q>conversation entre les livres</q></item>
                 </list>
             </div>
-            <div>
-                <head>Enrichment or Representation?</head>
+            <div type="slide">
+              <!--  <head>Enrichment or Representation?</head>-->
+                <head>Enrichissement ou représentation ?</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/beowulf-ms.png" height="60%"/>
-                    <head>When we go from this...</head>
+                    <!--<head>When we go from this...</head>-->
+                    <head>Quand nous allons de ceci...</head>
                 </figure>
                 <cb/>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/beowulf-wrenn.png" height="60%"/>
-                    <head>... to this, what is happening?</head>
+                   <!-- <head>... to this, what is happening?</head>-->
+                    <head>... à cela, que se passe-t-il ?</head>
                 </figure>
             </div>
-            <div>
-                <head>Editing</head>
-                <p>It's customary to distinguish (at least) these types or levels of interpretation:<list>
+            <div type="slide">
+               <!-- <head>Editing</head>-->
+                <head>L'édition</head>
+                <!--<p>It's customary to distinguish (at least) these types or levels of interpretation:<list>
                         <item>paleographic level : identifying the characters and other graphemic
                             components </item>
                         <item>documentary or diplomatic level : determining what was originally
                             written </item>
                         <item>editorial or semantic level : determining how it ought to be read
                         </item>
-                    </list></p>
+                    </list></p>-->
+                <p>Il est courant de distinguer au moins les catégories ou niveaux suivants d'interprétation d'un texte :
+                <list>
+                    <item>le niveau paléographique : identification des caractères et autres graphèmes</item>
+                    <item>le niveau documentaire ou diplomatique : détermination de ce qui a été écrit à l'origine</item>
+                    <item>le niveau éditorial ou sémantique : détermination des modalités de lecture</item>
+                </list></p>
                 <p rend="block">Digitization provides an opportunity to make each step explicit,
                     complex, and reversible</p>
             </div>
-            <div>
-                <head>The hermeneutic circle of digital enrichment</head>
+            <div type="slide">
+                <!--<head>The hermeneutic circle of digital enrichment</head>-->
+                <head>Le cercle herméneutique de l'enrichissement numérique</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/model.png"/>
                 </figure>
             </div>
 
-            <div>
-                <head>Enrichment</head>
-                <p>Adding markup to a document determines how it can be processed. It can concern
+            <div type="slide">
+                <head>Enrichissement</head>
+               <!-- <p>Adding markup to a document determines how it can be processed. It can concern
                     many different aspects : <list>
-                        <item>the presentation of the document -- its use of writing styles or
+                        <item>the presentation of the document -\- its use of writing styles or
                             typefaces, its rendering and layout </item>
-                        <item>the rhetorical organization of a document -- its sections and
+                        <item>the rhetorical organization of a document -\- its sections and
                             subsections, its paragraphs and lists and headings and footnotes</item>
-                        <item>metatextual aspects of the document -- its corrections and additions
+                        <item>metatextual aspects of the document -\- its corrections and additions
                             and deletions and errors and lacunae</item>
-                        <item>linguistic properties of a document -- its syntax and morphology and
+                        <item>linguistic properties of a document -\- its syntax and morphology and
                             semantics</item>
-                        <item>the document as an object -- information about its origins and
+                        <item>the document as an object -\- information about its origins and
                             custodial history, its transmission and reception, its social function
                             and category... </item>
-                    </list> and many others. </p>
+                    </list> and many others. </p>-->
+                <p>Ajouter du balisage à un document détermine comment il peut être traité automatiquement. Le balisage peut concerner de nombreux aspects différents :
+                <list><item>la présentation du document -- son usage des styles d'écriture ou des polices, son apparence et sa mise en page</item>
+                <item>l'organisation rhétorique du document -- ses sections et sous-sections, ses paragraphes et listes, ses intertitres et notes de bas de page ;</item>
+                <item>les aspects métatextuels du document -- corrections, additions, suppressions, erreurs, lacunes</item>
+                <item>les propriétés linguistiques du document -- sa syntaxe, sa morphologie et sa sémantique</item>
+                <item>le document comme un objet -- les informations sur sa création, l'histoire de sa conservation, sa transmission, sa réception, sa fonction sociale, sa catégorie...</item></list>
+                et beaucoup d'autres aspects.</p>
             </div>
 
-            <div xml:lang="fr">
-                <head>Un text numérique peut être simplement … </head>
+            <div xml:lang="fr" type="slide">
+                <head>Un texte numérique peut être simplement … </head>
                 <p rend="box">un <q>substitut</q> (surrogate) représentant l’apparence d’un document
                     existant</p>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/graves-2.png" height="80%"/>
                 </figure>
             </div>
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head> ... ou peut aller plus loin </head>
                 <p rend="box">une représentation du contenu linguistique, de sa structure, avec des
                     annotations sur sa portée, son contexte..</p>
@@ -195,46 +249,46 @@
                     <graphic url="../../tei-fr/Talks/Graphics/graves-1.png" height="80%"/>
                 </figure>
             </div>
-            <div>
-                <head>.. et en dessous </head>
+            <div type="slide">
+                <head>.. et en-dessous</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/graves-3.png"/>
                 </figure>
                 <p rend="box">C'est le balisage TEI qui rend tout possible</p>
             </div>
             
-            <div xml:lang="fr">
-                <head>La TEI nous propose un modèle conceptuel </head>
+            <div xml:lang="fr" type="slide">
+                <head>La TEI nous propose un modèle conceptuel</head>
                 <list>
-                    <item>bien établi (depuis plus que 30 ans)</item>
-                    <item>adequat aux besoins pratiques <list>
-                            <item>la conversion des données existantes</item>
-                            <item>la création des données nouvelles</item>
+                    <item>bien établi (depuis plus de 30 ans)</item>
+                    <item>adapté aux besoins pratiques <list>
+                            <item>la conversion de données existantes</item>
+                            <item>la création de données nouvelles</item>
                             <item>l’intégration des données déjà existantes mais répandues dans
                                 plusieurs sources</item>
                         </list></item>
-                    <item>adequat aux besoins scientifiques <list>
-                            <item>derive d'un consensus et des pratiques consensuelles</item>
-                            <item>mais aussi extensible </item>
+                    <item>adapté aux besoins scientifiques <list>
+                            <item>dérive d'un consensus et de pratiques consensuelles</item>
+                            <item>mais aussi extensible</item>
                         </list></item>
                     <item>exprimé en utilisant des formats ouverts et des technologies ouvertes
                     </item>
                 </list>
             </div>
 
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head>Est-ce que ceci représente la même chose ?</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/duBellay-1.png"/>
                 </figure>
             </div>
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head>Et ceci ?</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/duBellay-1a.png"/>
                 </figure>
             </div>
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head>Un texte n’est pas un document...</head>
                    <p rend="box">Un <soCalled>document</soCalled> est une chose physique, que nous
                     pouvons <emph>numériser</emph>.</p>
@@ -244,25 +298,25 @@
                 <p rend="box">Un <soCalled>texte</soCalled> est une abstraction construite par, ou
                     pour, une communauté de lecteurs, que nous pouvons <emph>encoder</emph>.</p>
                 <list>
-                    <item>les interprétations/lectures apportées ou trouvées  </item>
+                    <item>les interprétations/lectures apportées ou trouvées </item>
                     <item>les intentions (supposées) de son auteur </item>
                 </list>
             </div>
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head>L’encodage</head>
                 <list type="bulleted">
                     <item>Un texte est plus qu’une séquence de caractères encodés !</item>
-                    <item>Un texte est plus qu’une séquence de formes lexicales ! <list>
+                    <item>Un texte est plus qu’une séquence de formes lexicales !<list>
                             <item>Il a une <hi>structure</hi> et une <hi>signification</hi></item>
                             <item>Un texte peut avoir plusieurs <hi>lectures</hi> variantes</item>
                             <item>La portée d’un texte peut être <hi>enrichie</hi> par des
                                 annotations</item>
                         </list></item>
                     <item>L’encodage explicite les lectures</item>
-                    <item>Sans explicitation, on ne peut rien traiter </item>
+                    <item>Sans explicitation, on ne peut rien traiter</item>
                 </list>
             </div>
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head>L’effet Babel</head>
                 <p>Bien sûr il existe plusieurs lectures possibles pour la plupart des textes...</p>
                 <p><figure>
@@ -270,7 +324,7 @@
                     </figure></p>
                 <p>... et (malheureusement) plusieurs manières d’expression pour ces lectures !</p>
             </div>
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head>Encodage ou Babel ?</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/moby.png" height="60%"/>
@@ -281,21 +335,21 @@
                     <item rend="pause">Mauvaise nouvelle : on en a besoin !</item>
                 </list>
             </div>
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head>Échange d’informations (1)</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/echange-1.png"/>
-                    <head>sans format pivot: 20 passerelles requises (n*n-n)</head>
+                    <head>sans format pivot : 20 passerelles requises (n*n-n)</head>
                 </figure>
             </div>
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head>Échange d’informations (2)</head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/echange-2.png" height="80%"/>
-                    <head>avec format pivot: 10 passerelles requises (2n)</head>
+                    <head>avec format pivot : 10 passerelles requises (2n)</head>
                 </figure>
             </div>
-            <div xml:lang="fr">
+            <div xml:lang="fr" type="slide">
                 <head>Définitions</head>
                 <list type="bulleted">
                     <item>Un balisage explicite les distinctions qu’on désire faire en traitant une
@@ -305,52 +359,52 @@
                     <item>Quel genre de composants ? La réponse dépend des usages prévus...</item>
                 </list>
             </div>
-            <div xml:lang="fr">
-                <head>Séparation de forme et contenu</head>
+            <div xml:lang="fr" type="slide">
+                <head>Séparation de la forme et du contenu</head>
                 <list type="bulleted">
                     <item >Un balisage descriptif s’intéresse plus au contenu qu’à sa
                         mise en forme <list>
                             <item rend="pause">cette séparation facilite la réutilisation</item>
                             <item rend="pause">et augmente la flexibilité</item>
                         </list></item>
-                    <item >Un balisage présentationnel, par contre, s’intéresse plus à
+                    <item>Un balisage présentationnel, par contre, s’intéresse plus à
                         l’affichage qu’à sa sémantique</item>
                 </list>
             </div>
             
-                <div rend="slide">
-                    <head>Qu'est-ce qu'on fait en numérisant un texte?</head>
+            <div rend="slide" type="slide">
+                    <head>Qu'est-ce qu'on fait en numérisant un texte ?</head>
                     <figure>
                         <graphic url="../../tei-fr/Talks/Graphics/model-fr.png"/>
                     </figure>
                 </div>
-                <div rend="slide">
+            <div rend="slide" type="slide">
                     <head>Ceci n'est pas un arbre</head>
                     <figure>
                         <graphic url="../../tei-fr/Talks/Graphics/cecinestpasunarbre.jpg" height="75%"/>
-                        <head>Un modèle textuel réduit les complexités des textes, en utilisant un syntaxe
+                        <head>Un modèle textuel réduit les complexités des textes, en utilisant une syntaxe
                             simple pour les exprimer</head>
                     </figure>
                 </div>
-                <div>
+            <div type="slide">
                     <head>XML, par exemple</head>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples"> texte texte <tag attribut="valeur"
                         >element</tag> texte </egXML>
                     <p>On introduit des balises dans le flux de texte<list>
-                        <item>pour identifier un empan de ce flux</item>
+                        <item>pour identifier un segment de ce flux</item>
                         <item>pour lui associer un nom ou type ... </item>
-                        <item>... et peut être des attributs</item>
+                        <item>... et peut-être des attributs</item>
                     </list></p>
                 </div>
-                <div>
+            <div type="slide">
                     <head>Par exemple</head>
                     <figure>
                         <graphic url="../../tei-fr/Talks/Graphics/duBellay-bit.png" height="70%"/>
                     </figure>
-                    <p rend="box">Qu'est ce qu'on balisera?</p>
+                    <p rend="box">Qu'est-ce qu'on balisera?</p>
                 </div>
-                <div rend="slide">
-                    <head>Balisage du mise en evidence</head>
+            <div rend="slide" type="slide">
+                    <head>Balisage de la mise en page</head>
                     <figure>
                         <graphic url="../../tei-fr/Talks/Graphics/duBellay-bitty.png"/>
                     </figure>
@@ -364,7 +418,7 @@
                         <lb/>que tu ioues au Specta-
                         <lb/>cle de toute l'Europe...</egXML>
                 </div>
-                <div rend="slide">
+            <div rend="slide" type="slide">
                     <head>Balisage de structure</head>
                     <figure>
                         <graphic url="../../tei-fr/Talks/Graphics/duBellay-bitty.png"/>
@@ -376,7 +430,7 @@
                         <p><c rend="lettrine">V</c>EU le Personnaige, que tu joues au Spectacle de toute
                             l'Europe... </p>...</div></egXML>
                 </div>
-                <div>
+            <div type="slide">
                     <head>Mais on peut aller plus loin... </head>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples"><pb n="4"/>
                         <s><w pos="PPJ" lemma="voir">VEU</w>
@@ -392,8 +446,8 @@
                             au Spectacle...</s>
                     </egXML>
                 </div>
-                <div>
-                    <head>à ne rien dire de ... </head>
+            <div type="slide">
+                    <head>sans parler de ... </head>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <head> A MONSEIGNEUR LE REVERENDISSIME <persName ref="#dubellay03">CARDINAL DU
                             BELLAY</persName></head>
@@ -407,18 +461,18 @@
                             <!-- ... -->
                         </person></egXML>
                 </div>
-                <div>
-                    <head>Conclusions preliminaires</head>
+            <div type="slide">
+                    <head>Conclusions préliminaires</head>
                     <p><list>
                         <item>Avant de commencer un exercice de balisage, il faut bien préciser son choix
                             des balises</item>
                         <item>Ce choix sera déterminé par les distinctions et méta-informations qu'on
                             considère d'importance</item>
-                        <item>L'XML nous aide en définissant un syntaxe formel pour notre balisage</item>
-                        <item>La TEI nous aide en fournissant un lexique tres complet des balises
+                        <item>XML nous aide en définissant une syntaxe formelle pour notre balisage</item>
+                        <item>La TEI nous aide en fournissant un lexique très complet des balises
                             disponibles</item>
                     </list></p>
-                    <p rend="box">Revenons d'abord sur le syntaxe XML</p>
+                    <p rend="box">Revenons d'abord sur la syntaxe XML</p>
                 </div>
              <!--   
                 <div xml:lang="fr">
@@ -458,11 +512,11 @@
             <div xml:lang="fr">
                 <head>Notre système d’encodage devrait être capable de…</head>
                 <list>
-                    <item>spécifier les caractères d’un texte</item>
-                    <item>expliciter la/les structures aperçue/s dans un texte</item>
-                    <item>linéariser le texte </item>
-                    <item>spécifier les méta-informations, renseignements contextuels etc.</item>
-                    <item>prendre en compte la sémantique de la texte</item>
+                    <item>spécifier les caractères d’un texte ;</item>
+                    <item>expliciter la/les structures aperçue/s dans un texte ;</item>
+                    <item>linéariser le texte ;</item>
+                    <item>spécifier les méta-informations, renseignements contextuels etc.;</item>
+                    <item>prendre en compte la sémantique du texte.</item>
                 </list>
                 <p rend="box">Jusqu’à présent, XML semble une bonne solution...</p>
             </div>
