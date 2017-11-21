@@ -111,20 +111,20 @@
       <div>
         <head>Document A : une carte postale</head>
         <figure>
-          <graphic url="../images/carte-1v.png" width="80%"/>
+          <graphic url="../Travaux/cartePostale.png" width="80%"/>
         </figure>
       </div>
       <div>
         <head>Document B : un manuscrit</head>
         <figure>
-          <graphic url="../images/acteRoyale.jpg" width="80%"/>
+          <graphic url="../Travaux/manuscrit.jpg" width="80%"/>
         </figure>
         <p>Nota bene : ce document, daté de 1763, est conservé aux Archives nationales sous la cote O1 284, n° 525. Il s'agit de l'enregistrement, par le gouverneur du château de Marly, d'ordres du roi relatifs au confort des courtisans. Son édition en TEI, accompagnée d'un commentaire diplomatique et historique, est publiée dans les dossiers documentaires de l'application Theleme (Techniques pour l'Historien en Ligne : Études, Manuels, Exercices, Bibliographies) de l'Ecole nationale des chartes. Vous pouvez la consulter à la page <ref target="http://theleme.enc.sorbonne.fr/dossiers/notice105.php">http://theleme.enc.sorbonne.fr/dossiers/notice105.php</ref>.</p>
       </div>
       <div>
         <head>Document C : un tapuscrit</head>
         <figure>
-          <graphic url="../images/10010099-1_1.jpg" width="80%"/>
+          <graphic url="../Travaux/tapuscrit.jpg" width="80%"/>
         </figure>
       </div>
       <!--      <note><p>L’une des leçons de cet exercice, c’est que l’on ne peut pas encoder mécaniquement un texte. Il est toujours intéressant de voir comment une personne envisage un document et se l’approprie.</p></note>

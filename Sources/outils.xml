@@ -226,8 +226,7 @@
                </div>
             </div>
             <div type="slide">
-               <div>
-                  <head>Islandora</head>
+                   <head>Islandora</head>
                   <div>
                      <div>
                         <head> <ref target="http://islandora.ca/">Islandora</ref> </head>
@@ -238,7 +237,6 @@
                         <p>De nouveaux développements doivent, dans un avenir proche, permettre d’étendre considérablement les fonctionnalités de cet éditeur à la fois pour la TEI et pour l’annotation sémantique avec des balisages externes tant en WYSIWYG qu’en édition directe du code.</p>
                      </div>
                   </div>
-               </div>
                <div>
                   <p>La plupart des applications XML natives ont été développées en environnement Java. Cela tient notamment au fait que, jusqu’à présent, les processeurs XSLT et XQuery les plus efficaces sont développés en Java. Du point de vue de l’hébergement d’application web, cela peut présenter un certain nombre d’inconvénients car leur déploiement nécessite un conteneur de servlets Java. Un tel environnement de développement web ne correspond pas à l’offre classique LAMP (Linux, Apache HTTP, MySql, PHP ) des hébergeurs de site web. Comme elle peut être coûteuse en ressources elle présente souvent un surcoût non négligeable, par ailleurs, elle peut poser des problèmes de sécurité. En France, la TGIR HumaNum met cependant à disposition des hébergements de ce type dans le cadre de sa grille de service.</p>
                </div>
