@@ -52,8 +52,8 @@
             -->
             <div type="slide">
                 <head>Traitements numériques du texte</head>
-                <p><graphic height="90%" url="../../tei-fr/Talks/Graphics/txttrin.png"/>
-                <head>(Burnard 1987)</head></p>
+                <p><figure><graphic height="90%" url="../../tei-fr/Talks/Graphics/txttrin.png"/>
+                <head>(Burnard 1987)</head></figure></p>
             </div>
            
             <div type="slide">
@@ -198,7 +198,7 @@
                 <p>Il est courant de distinguer au moins trois catégories ou niveaux d'interprétation d'un texte :
                 <list>
                     <item>le niveau <term>paléographique </term>: identification des caractères et autres graphèmes</item>
-                    <item>le niveau <document>documentaire ou diplomatique</document> : détermination de ce qui a été écrit à l'origine</item>
+                    <item>le niveau <term>documentaire ou diplomatique</term> : détermination de ce qui a été écrit à l'origine</item>
                     <item>le niveau <term>éditorial ou sémantique</term> : détermination de ce qu'il faut comprendre par cela</item>
                 </list></p>
                 <p rend="block">La numérisation nous permet d'expliciter chacun de ces étapes</p>
