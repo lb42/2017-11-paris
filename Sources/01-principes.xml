@@ -4,7 +4,7 @@
         <fileDesc>
             <titleStmt>
                 <title>Principes et enjeux du balisage</title>
-                <author>Lou Burnard</author>
+                <author>Lou Burnard et Florence Clavaud</author>
             </titleStmt>
             <publicationStmt>
                 <p/>
@@ -52,7 +52,8 @@
             -->
             <div type="slide">
                 <head>Traitements numériques du texte</head>
-                <p><graphic height="90%" url="../../tei-fr/Talks/Graphics/txttrin.png"/></p>
+                <p><graphic height="90%" url="../../tei-fr/Talks/Graphics/txttrin.png"/>
+                <head>(Burnard 1987)</head></p>
             </div>
            
             <div type="slide">
@@ -77,7 +78,7 @@
                 </p>-->
                 <p>Les logiciels existants ont tendance à se spécialiser... <list>
                     <item>outils de gestion et de production de documents</item>
-                    <item>de gestion et de production d'images</item>
+                    <item>systèmes de gestion et de production d'images</item>
                     <item>outils d'analyse et de gestion linguistique</item>
                     <item>systèmes de gestion de bases de données</item>
                 </list>
@@ -102,7 +103,7 @@
                         <item>une base de données de type système d'information géographique sur les lieux de la mer Egée</item>
                         <item>un index des noms de lieux situés dans la même aire géographique</item>
                         <item>un corpus de textes qui mentionnent ces lieux</item>
-                    </list> on a besoin de combienr la puissance d'une base de données avec des outils d'analyse linguistique et de restitution spatiale de l'information. </p>
+                    </list> on a besoin de combiner la puissance d'une base de données avec des outils d'analyse linguistique et de restitution spatiale de l'information. </p>
                 <p>Quelques exemples : <list>
                     <item>https://pleiades.stoa.org/places/109236</item>
                     <item>http://www.mappingpaintings.org</item>
@@ -112,7 +113,7 @@
             </div>
             <div type="slide">
                 <!--<head>The problem </head>-->
-                <head>Le problème</head>
+                <head>Il faut aller <q>au-delà de la page</q></head>
                 <figure>
                     <graphic url="../../tei-fr/Talks/Graphics/beowulf-ipad.png"/>
                 </figure>
@@ -130,7 +131,7 @@
                 <list>
                     <item>Les applications actuelles des bibliothèques numériques se concentrent encore sur la fourniture de pages virtuelles pour le lecteur : la métaphore du livre est tellement omniprésente que nous pouvons tout juste la voir</item>
                     <item>Il est évident que la numérisation permet d'offrir des susbtituts moins chers et plus accessibles des pages imprimées ou manuscrites.</item>
-                    <item>Mais ce n'est pas assez... les textes numériques devraient aller <q>au-delà de la page</q>
+                    <item>Mais ce n'est pas assez... <!--les textes numériques devraient aller <q>au-delà de la page</q>-->
                     </item>
                 </list>
             </div>
@@ -190,21 +191,23 @@
                             written </item>
                         <item>editorial or semantic level : determining how it ought to be read
                         </item>
-                    </list></p>-->
-                <p>Il est courant de distinguer au moins les catégories ou niveaux suivants d'interprétation d'un texte :
-                <list>
-                    <item>le niveau paléographique : identification des caractères et autres graphèmes</item>
-                    <item>le niveau documentaire ou diplomatique : détermination de ce qui a été écrit à l'origine</item>
-                    <item>le niveau éditorial ou sémantique : détermination des modalités de lecture</item>
-                </list></p>
-                <p rend="block">Digitization provides an opportunity to make each step explicit,
+                    </list></p>
+                 <p rend="block">Digitization provides an opportunity to make each step explicit,
                     complex, and reversible</p>
+      -->
+                <p>Il est courant de distinguer au moins trois catégories ou niveaux d'interprétation d'un texte :
+                <list>
+                    <item>le niveau <term>paléographique </term>: identification des caractères et autres graphèmes</item>
+                    <item>le niveau <document>documentaire ou diplomatique</document> : détermination de ce qui a été écrit à l'origine</item>
+                    <item>le niveau <term>éditorial ou sémantique</term> : détermination de ce qu'il faut comprendre par cela</item>
+                </list></p>
+                <p rend="block">La numérisation nous permet d'expliciter chacun de ces étapes</p>
             </div>
             <div type="slide">
                 <!--<head>The hermeneutic circle of digital enrichment</head>-->
                 <head>Le cercle herméneutique de l'enrichissement numérique</head>
                 <figure>
-                    <graphic url="../../tei-fr/Talks/Graphics/model.png"/>
+                    <graphic url="../../tei-fr/Talks/Graphics/model-fr.png"/>
                 </figure>
             </div>
 
@@ -371,14 +374,14 @@
                         l’affichage qu’à sa sémantique</item>
                 </list>
             </div>
-            
+           <!-- 
             <div rend="slide" type="slide">
                     <head>Qu'est-ce qu'on fait en numérisant un texte ?</head>
                     <figure>
                         <graphic url="../../tei-fr/Talks/Graphics/model-fr.png"/>
                     </figure>
                 </div>
-            <div rend="slide" type="slide">
+      -->      <div rend="slide" type="slide">
                     <head>Ceci n'est pas un arbre</head>
                     <figure>
                         <graphic url="../../tei-fr/Talks/Graphics/cecinestpasunarbre.jpg" height="75%"/>
@@ -472,7 +475,7 @@
                         <item>La TEI nous aide en fournissant un lexique très complet des balises
                             disponibles</item>
                     </list></p>
-                    <p rend="box">Revenons d'abord sur la syntaxe XML</p>
+                    <p rend="box">Nous revenons ensuite sur la syntaxe XML.. </p>
                 </div>
              <!--   
                 <div xml:lang="fr">
@@ -509,7 +512,7 @@
                         tu joues au Spectacle...</s>
                 </egXML>
             </div>-->
-            <div xml:lang="fr">
+           <!-- <div xml:lang="fr">
                 <head>Notre système d’encodage devrait être capable de…</head>
                 <list>
                     <item>spécifier les caractères d’un texte ;</item>
@@ -519,7 +522,7 @@
                     <item>prendre en compte la sémantique du texte.</item>
                 </list>
                 <p rend="box">Jusqu’à présent, XML semble une bonne solution...</p>
-            </div>
+            </div>-->
         </body>
     </text>
 </TEI>
