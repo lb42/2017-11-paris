@@ -3,9 +3,9 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Formation à l'utilisation de TEI pour l'édition scientifique de manuscrits</title>
-        <author>Florence Clavaud</author>
-        <author>Lou Burnard</author>
+        <title>Formation à l’utilisation de TEI pour l’édition scientifique de manuscrits</title>
+        <author xml:id="FC">Florence Clavaud</author>
+        <author xml:id="LB">Lou Burnard</author>
       </titleStmt>
       <publicationStmt>
         <publisher>LBC</publisher>
@@ -32,73 +32,73 @@
           <label> Lieu</label> Archives nationales, site de Paris (salle informatique au 1er étage
           du CARAN, 11 rue des Quatre-Fils, 75003 Paris) </p>
         <p>
-          <label> Horaires </label> - 10 h – 13 h le matin  - 14 h – 17 h l'après-midi (ou 14 h 30 –
+          <label> Horaires </label> - 10 h – 13 h le matin  - 14 h – 17 h l’après-midi (ou 14 h 30 –
           17 h 30 si jugé préférable par une majorité) Soit 6 h par jour</p>
       </div>
       <div type="slide">
         <head>Objectifs</head>
         <p>Cette première formation à TEI aux Archives nationales réunira la plupart des membres de
-          l'équipe projet de plateforme collaborative de transcription des testaments de Poilus.</p>
-        <p>L'objectif primaire serait d'introduire l’univers TEI XML, en passant par ...</p>
+          l’équipe projet de plateforme collaborative de transcription des testaments de Poilus.</p>
+        <p>L’objectif primaire serait d’introduire l’univers TEI XML, en passant par ...</p>
         <list>
           <item>Réflexions sur les enjeux de l’édition électronique</item>
-          <item>Syntaxe XML : outillage typiques</item>
-          <item>Présentation de la Text Encoding Initiative: histoire et mode d'emploi</item>
+          <item>Syntaxe XML : outillage typique</item>
+          <item>Présentation de la Text Encoding Initiative : histoire et mode d’emploi</item>
           <item>Travaux pratiques d’encodage en TEI XML (éditions critiques)</item>
           <item>Introduction aux chaînes de traitement de documents TEI XML</item>
         </list>
-        <p>A l'issue de la formation les participants seront capables :</p>
+        <p>À l’issue de la formation les participants seront capables :</p>
         <list rend="ordered">
-          <item>d'articuler les règles d'édition définies pour les Testaments de Poilus avec les
-            spécifications du standard TEI ; d'utiliser la documentation du standard TEI et la
+          <item>d’articuler les règles d’édition définies pour les testaments de Poilus avec les
+            spécifications du standard TEI ; d’utiliser la documentation du standard TEI et la
             documentation du projet pour retrouver la définition formelle d’un élément ou attribut
             TEI afin de faire les bons choix de balisage ; </item>
-          <item>de transcrire et d'annoter, de façon rigoureuse et adéquate, un testament de Poilu
-            en TEI, via l’interface de la plate-forme de transcription ou via un éditeur XML ; </item>
+          <item>de transcrire et d’annoter, de façon rigoureuse et adéquate, un testament de Poilu
+            en TEI, via l’interface de la plateforme de transcription ou via un éditeur XML ; </item>
           <item>de relire et de corriger la transcription réalisée par un ou plusieurs autres
-            contributeurs ; d'expliquer les corrections réalisées à ces contributeurs ; </item>
-          <item>d'échanger avec l’auteur du modèle d’encodage (F. Clavaud) sur de possibles
+            contributeurs ; d’expliquer les corrections réalisées à ces contributeurs ; </item>
+          <item>d’échanger avec l’auteur du modèle d’encodage (F. Clavaud) sur de possibles
             évolutions de ce modèle ; </item>
           <item>de co-animer des ateliers d’initiation à la transcription des testaments de Poilus
             pour les bénévoles volontaires ; </item>
-          <item>(pour celles et ceux qui auraient en tête d'autres projets, de réfléchir à l’édition
+          <item>(pour celles et ceux qui auraient en tête d’autres projets, de réfléchir à l’édition
             en TEI d’autres documents manuscrits, de tester les solutions d’encodage possibles, de
             contribuer à la conception d’un modèle et à la production des fichiers TEI) </item>
         </list>
       </div>
       <div type="slide">
         <head>Formateurs</head>
-        <p>La formation est assuree par deux formateurs, qui proposent tout les deux des <list>
+        <p>La formation est assurée par deux formateurs, qui proposent tous les deux des <list>
             <item>exposés introductifs</item>
             <item>méthodes démonstratives</item>
             <item>méthodes actives ou de découverte</item>
           </list>
         </p>
-        <p>Du point de vue de la méthode pédagogique, nous essayons d'alterner ces différents types
-          d'approches.</p>
-        <p>Une participation active est requise! n’hésitez pas à nous interrompre ou à nous poser
+        <p>Du point de vue de la méthode pédagogique, nous essayons d’alterner ces différents types
+          d’approches.</p>
+        <p>Une participation active est requise ! n’hésitez pas à nous interrompre ou à nous poser
           des questions. L’accent sera mis sur les exercices pratiques et les situations réelles.
-          Les supports de cours seront mis à votre disposition à l'issue de la formation.</p>
-        <p><label>Florence Clavaud</label> est Conservateur en chef du patrimoine aux Archives
-          nationales, membre du Centre Jean-Mabillon de l'Ecole nationale des chartes. Responsable
+          Les supports de cours seront mis à votre disposition à l’issue de la formation.</p>
+        <p><label>Florence Clavaud</label> est conservateur en chef du patrimoine aux Archives
+          nationales, membre du Centre Jean-Mabillon de l’École nationale des chartes. Responsable
           informatique (et le plus souvent co-auteur et développeur) de plusieurs éditions
           numériques de documents très divers en TEI, achevées ou en cours, statiques ou
-          dynamiques ; consultante sur d'autres projets ; auteur de nombreuses formations sur ce
+          dynamiques ; consultante sur d’autres projets ; auteur de nombreuses formations sur ce
           sujet, en formation initiale ou continue, spécifiques ou génériques. Voir, pour un aperçu
           non exhaustif des projets, les rubriques « Projets en cours » et « Publications » de la
           page <ref target="http://www.enc-sorbonne.fr/fr/florence-clavaud">http://www.enc-sorbonne.fr/fr/florence-clavaud</ref>.</p>
         <p><label>Lou Burnard</label> anciennement directeur adjoint aux services informatiques de
-          l'Université d'Oxford, actuellement consultant, est un des co-fondateurs de la Text
-          Encoding Initiative, actif dans le domaine depuis les 1980s. Il a contribué à de très
+          l’Université d’Oxford, actuellement consultant, est un des co-fondateurs de la Text
+          Encoding Initiative, actif dans le domaine depuis les années 1980. Il a contribué à de très
           nombreux projets en humanités numériques, et est responsable de nombreuses formations sur
-          ce sujet, notamment en France depuis 2010 au CESR de l'université Francois Rabelais de
-          Tours, et à l'Ecole Nationale des Chartes depuis 2014.</p>
+          ce sujet, notamment en France depuis 2010 au CESR de l’université Francois Rabelais de
+          Tours, et à l’École nationale des Chartes depuis 2014.</p>
       </div>
       <div type="slide">
-        <head>Premier jour (23 nov)</head>
+        <head>Premier jour (23 nov.)</head>
         <list>
           <label>10h-10h45 </label>
-          <item> Présentation des participants et discussion des objets de la formation</item>
+          <item>Présentation des participants et discussion sur les objectifs de la formation</item>
           <label>11h–11h30</label>
           <item>Principes et enjeux du balisage (<ref target="Sources/01-principes.xml">Source</ref>
             <ref target="Diapos/01-principes.pdf">PDF</ref>)
@@ -106,60 +106,65 @@
           <label>11h30–12h00</label>
           <item>TP Modélisation  (<ref target="Travaux/ex01-analyse.pdf">PDF</ref> <ref
             target="Sources/ex01-analyse.xml">source</ref>)  </item>
-          <label>12h00–12h30</label>
-          <item resp="#FC">Introduction XML (<ref target="Sources/introductionXML.xml">Source</ref>,
-            <ref target="Diapos/introductionXML.html">HTML</ref>) </item>
-          <label>12h30–13h30</label>
+          <label>12h00–12h45</label>
+          <item resp="#FC">Introduction à XML <ref target="Sources/introductionXML.xml">Source</ref>,
+            <ref target="Diapos/introductionXML.html">HTML</ref>)</item>
+          <label>12h45–14h</label>
           <item>Pause déjeuner</item>
           <label>14h–15h</label>
-          <item>À la découverte d’oXygen (<ref target="Travaux/ex02-oxygen.pdf">PDF</ref>, <ref
+          <item resp="#FC">À la découverte d’oXygen (<ref target="Travaux/ex02-oxygen.pdf">PDF</ref>, <ref
             target="Sources/ex02-oxygen.xml">source</ref>)
           </item>
           <label>15h00-17h</label>
-          <item>
+          <item resp="#LB">
             Introduction aux richesses de la TEI (<ref target="Diapos/richessesTEI.pdf">PDF</ref>;
             <ref target="Sources/richessesTEI.xml">source</ref>)
           </item>
         </list>
       </div>
       <div type="slide">
-        <head>2<hi rend="superscript">ème</hi> journée (24 nov)</head>
+        <head>2<hi rend="superscript">e</hi> journée (24 nov.)</head>
         <list>
-          <label>10h - 11h </label>
-          <item resp="#FC">Eléments TEI pour la transcription des sources
+          <label>10h-11h30</label>
+          <item resp="#FC">Éléments TEI pour la transcription des sources
             primaires (<ref target="Diapos/transcriptionManuscrit.html">HTML</ref>; <ref
               target="Sources/transcriptionManuscrit.xml">Source</ref>)
             </item>
-          <label>11h - 12h </label>
+          <label>11h30-13h</label>
           <item resp="#LB">Exercices sur la transcription des sources (<ref
             target="Travaux/ex03-transcr.pdf">PDF</ref>; <ref
-              target="Sources/ex03-transcr.xml">Source</ref>) </item>
-                <label>14h – 14h45 </label>
-          <item>Continuation de l'exercice </item>
-          <label>15h – 16 h :</label>
-          <item resp="#FC">Eléments TEI pour l'encodage de l'apparat critique 
+              target="Sources/ex03-transcr.xml">Source</ref>)</item>
+         
+          <label>13h–14h</label>
+          <item>Pause déjeuner</item>
+         <label>14h-15h</label>
+          <item>Continuation de l’exercice ?</item>
+          <label>15h–16h</label>
+          <item resp="#FC">Éléments TEI pour l’encodage de l’apparat critique 
             (<ref target="Sources/apparatCritique.xml">Source</ref> <ref
               target="Diapos/apparatCritique.html">HTML</ref>)</item>
-          <label> 16h – 17 h </label>
-          <item resp="#LB">TEI Header ( <ref target="Diapos/teiHeader.pdf">PDF</ref>; <ref
+          <label>16h–17h </label>
+          <item resp="#LB">TEI Header (<ref target="Diapos/teiHeader.pdf">PDF</ref>; <ref
             target="Sources/teiHeader.xml">Source</ref>)</item><!-- or HTML ? -->
-                <label>devoirs</label>
-          <item> Exercice à faire à la maison : ajouter des notes d'apparat critique et compléter
-            l'en-tête pour le fichier TEI d'encodage du testament</item>
+                <label>Devoir !</label>
+          <item>Exercice à faire à la maison : ajouter des notes d’apparat critique et compléter
+            l’en-tête pour le fichier TEI d’encodage du testament</item>
         </list>
       </div>
       <div type="slide">
-        <head>3<hi rend="superscript">ème</hi> journée (4 dec)</head>
+        <head>3<hi rend="superscript">e</hi> journée (4 déc.)</head>
         <list>
           <label>10h – 10h45</label>
-          <item>Examen rapide des fichiers d'exercice faits à la maison ; rappel du contenu des 2
+          <item>Examen rapide des fichiers d’exercice faits à la maison ; rappel du contenu des 2
             journées précédentes (pour remettre tout le monde dans le bain)</item>
           <label> 10h45 – 11h45</label>
           <item resp="#LB">Description des manuscrits et autres TBOs (<ref
             target="Sources/msdesc.xml">Source</ref>; <ref target="Diapos/msdesc.pdf">PDF</ref>) </item>
           <label>11h45 – 12h45 </label>
-          <item>Exercice de description des manuscrits (a faire) (<ref target="Source/ex04-msdesc.xml"> PDF</ref>; <ref target="Travaux/ex04-msdesc.pdf"> PDF</ref>)
+          <item>Exercice de description des manuscrits (à faire) (<ref target="Source/ex04-msdesc.xml"> PDF</ref>; <ref target="Travaux/ex04-msdesc.pdf"> PDF</ref>)
           </item>
+          <label>13h–14h</label>
+          <item>Pause déjeuner</item>
           <label>14h - 15h</label>
           <item resp="#FC"> encodage des notes (historiques, explicatives); encodage des entités nommées
             <ref target="Sources/notesIndexation.xml">source</ref> <ref target="Diapos/notesIndexations.html">HTML</ref>
@@ -167,17 +172,17 @@
          <!-- <label>14h45-15h30</label>
           <item resp="#LB"><ref target="07-entitesNommees.html"></ref></item>-->
           <label>15h30 - 16h15</label>
-          <item resp="#LB">un aperçu rapide des méthodes d'analyse textuelle <!--(je veux dire, de
-            balisage d'expressions renvoyant à un vocabulaire, avec @ana et <gi>interprGrp</gi> ; on
-            va s'en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-ana.xml">source</ref></item>
+          <item resp="#LB">un aperçu rapide des méthodes d’analyse textuelle <!--(je veux dire, de
+            balisage d’expressions renvoyant à un vocabulaire, avec @ana et <gi>interprGrp</gi> ; on
+            va s’en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-ana.xml">source</ref></item>
           <label>16h15-17h </label>
-          <item>Exercice d'enrichissement (les participants sont invites d’enrichir leurs testaments
+          <item>Exercice d’enrichissement (les participants sont invites d’enrichir leurs testaments
             avec des notes, des entités nommés, des analyses etc)</item>
         
         </list>
       </div>
       <div type="slide">
-        <head>4<hi rend="superscript">ème</hi> journée (5 dec)</head>
+        <head>4<hi rend="superscript">e</hi> journée (5 déc.)</head>
         <list>
           <label>10h-11h30</label>
           <item resp="#LB">Personnalisation de la TEI avec ODD  <ref target="Sources/personnalisation.xml">Source</ref>; <ref target="Sources/personnalisation.html">HTML</ref>;
@@ -187,7 +192,8 @@
           <item resp="#FC"><ref target="11-traitementTEI.html">Chaînes de traitement TEI</ref>
             <ref target="14-outils.html">L’outillage TEI</ref>              
           </item>
-          
+          <label>13h–14h</label>
+          <item>Pause déjeuner</item>
           <label>14h-15h</label>
           <item resp="#LB">XSLT Pour les nuls  
             <ref target="Sources/xsltNuls.xml">Source</ref>; <ref target="Diapos/xsltNuls.xml">PDF</ref>
@@ -198,12 +204,12 @@
               >source</ref>; <ref target="Diapos/teiCommunity.html">HTML</ref>; <ref
               target="Diapos/teiCommunity.pdf">PDF</ref> ) </item>
           <label>15h30 – 16h30 </label>
-          <item resp="#fc">Prise en main de l'interface de transcription de la plateforme collaborative</item>
+          <item resp="#FC">Prise en main de l’interface de transcription de la plateforme collaborative</item>
           <label>16h30 – 17 h</label>
           <item> bilan, discussion, évaluation</item>
         </list>
       </div>
-      <div type="slide">
+     <!-- <div type="slide">
         <div>
           <head>Télécharger les sources</head>
           <list>
@@ -214,20 +220,20 @@
           <egXML xmlns="http://www.tei-c.org/ns/Examples"> cd Desktop git clone [CTRL-V] </egXML>
           <eg>(i.e. git clone https://github.com/lb42/2017-11-paris.git)</eg>
         </div>
-      </div>
+      </div>-->
       <div type="slide">
-        <head>Organisation du répertoire A CORRIGER</head>
+        <head>Organisation du répertoire</head>
         <list>
           <!--   <item><code>exemples/</code> exemples tei</item>
         -->
-          <item><code>travaux/</code> contient les dossiers de travaux pratiques</item>
-          <item><code>pdfs/</code> tutoriaux et diapos au format pdf</item>
-          <item><code>diapos/</code> présentations au format HTML</item>
-          <item><code>images/</code> contenus graphiques</item>
+          <item><code>Travaux/</code> contient les fichiers nécessaires pour les travaux pratiques</item>
+         <!-- <item><code>pdfs/</code> tutoriaux et diapos au format pdf</item>-->
+          <item><code>Diapos/</code> contient les présentations au format HTML</item>
+          <item><code>Images/</code> contient des images numériques de documents</item>
           <!--   <item><code>ressources/</code> matériel d’accompagnement</item>
             <item><code>schemas/</code> schémas distribués pour la formation</item>
      -->
-          <item><code>sources/</code> sources TEI de tout la reste</item>
+          <item><code>Sources/</code> contient les sources TEI des fichiers de TP et de cours</item>
           <!--      <item><code>xsl/</code> transformations xslt</item>
      -->
         </list>
