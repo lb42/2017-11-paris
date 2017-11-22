@@ -39,7 +39,7 @@
     </front>-->
     <body>
       
-      <div>
+    <!--  <div>
         <head>Par exemple</head>
         <figure>
           <graphic url="../../tei-fr/Talks/Graphics/duBellay-bit.png" height="70%"/>
@@ -94,20 +94,20 @@
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <head> A MONSEIGNEUR LE REVERENDISSIME <persName ref="#dubellay03">CARDINAL DU
             BELLAY</persName></head>
-          <!-- .... -->
+          <!-\- .... -\->
           <person xml:id="dubellay03">
             <persName>Jean du Bellay</persName>
             <birth><date>1492</date>
               <placeName>Souday</placeName></birth>
             <death><date when="15600216">16 February 1560</date>
               <placeName>Roma</placeName></death>
-            <!-- ... -->
+            <!-\- ... -\->
           </person></egXML>
       </div>
       
       
       
-      
+-->      
       <!-- d’abord un peu de contextualisation -->
       <div type="slide">
         <head>Les Cinq Étapes du chemin de l’Éveil TEI</head>
@@ -490,18 +490,7 @@
 </sp></egXML>
       </div>
       
-      <div type="slide">
-        <head>Composants des composants des divisions</head>
-        <p>On peut shouhaiter baliser…</p>
-        <list>
-          <item>éléments de repérage : les <gi>lb</gi>, <gi>pb</gi> etc.</item>
-          <item>éléments et attributs de mise-en-forme : <gi>hi</gi>, <att>rend</att>, <att>rendition</att> etc.</item>
-          <item>éléments sémantiques : <gi>date</gi>, <gi>name</gi>, <gi>placeName</gi> etc.</item>
-          <item>éléments para-textuels : <gi>sic</gi>, <gi>corr</gi>, <gi>add</gi> etc.</item>
-          <item>etc., etc., etc.</item>
-        </list>
-      </div>
-      
+     
       <div type="slide">
         <head>Composants textuels typiques</head>
         <list type="ordered">
@@ -516,8 +505,22 @@
         <p rend="box">TEI fournit des balises pour toutes ces choses : mais il faut faire une choix,
           selon les objectifs de son projet</p>
       </div>
+     
+      <div type="slide">
+        <head>Composants des composants des divisions</head>
+        <p>Distinguons les traits balisables en …</p>
+        <list>
+          <item>éléments de repérage : les <gi>lb</gi>, <gi>pb</gi> etc.</item>
+          <item>éléments et attributs de mise-en-forme : <gi>hi</gi>, <att>rend</att>, <att>rendition</att> etc.</item>
+          <item>éléments sémantiques : <gi>date</gi>, <gi>name</gi>, <gi>placeName</gi> etc.</item>
+          <item>éléments para-textuels : <gi>sic</gi>, <gi>corr</gi>, <gi>add</gi> etc.</item>
+          <item>etc., etc., etc.</item>
+        </list>
+      </div>
+      
+      
       <div  type="slide">
-        <head>(1) La mise en évidence et son interprétation</head>
+        <head>La mise en évidence et son interprétation</head>
         <p>On voit une partie en italique ou en petites capitales : et on se demande pourquoi… par exemple :</p>
         <figure>
           <graphic width="80%" url="../../tei-fr/Talks/Graphics/prevert.png"/>
@@ -568,7 +571,7 @@
         </egXML>
       </div>
       <div type="slide">
-        <head>(2) Noms de lieux et de personnes</head>
+        <head>Noms de lieux et de personnes</head>
         <p>La balise <gi>rs</gi> (referring string) est très générique : <egXML
             xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
             <p>Le premier dîner que <rs type="person"
@@ -595,7 +598,7 @@
             when="1794-10-30">9 Brumaire An III</date></egXML>
       </div>
       <div type="slide">
-        <head>(3) Les interventions éditoriales</head>
+        <head>Les interventions éditoriales</head>
         <p>En transcrivant une source primaire on pourrait vouloir <list>
             <item>respecter, normaliser, ou corriger l’orthographie originel</item>
             <item>signaler la présence des ajouts, ratures, etc.</item>
@@ -606,7 +609,7 @@
         <p>Nous allons traiter plus tard ce sujet avec plus de détails.</p>
       </div>
       <div type="slide">
-        <head>(4) Les références croisées et les liens</head>
+        <head>Les références croisées et les liens</head>
         <p>Pour relier deux endroits d’un ou plusieurs textes, on utilise l’un des éléments
             <gi>ptr</gi> ou <gi>ref</gi>. <egXML rend="tiny"
             xmlns="http://www.tei-c.org/ns/Examples">Voir <ref target="#pv1894_61"> procès-verbal no
@@ -623,7 +626,7 @@
       </div>
 
       <div type="slide">
-        <head>(5) Les images</head>
+        <head>Les images</head>
         <p>
           <list>
             <item><gi>graphic</gi> précise la location d’une image, illustration, etc. faisant partie du texte)</item>

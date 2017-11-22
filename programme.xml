@@ -104,7 +104,7 @@
             <ref target="Diapos/01-principes.pdf">PDF</ref>)
           </item>
           <label>11h30–12h00</label>
-          <item>TP Modélisation  (<ref target="PDF/ex01-analyse.pdf">PDF</ref> <ref
+          <item>TP Modélisation  (<ref target="Travaux/ex01-analyse.pdf">PDF</ref> <ref
             target="Sources/ex01-analyse.xml">source</ref>)  </item>
           <label>12h00–12h30</label>
           <item resp="#FC">Introduction XML (<ref target="Sources/introductionXML.xml">Source</ref>,
@@ -112,7 +112,7 @@
           <label>12h30–13h30</label>
           <item>Pause déjeuner</item>
           <label>14h–15h</label>
-          <item>À la découverte d’oXygen (<ref target="PDF/ex02-oxygen.pdf">PDF</ref>, <ref
+          <item>À la découverte d’oXygen (<ref target="Travaux/ex02-oxygen.pdf">PDF</ref>, <ref
             target="Sources/ex02-oxygen.xml">source</ref>)
           </item>
           <label>15h00-17h</label>
@@ -131,18 +131,18 @@
               target="Sources/transcriptionManuscrit.xml">Source</ref>)
             </item>
           <label>11h - 12h </label>
-          <item resp="#LB">Exercices sur la transcription des sources <ref
-            target="PDF/ex03-transcr.pdf">PDF</ref>; <ref
-              target="Sources/ex03-transcr.xml">Source</ref> </item>
-                <label>14h– 14h45 </label>
-          <item>: Fin de l'exercice <hi>C'est quoi ?????????</hi></item>
-          <label>- 15h– 16 h :</label>
+          <item resp="#LB">Exercices sur la transcription des sources (<ref
+            target="Travaux/ex03-transcr.pdf">PDF</ref>; <ref
+              target="Sources/ex03-transcr.xml">Source</ref>) </item>
+                <label>14h – 14h45 </label>
+          <item>Continuation de l'exercice </item>
+          <label>15h – 16 h :</label>
           <item resp="#FC">Eléments TEI pour l'encodage de l'apparat critique 
-            <ref target="Sources/apparatCritique.xml">Source</ref> <ref
-              target="Diapos/apparatCritique.html">HTML</ref></item>
-          <label> 16h– 17 h </label>
+            (<ref target="Sources/apparatCritique.xml">Source</ref> <ref
+              target="Diapos/apparatCritique.html">HTML</ref>)</item>
+          <label> 16h – 17 h </label>
           <item resp="#LB">TEI Header ( <ref target="Diapos/teiHeader.pdf">PDF</ref>; <ref
-            target="Sources/teiHeader.xml">Source</ref>)</item>
+            target="Sources/teiHeader.xml">Source</ref>)</item><!-- or HTML ? -->
                 <label>devoirs</label>
           <item> Exercice à faire à la maison : ajouter des notes d'apparat critique et compléter
             l'en-tête pour le fichier TEI d'encodage du testament</item>
@@ -151,27 +151,28 @@
       <div type="slide">
         <head>3<hi rend="superscript">ème</hi> journée (4 dec)</head>
         <list>
-          <label>10h– 10h45</label>
-          <item>examen rapide des fichiers d'exercice faits à la maison ; rappel du contenu des 2
+          <label>10h – 10h45</label>
+          <item>Examen rapide des fichiers d'exercice faits à la maison ; rappel du contenu des 2
             journées précédentes (pour remettre tout le monde dans le bain)</item>
           <label> 10h45 – 11h45</label>
-          <item resp="#LB">Description des manuscrits (et autres TBOs)<ref
-            target="Sources/msdesc.xml">Source</ref></item>
+          <item resp="#LB">Description des manuscrits et autres TBOs (<ref
+            target="Sources/msdesc.xml">Source</ref>; <ref target="Diapos/msdesc.pdf">PDF</ref>) </item>
           <label>11h45 – 12h45 </label>
-          <item>exercice de description des manuscrits (a faire)</item>
-          <label>14h-15h</label>
-          <item resp="#FC"> encoder des notes (historiques, explicatives); encodage des entités nommées
-            <ref target="Sources/notesIndexation.xml">source</ref>
+          <item>Exercice de description des manuscrits (a faire) (<ref target="Source/ex04-msdesc.xml"> PDF</ref>; <ref target="Travaux/ex04-msdesc.pdf"> PDF</ref>)
+          </item>
+          <label>14h - 15h</label>
+          <item resp="#FC"> encodage des notes (historiques, explicatives); encodage des entités nommées
+            <ref target="Sources/notesIndexation.xml">source</ref> <ref target="Diapos/notesIndexations.html">HTML</ref>
           </item>
          <!-- <label>14h45-15h30</label>
           <item resp="#LB"><ref target="07-entitesNommees.html"></ref></item>-->
-          <label>15h30-16h15</label>
-          <item resp="#LB">un aperçu rapide des méthodes d'analyse textuelle (je veux dire, de
+          <label>15h30 - 16h15</label>
+          <item resp="#LB">un aperçu rapide des méthodes d'analyse textuelle <!--(je veux dire, de
             balisage d'expressions renvoyant à un vocabulaire, avec @ana et <gi>interprGrp</gi> ; on
-            va s'en servir dans le projet) et du balisage linguistique</item>
+            va s'en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-ana.xml">source</ref></item>
           <label>16h15-17h </label>
           <item>Exercice d'enrichissement (les participants sont invites d’enrichir leurs testaments
-            avec des notes, des entites nommes, des analyses etc)</item>
+            avec des notes, des entités nommés, des analyses etc)</item>
         
         </list>
       </div>
@@ -179,24 +180,25 @@
         <head>4<hi rend="superscript">ème</hi> journée (5 dec)</head>
         <list>
           <label>10h-11h30</label>
-          <item resp="#LB"><ref target="09-personnalisation.html">Personnalisation avec ODD</ref>;
-              <ref target="PDF/ex03-roma.pdf"> Personnalisation TEI avec Roma</ref></item>
-          
+          <item resp="#LB">Personnalisation de la TEI avec ODD  <ref target="Sources/personnalisation.xml">Source</ref>; <ref target="Sources/personnalisation.html">HTML</ref>;
+            exercice personnalisation TEI avec Roma  <ref target="Sources/ex05-roma.xml">Source</ref>; <ref target="Travaux/ex05-roma.pdf">PDF </ref></item>
+         
           <label>11h30-13h</label>
           <item resp="#FC"><ref target="11-traitementTEI.html">Chaînes de traitement TEI</ref>
             <ref target="14-outils.html">L’outillage TEI</ref>              
           </item>
           
           <label>14h-15h</label>
-          <item resp="#LB"><ref target="12-xsltNuls.xml">XSLT Pour les nuls</ref>
-            <ref target="PDF/ex12-xslt.pdf">Un peu de XPath, un peu de XSLT</ref></item>
+          <item resp="#LB">XSLT Pour les nuls  
+            <ref target="Sources/xsltNuls.xml">Source</ref>; <ref target="Diapos/xsltNuls.xml">PDF</ref>
+            Un peu de XPath, un peu de XSLT  <ref target="Travaux/ex06-xslt.pdf">PDF</ref>; <ref target="Sources/ex06-xslt.xml">Source</ref></item>
         
           <label>15h–15h30</label>
           <item resp="#LB">Welcome to the TEI community (<ref target="Sources/teiCommunity.xml"
               >source</ref>; <ref target="Diapos/teiCommunity.html">HTML</ref>; <ref
               target="Diapos/teiCommunity.pdf">PDF</ref> ) </item>
           <label>15h30 – 16h30 </label>
-          <item resp="#fc">prise en main de l'interface de transcription de la plateforme collaborative</item>
+          <item resp="#fc">Prise en main de l'interface de transcription de la plateforme collaborative</item>
           <label>16h30 – 17 h</label>
           <item> bilan, discussion, évaluation</item>
         </list>
