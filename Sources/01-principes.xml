@@ -130,7 +130,7 @@
                 </list>-->
                 <list>
                     <item>Les applications actuelles des bibliothèques numériques se concentrent encore sur la fourniture de pages virtuelles pour le lecteur : la métaphore du livre est tellement omniprésente que nous pouvons tout juste la voir</item>
-                    <item>Il est évident que la numérisation permet d'offrir des susbtituts moins chers et plus accessibles des pages imprimées ou manuscrites.</item>
+                    <item>Il est évident que la numérisation permet d'offrir des substituts moins chers et plus accessibles des pages imprimées ou manuscrites.</item>
                     <item>Mais ce n'est pas assez... <!--les textes numériques devraient aller <q>au-delà de la page</q>-->
                     </item>
                 </list>
@@ -147,7 +147,7 @@
                 </p>-->
                 <p>Les applications numériques permettent de faire plus avec un texte, en particulier avec une collection de textes !
                 <list><item>plus que simplement lire le texte du début à la fin</item>
-                <item>plus que lui associer des annotatins pour que les autres les lisent</item>
+                <item>plus que lui associer des annotations pour que les autres les lisent</item>
                 <item>plus qu'exécuter une fouille de texte brute</item></list></p>
                <!-- <p rend="box">The content of the digital library must therefore be enriched, even if
                     this requires the use of techniques which are not currently automatable.</p>-->
@@ -155,7 +155,7 @@
             </div>
             <div type="slide">
                 <!--<head>What's that noise in the digital library?</head>-->
-                <head>Que se passe-t-il dans la bibliothèque numérique ?</head>
+                <head>Quels sont ces murmures dans la bibliothèque numérique ?</head>
                 <p><graphic url="../../tei-fr/Talks/Graphics/otlet-lib.png" height="50%"/></p>
                 <list>
                     <!--<item>A digital edition should capture the intentions and meaning of a text, not
@@ -201,7 +201,7 @@
                     <item>le niveau <term>documentaire ou diplomatique</term> : détermination de ce qui a été écrit à l'origine</item>
                     <item>le niveau <term>éditorial ou sémantique</term> : détermination de ce qu'il faut comprendre par cela</item>
                 </list></p>
-                <p rend="block">La numérisation nous permet d'expliciter chacun de ces étapes</p>
+                <p rend="block">La numérisation nous permet d'expliciter chacune de ces étapes</p>
             </div>
             <div type="slide">
                 <!--<head>The hermeneutic circle of digital enrichment</head>-->
@@ -295,7 +295,7 @@
                 <head>Un texte n’est pas un document...</head>
                    <p rend="box">Un <soCalled>document</soCalled> est une chose physique, que nous
                     pouvons <emph>numériser</emph>.</p>
-                <list><item>l’apparence des lettres et leur mise-en-page</item>
+                <list><item>l’apparence des lettres et leur mise en page</item>
                     <item>la version originelle (supposée) de cette copie</item>
                 </list>
                 <p rend="box">Un <soCalled>texte</soCalled> est une abstraction construite par, ou
