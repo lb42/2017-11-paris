@@ -838,7 +838,7 @@
       </div>
       <div>
         <head>TEI Modules (4)</head>
-        <p>Si vous faites des analyses specialisés vous aurez peut être besoin de quelques un de ceux-ci : </p>
+        <p>Si vous faites des analyses spécialisées vous aurez peut-être besoin de quelques-uns de ceux-ci : </p>
         <table rend="rules">
           <row role="label">
             <cell>module</cell>
@@ -885,13 +885,13 @@
           <row>
             <cell>namesdates</cell>
             <!--         <cell>names, dates, and named entities</cell>
-   -->     <cell>noms, dates, entités nommés</cell>    <cell>52</cell>
+   -->     <cell>noms, dates, entités nommées</cell>    <cell>52</cell>
             <cell>30</cell>
           </row>
           <row>
             <cell>nets</cell>
             <!--         <cell>graphs, networks, and trees</cell>
-  -->    <cell>graphes, reseaux génériques, et arborescences</cell>      <cell>12</cell>
+  -->    <cell>graphes, réseaux génériques, et arborescences</cell>      <cell>12</cell>
             <cell>12</cell>
           </row>
         </table>
@@ -917,5 +917,5 @@
     
    
     </body>
-  </text>
+  </text> 
 </TEI>
