@@ -169,12 +169,13 @@
           <item>Pause déjeuner</item>
           <label> 14h – 14h45</label>
           <item resp="#LB">Description des manuscrits et autres TBOs (<ref
-            target="Sources/msdesc.xml">Source</ref>; <ref target="Diapos/msdesc.pdf">PDF</ref>) </item>
-              <label>14h45 - 16h</label>
+            target="Sources/msdesc.xml">Source</ref>; <ref target="Diapos/msdesc.pdf">PDF</ref>) 
+         <ref target="Sources/ex05-header.xml"> exercice teiheader preliminaire 
+         </ref>  </item>
+          <label>14h45 - 16h</label>
           <item resp="#FC">Un aperçu rapide des méthodes d’analyse textuelle <!--(je veux dire, de
             balisage d’expressions renvoyant à un vocabulaire, avec @ana et <gi>interprGrp</gi> ; on
-            va s’en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-ana.xml">source</ref></item>
-      
+            va s’en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-ana.xml">source</ref></item>     
           <label>16h-17h </label>
           <item>Exercice d’enrichissement (les participants sont invités à enrichir leurs testaments
             avec un entête, des notes, des entités nommées, des analyses etc)</item>
