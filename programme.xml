@@ -178,7 +178,7 @@
             va s’en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-analysis.xml">source</ref></item>     
           <label>16h-17h </label>
           <item>Exercice d’enrichissement (les participants sont invités à enrichir leurs testaments
-            avec un entête, des notes, des entités nommées, des analyses etc)</item>
+            avec un msDesc, des notes, des entités nommées, des analyses etc)</item>
         </list>
       </div>
       <div type="slide">
