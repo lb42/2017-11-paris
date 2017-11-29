@@ -157,11 +157,11 @@
           <label>10h – 10h30</label>
           <item>Examen rapide des fichiers d’exercice faits à la maison ; rappel du contenu des 2
             journées précédentes (pour remettre tout le monde dans le bain)</item>
-          <label>1030 - 1130</label>
+          <label>10h30 - 11h30</label>
           <item resp="#LB">TEI Header (<ref target="Diapos/teiHeader.pdf">PDF</ref>; <ref
             target="Sources/teiHeader.xml">Source</ref>)</item>
           <label>11h30 - 12h30</label>
-          <item resp="#FC"> encodage des notes (historiques, explicatives); encodage des entités nommées
+          <item resp="#FC">Encodage des notes (historiques, explicatives); encodage des entités nommées
             <ref target="Sources/notesIndexation.xml">source</ref> <ref target="Diapos/notesIndexations.html">HTML</ref>
           </item>
        
@@ -171,13 +171,13 @@
           <item resp="#LB">Description des manuscrits et autres TBOs (<ref
             target="Sources/msdesc.xml">Source</ref>; <ref target="Diapos/msdesc.pdf">PDF</ref>) </item>
               <label>14h45 - 16h</label>
-          <item resp="#FC">un aperçu rapide des méthodes d’analyse textuelle <!--(je veux dire, de
+          <item resp="#FC">Un aperçu rapide des méthodes d’analyse textuelle <!--(je veux dire, de
             balisage d’expressions renvoyant à un vocabulaire, avec @ana et <gi>interprGrp</gi> ; on
             va s’en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-ana.xml">source</ref></item>
       
           <label>16h-17h </label>
           <item>Exercice d’enrichissement (les participants sont invites d’enrichir leurs testaments
-            avec un entete, des notes, des entités nommés, des analyses etc)</item>
+            avec un entête, des notes, des entités nommées, des analyses etc)</item>
         </list>
       </div>
       <div type="slide">
