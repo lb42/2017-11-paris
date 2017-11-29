@@ -170,12 +170,12 @@
           <label> 14h – 14h45</label>
           <item resp="#LB">Description des manuscrits et autres TBOs (<ref
             target="Sources/msdesc.xml">Source</ref>; <ref target="Diapos/msdesc.pdf">PDF</ref>) 
-         <ref target="Sources/ex05-header.xml"> exercice teiheader preliminaire 
-         </ref>  </item>
-          <label>14h45 - 16h</label>
+            <label>14h45-15h15</label>Exercice teiheader preliminaire  <ref target="Sources/ex05-header.xml">Source</ref> 
+          </item>
+          <label>15h15 - 16h</label>
           <item resp="#FC">Un aperçu rapide des méthodes d’analyse textuelle <!--(je veux dire, de
             balisage d’expressions renvoyant à un vocabulaire, avec @ana et <gi>interprGrp</gi> ; on
-            va s’en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-ana.xml">source</ref></item>     
+            va s’en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-analysis.xml">source</ref></item>     
           <label>16h-17h </label>
           <item>Exercice d’enrichissement (les participants sont invités à enrichir leurs testaments
             avec un entête, des notes, des entités nommées, des analyses etc)</item>
@@ -225,11 +225,11 @@
         <list>
           <!--   <item><code>exemples/</code> exemples tei</item>
         -->
-          <item><code>Travaux/</code> contient les fichiers nécessaires pour les travaux pratiques</item>
+          <item><code>Travaux/</code> contient les fichiers nécessaires pour les travaux pratiques et les tutoriaux</item>
          <!-- <item><code>pdfs/</code> tutoriaux et diapos au format pdf</item>-->
-          <item><code>Diapos/</code> contient les présentations au format HTML</item>
-          <item><code>Images/</code> contient des images numériques de documents</item>
-          <!--   <item><code>ressources/</code> matériel d’accompagnement</item>
+          <item><code>Diapos/</code> contient les présentations au format HTML ou PDF</item>
+        <!--  <item><code>Images/</code> contient des images numériques de documents</item>
+        -->  <!--   <item><code>ressources/</code> matériel d’accompagnement</item>
             <item><code>schemas/</code> schémas distribués pour la formation</item>
      -->
           <item><code>Sources/</code> contient les sources TEI des fichiers de TP et de cours</item>
@@ -237,7 +237,7 @@
      -->
         </list>
       </div>
-      <div type="slide">
+     <!-- <div type="slide">
         <head>Utiliser ces diapositives</head>
         <list>
           <item>←, ↑, Pg Up, k : aller à la page précédente</item>
@@ -248,7 +248,7 @@
           <item>Esc : quitter le mode plein écran</item>
           <item>?, h : afficher l’aide</item>
         </list>
-      </div>
+      </div>-->
     </body>
   </text>
 </TEI>
