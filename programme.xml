@@ -170,7 +170,8 @@
           <label> 14h – 14h45</label>
           <item resp="#LB">Description des manuscrits et autres TBOs (<ref
             target="Sources/msdesc.xml">Source</ref>; <ref target="Diapos/msdesc.pdf">PDF</ref>) 
-            <label>14h45-15h15</label>Exercice teiheader preliminaire  <ref target="Sources/ex05-header.xml">Source</ref> 
+            <label>14h45-15h15</label>Exercice teiheader  <ref target="Sources/ex04-header.xml">Source</ref>;
+            <ref target="Travaux/ex04-header.pdf">Source</ref>
           </item>
           <label>15h15 - 16h</label>
           <item resp="#FC">Un aperçu rapide des méthodes d’analyse textuelle <!--(je veux dire, de
@@ -185,7 +186,7 @@
         <head>4<hi rend="superscript">e</hi> journée (5 déc.)</head>
         <list>
           <label>10h-11h30</label>
-          <item resp="#LB">Personnalisation de la TEI avec ODD  <ref target="Sources/personnalisation.xml">Source</ref>; <ref target="Sources/personnalisation.html">HTML</ref>;
+          <item resp="#LB">Personnalisation de la TEI avec ODD  <ref target="Sources/personnalisation.xml">Source</ref>; <ref target="Diapos/personnalisation.pdf">PDF</ref>;
             exercice personnalisation TEI avec Roma  <ref target="Sources/ex05-roma.xml">Source</ref>; <ref target="Travaux/ex05-roma.pdf">PDF </ref></item>
          
           <label>11h30-13h</label>

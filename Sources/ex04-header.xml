@@ -85,8 +85,14 @@
                <item>Comme avant, tapez un chevron pour voir quels éléments sont disponibles à l'intérieur de votre msDesc. 
                     Il faut commencer par un <gi>msIdentifier</gi> qui, dans notre cas contiendra la mention des Archives (<gi>institution</gi>)
                     et la cote du manuscrit (<gi>idno</gi>)</item>
-                 <item>Continuez de la meme manière. Vous aurez besoin d'ajouter
-                    un <gi>physDesc</gi> par exemple. Vous n'etes pas obligé.e d'ajouter un <gi>msContents</gi>, mais c'est conseillé: vous
+                 <item>Continuez de la meme manière. Vous  devrez ajouter
+                    un <gi>physDesc</gi> contenant un <gi>objectDesc</gi> ; ce dernier serait 
+                    compose d'un <gi>supportDesc</gi>, qui contient des informations concernant  
+                    le support (<gi>support</gi>) lui meme et sa taille (<gi>extent</gi>, <gi>dimensions</gi>,
+                    regroupant <gi>height</gi> et <gi>width</gi>). Il pourrait etre complete par un <gi>handDesc</gi> pour decrire
+                    la mode d'ecriture (encre).
+                 </item>
+                 <item>Vous n'etes pas obligé.e d'ajouter un <gi>msContents</gi>, mais c'est conseillé: vous
                     pourrez simplement copier le titre du <gi>titleStmt</gi> ou le simplifier <q>Testament d'un poilu</q></item>
      </list></div>
       </body>
