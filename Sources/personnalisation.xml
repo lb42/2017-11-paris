@@ -60,6 +60,48 @@
       </div>
     </front>-->
     <body>
+      <div type="slide" xml:lang="fr">
+        <head>Un standard existe pour qu'on s'y conforme, non ?</head>
+        <figure>
+          <graphic url="../../tei-fr/Talks/Graphics/1991-TEI-commandments.png" height="80%"/>
+        </figure>
+      </div>
+      <div type="slide" xml:lang="fr">
+        <head>L’esprit TEI</head>
+        <p>Qu’est-ce que cela veut dire : « être conforme » à la TEI ?</p>
+        <list>
+          <item>une pratique de balisage consensuelle</item>
+          <item>un lexique commun</item>
+          <item>un respect de l’autonomie</item>
+        </list>
+        <p>La standardisation ne doit pas signifier « fais comme moi » ; elle veut dire « explique-moi
+          ce que tu fais. »</p>
+      </div>
+      <div type="slide" xml:lang="fr">
+        <head>… d’où les variations TEI</head>
+        <p>Par exemple : éléments pour description bibliographique : On a le choix entre <list>
+          <item><gi>bibl</gi> qui contient n’importe quel mélange de composants bibliographiques
+            … ou aucun</item>
+          <item><gi>biblStruct</gi> qui contient une sélection prédéfinie d’éléments, strictement
+            structurés</item>
+          <item><gi>biblFull</gi> qui est modélisé sur le <gi>fileDesc</gi> du TEI Header</item>
+        </list>
+        </p>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <bibl xml:id="MK_73">Sturm, U. &amp; Drang, F. : <title>Musikalische Katastrophe</title>.
+            (Berlin, W. de Gruyter, 1973)</bibl>
+        </egXML><egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+          <bibl xml:id="MK73"><author key="U. Sturm (1884-1919)"><persName>
+            <surname>>Sturm</surname><forename>Ulbricht</forename></persName></author>
+            <author>Drang, F.</author>
+            <title xml:lang="de" level="m">Musikalische Katastrophe </title>
+            <pubPlace>Berlin</pubPlace>
+            <publisher>W. de Gruyter</publisher>
+            <date>1973</date></bibl>
+        </egXML>
+      </div>
+      
+      
       <div>
         <head>La pérsonnalisation</head>
         <p><figure>
@@ -85,7 +127,12 @@
           <item>on peut y mélanger des éléments nouveaux, ou bien natifs ou bien d'autres
             standards</item>
         </list>
+        <p rend="box">Un encodage TEI représente une modélisation spécifique de l’univers textuel</p>
+        
       </div>
+      
+      
+      
       <div type="slide" xml:lang="fr">
         <head>Un système modulaire de modélisation</head>
       
@@ -609,6 +656,8 @@
             </list>
         
        </div>
+      
+      
     </body>
     <!--<back>
       <div type="title" xml:lang="fr">

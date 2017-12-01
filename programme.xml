@@ -197,7 +197,7 @@
           <item>Pause déjeuner</item>
           <label>14h-15h</label>
           <item resp="#LB">XSLT Pour les nuls  
-            <ref target="Sources/xsltNuls.xml">Source</ref>; <ref target="Diapos/xsltNuls.xml">PDF</ref>
+            <ref target="Sources/xsltNuls.xml">Source</ref>; <ref target="Diapos/xsltNuls.pdf">PDF</ref>
             Un peu de XPath, un peu de XSLT  <ref target="Travaux/ex06-xslt.pdf">PDF</ref>; <ref target="Sources/ex06-xslt.xml">Source</ref></item>
           <label>15h–15h30</label>
           <item resp="#LB">Welcome to the TEI community (<ref target="Sources/teiCommunity.xml"
