@@ -178,7 +178,7 @@
           <label>15h15 - 16h</label>
           <item resp="#FC">Un aperçu rapide des méthodes d’analyse linguistique et textuelle <!--(je veux dire, de
             balisage d’expressions renvoyant à un vocabulaire, avec @ana et <gi>interprGrp</gi> ; on
-            va s’en servir dans le projet)--> et du balisage linguistique <ref target="sources/tei-analysis.xml">source</ref>; <ref target="Diapos/tei-analysis.html">HTML</ref></item>     
+            va s’en servir dans le projet)--> et du balisage linguistique <ref target="Sources/tei-analysis.xml">source</ref>; <ref target="Diapos/tei-analysis.html">HTML</ref></item>     
           <label>16h-17h </label>
           <item>Exercice d’enrichissement (les participants sont invités à enrichir leurs testaments
             avec un msDesc, des notes, des entités nommées, des analyses etc)</item>
@@ -192,8 +192,8 @@
             exercice personnalisation TEI avec Roma  <ref target="Sources/ex05-roma.xml">Source</ref>; <ref target="Travaux/ex05-roma.pdf">PDF </ref></item>
          
           <label>11h30-13h</label>
-          <item resp="#FC"><ref target="11-traitementTEI.html">Chaînes de traitement TEI</ref>
-            <ref target="14-outils.html">L’outillage TEI</ref>              
+          <item resp="#FC">Chaînes de traitement et outils TEI : <ref target="Sources/11-traitementTEI.xml">source</ref> ; <ref target="Diapos/11-traitementTEI.html">HTML</ref>
+          <!--  <ref target="14-outils.html">L’outillage TEI</ref>   -->           
           </item>
           <label>13h–14h</label>
           <item>Pause déjeuner</item>
