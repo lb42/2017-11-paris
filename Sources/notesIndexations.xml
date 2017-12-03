@@ -13,7 +13,7 @@
       </editionStmt>
       <publicationStmt>
         <distributor><persName xml:id="FC">Florence Clavaud</persName> (Archives nationales et
-          Centre Jean-Mabillon de l'Ecole nationale des chartes)</distributor>
+          Centre Jean-Mabillon de l’Ecole nationale des chartes)</distributor>
         <availability>
           <p>Placé sous licence CC-BY</p>
         </availability>
@@ -31,7 +31,7 @@
     <encodingDesc>
       <projectDesc>
         <p>Document rédigé pour servir pendant une formation sur TEI; document retabli a partir de
-          la version PDF d'un originel perdu</p>
+          la version PDF d’un originel perdu</p>
       </projectDesc>
     </encodingDesc>
     <revisionDesc>
@@ -118,7 +118,7 @@
             </div>
           </egXML>Cette méthode n’a pas les inconvénients de la première méthode, par contre elle
           est un peu plus compliquée à mettre en œuvre. </p>
-        <p>On peut noter qu’avec cette méthode, rien n’empêche de préparer la création d'une, deux,
+        <p>On peut noter qu’avec cette méthode, rien n’empêche de préparer la création d’une, deux,
           trois (ou plus, en fait autant qu’on veut) couches d’annotation. </p>
       </div>
       <div type="slide">
@@ -277,7 +277,7 @@
             </langKnowledge>
           </egXML>
         </p>
-        <p>L'élément <gi>persona</gi> renvoie à la notion d'identité ou de personnalité d'une personne, qui est actuellement par ailleurs également représentée dans les versions les plus récentes des modèles de description bibliographique et archivistique.</p>
+        <p>L’élément <gi>persona</gi> renvoie à la notion d’identité ou de personnalité d’une personne, qui est actuellement par ailleurs également représentée dans les versions les plus récentes des modèles de description bibliographique et archivistique.</p>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <person>
             <persona sex="M">
@@ -309,7 +309,7 @@
       </div>
       <div type="slide">
         <head>Encodage des informations relatives aux personnes : les traits et états, exemples</head>
-        <p>Exemple simplifié, tiré de l'édition critique du Petit Thalamus de Montpellier (voir <ref target="http://thalamus.huma-num.fr/index-personnes/lettre-R.html#ARaynaut">l'index des personnes, Arnaud Rainaud</ref>):
+        <p>Exemple simplifié, tiré de l’édition critique du Petit Thalamus de Montpellier (voir <ref target="http://thalamus.huma-num.fr/index-personnes/lettre-R.html#ARaynaut">l’index des personnes, Arnaud Rainaud</ref>):
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <person xml:id="ARaynaut">
               <persName xml:lang="oci">
@@ -462,11 +462,11 @@
         <list>
           <item><gi>surname </gi>(nom de famille) contient un nom de famille (hérité) par opposition à un nom donné, nom de baptême ou surnom</item>
           <item><gi>forename</gi>(prénom) contient un prénom</item>
-          <item> <gi>roleName</gi> (rôle) contient un composant du nom d'une personne, indiquant que celle-ci a un rôle ou une position particulière dans la société, comme un titre ou un rang officiel</item>
+          <item> <gi>roleName</gi> (rôle) contient un composant du nom d’une personne, indiquant que celle-ci a un rôle ou une position particulière dans la société, comme un titre ou un rang officiel</item>
          
           <item> <gi>addName</gi> (nom additionnel) contient une composante de nom additionnelle, comme un surnom, une épithète, un alias ou toute autre expression descriptive utilisée dans un nom de personne</item>
-          <item> <gi>nameLink</gi> (lien entre les composants d'un nom) contient une particule ou une expression exprimant un lien, utilisés dans un nom mais considérés comme n'en faisant pas partie, comme "van der" ou "de"</item>
-          <item><gi>genName</gi> (qualificatif générationnel de nom) contient une composante de nom utilisée pour distinguer des noms, par ailleurs similaires, sur la base de l'âge ou de la génération des personnes concernées.</item>
+          <item> <gi>nameLink</gi> (lien entre les composants d’un nom) contient une particule ou une expression exprimant un lien, utilisés dans un nom mais considérés comme n’en faisant pas partie, comme "van der" ou "de"</item>
+          <item><gi>genName</gi> (qualificatif générationnel de nom) contient une composante de nom utilisée pour distinguer des noms, par ailleurs similaires, sur la base de l’âge ou de la génération des personnes concernées.</item>
           
         </list>
       </div>
@@ -486,7 +486,7 @@
           
         </p>
         <p>
-          Extrait de l'index des personnes dans l'édition du Petit Thalamus de Montpellier : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          Extrait de l’index des personnes dans l’édition du Petit Thalamus de Montpellier : <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <person xml:id="AlphonseXSage">
             <idno type="ISNI">ISNI 0000 0001 2137 2039</idno>
             <idno type="BNF">http://data.bnf.fr/ark:/12148/cb11997785j#foaf:Person</idno>
@@ -534,7 +534,7 @@
 
       <div type="slide">
         <head>Encodage des informations relatives aux personnes : affectation de dates aux informations fournies</head>
-        <p> Comme déjà indiqué, tous les éléments constitutifs de la description d'une personne, qu’ils soient spécifiques ou génériques, sont
+        <p> Comme déjà indiqué, tous les éléments constitutifs de la description d’une personne, qu’ils soient spécifiques ou génériques, sont
           membres de la classe d’attributs <ident>datable</ident>, ce qui veut dire que leur contenu
           peut être daté, comme dans l’exemple ci-après, où l’on lit que la personne d’abord appelée
           David Jones a changé de nom en 1966 pour s’appeler David Bowie : <egXML
@@ -549,7 +549,7 @@
         <p> Tous les éléments génériques que nous avons vus sont aussi membres de la classe
             <ident>global.responsibility</ident>. Cette classe fournit les attributs <att>cert</att>, pour indiquer le
           niveau de certitude, <att>resp</att> pour indiquer le nom de l’entité responsable de
-          l’information. D'autre part l'attribut <att>evidence</att> permet de préciser la nature de la preuve utilisée (interne, externe, conjecture).</p><p>Il
+          l’information. D’autre part l’attribut <att>evidence</att> permet de préciser la nature de la preuve utilisée (interne, externe, conjecture).</p><p>Il
           est ainsi possible, dans le cas de sources multiples et non cohérentes, de fournir plus
           d’un point de vue sur ce qui est arrivé, comme dans l’exemple ci-après, où un lieu et une
           date de naissance différents ont été avancés pour le même individu par deux chercheurs,
@@ -589,31 +589,10 @@
           </egXML></p>-->
 
       </div>
-      <!--<div type="slide">
-        <head>14. Un autre exemple de notice descriptive de personne</head>
-        <p> Notice simplifiée tirée d’un fichier produit dans le cadre d’un projet de la BnF :
-            <egXML xmlns="http://www.tei-c.org/ns/Examples"><person xml:id="f123456">
-              <persName>
-                <surname>Douceur</surname>
-                <forename>Louis</forename>
-              </persName>
-              <residence>
-                <placeName><settlement>Paris</settlement></placeName>
-              </residence>
-              <birth when="1700" cert="low">?</birth>
-              <death when="1769-02-17">1769</death>
-              <occupation>Relieur-libraire, créateur des reliures à décor de dentelle et de
-                mosaïque.</occupation>
-              <floruit notBefore="1721" notAfter="1766">En activité de 1721 à 1766.</floruit>
-            </person>
-          </egXML>
-        </p>
-      </div>
-      
-      -->
+     
       <div type="slide">
         <head>Encodage des informations sur les collectivités</head>
-<p>En ce qui concerne les collectivités, prises ici au sens large, on utilise l'élément <gi>org</gi> pour encoder les notices. Cet élément devrait normalement contenir au moins un élément <gi>orgName</gi> pour encoder le ou les noms de la collectivité. <gi>orgName</gi> peut contenir de nombreux sous-éléments, y compris <gi>orgName</gi>, <gi>persName</gi> et les éléments utilisés pour les noms de lieux. On peut aussi y trouver autant d'éléments <gi>trait</gi>, <gi>state</gi> et <gi>event</gi> que nécessaire, ainsi que l'élément <gi>desc</gi>.</p> 
+<p>En ce qui concerne les collectivités, prises ici au sens large, on utilise l’élément <gi>org</gi> pour encoder les notices. Cet élément devrait normalement contenir au moins un élément <gi>orgName</gi> pour encoder le ou les noms de la collectivité. <gi>orgName</gi> peut contenir de nombreux sous-éléments, y compris <gi>orgName</gi>, <gi>persName</gi> et les éléments utilisés pour les noms de lieux. On peut aussi y trouver autant d’éléments <gi>trait</gi>, <gi>state</gi> et <gi>event</gi> que nécessaire, ainsi que l’élément <gi>desc</gi>.</p> 
         <p>Exemple (extrait simplifié des fichiers produits pour le projet Reliures de la BnF en 2012)
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <org xml:id="FR-751131011_RELIURE_COL_00009" corresp="FR-751131011_RELIURE_NOT_00028.xml#c1">
@@ -626,9 +605,9 @@
             <desc>Atelier de reliure et dorure</desc>
         
             <note>Atelier dirigé par le relieur du roi, qui a mis en oeuvre le programme de reliures élaboré pour les nouvelles collections de la <orgName ref="#FR-751131011_RELIURE_COL_00008">Bibliothèque royale de
-              Fontainebleau</orgName> et très probablement localisé sur place. Il s'est mis en place vraisemblablement à l'été 1545, avec pour premier dirigeant le relieur du roi en titre, <persName>Etienne
-                Roffet</persName>. Celui-ci a été probablement dès le départ assisté par <persName>Gomar Estienne</persName>, aussi cité comme relieur du roi en novembre 1547. L'atelier produisit près de 640 reliures entre
-              <date>1545 et 1522</date>, date à laquelle il semble cesser son activité, au seul profit de l'atelier parisien du relieur du roi (<bibl>
+              Fontainebleau</orgName> et très probablement localisé sur place. Il s’est mis en place vraisemblablement à l’été 1545, avec pour premier dirigeant le relieur du roi en titre, <persName>Etienne
+                Roffet</persName>. Celui-ci a été probablement dès le départ assisté par <persName>Gomar Estienne</persName>, aussi cité comme relieur du roi en novembre 1547. L’atelier produisit près de 640 reliures entre
+              <date>1545 et 1522</date>, date à laquelle il semble cesser son activité, au seul profit de l’atelier parisien du relieur du roi (<bibl>
                 <ref target="documentation.xml#FR-751131011_RELIURE_DOC_00055">Paris 1999, Reliures royales</ref>
               </bibl>
             </note>
@@ -637,13 +616,13 @@
         <p>Exemple tiré des fichiers accompagnant le schéma TEI du projet Testaments de Poilus (dans sa version actuelle) :
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <org xml:id="o-0003" resp="#ML #JD #CN">
-            <orgName type="fullIndexEntryForm"><orgName>France</orgName>. <orgName>Armée de terre</orgName>. <orgName>Régiment d'infanterie coloniale (<num>23</num>)</orgName>
+            <orgName type="fullIndexEntryForm"><orgName>France</orgName>. <orgName>Armée de terre</orgName>. <orgName>Régiment d’infanterie coloniale (<num>23</num>)</orgName>
             </orgName>
-            <orgName type="proseForm">23<hi rend="superscript">e</hi> régiment d'infanterie coloniale</orgName>
+            <orgName type="proseForm">23<hi rend="superscript">e</hi> régiment d’infanterie coloniale</orgName>
             <orgName type="abbreviatedForm">23<hi  rend="superscript">e</hi> RIC</orgName>
             
             
-            <bibl>Article <title level="a">23e régiment d'infanterie coloniale</title> de <title level="m">Wikipédia en français</title>. Contenu soumis à la licence CC-BY-SA 3.0.
+            <bibl>Article <title level="a">23e régiment d’infanterie coloniale</title> de <title level="m">Wikipédia en français</title>. Contenu soumis à la licence CC-BY-SA 3.0.
               <ref type="uri">http://fr.wikipedia.org/wiki/23e_r%C3%A9giment_d%27infanterie_coloniale</ref></bibl>
           </org></egXML>
         </p>
@@ -828,384 +807,4 @@
     </body>
   </text>
 </TEI>
-<!-- suit la version de l'ENC -->
-<!-- 
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Entités nommées définition</head>
-            <p>unités lexicales sélectionnées pour leur intérêt sémantique</p>
-            <list type="unordered">
-              <item>noms de lieux</item>
-              <item>noms de personnes</item>
-              <item>objets, etc.</item>
-            </list>
-          </div>
-          <div type="slide">
-            <head>Entités nommées définition</head>
-            <p>Les entités nommées sont des unités lexicales sélectionnées pour leur intérêt sémantique : <list>
-                <item>noms de lieux,</item>
-                <item>de personnes,</item>
-                <item>des objets, etc.</item>
-              </list></p>
-            <p>LB : La TEI se positionne avec Frege dans la grande discussion philosophique autour de la théorie de référence : elle cherche à encoder ce qu’il appelle <foreign>das bedeutung</foreign> (signification)</p>
-          </div>
-        </div>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Pourquoi s’en occuper ?</head>
-            <list>
-              <item>Construction d’index</item>
-              <item>Constitution de bases de données</item>
-              <item>Exposition dans le LOD</item>
-            </list>
-          </div>
-          <div type="slide">
-            <head>Pourquoi s’en occuper ?</head>
-            <list>
-              <item>Utiliser les textes comme une base de données</item>
-              <item>Mise en relation des textes entre eux</item>
-              <item>Traitement type TAL (traitement automatique de la langue), cartographie, index (facile avec XSLT)</item>
-              <item>Suivi de tendance, veille Optimisation de recherche et moteur de recherche sémantique Production de savoir par inférence (classification de documents par exemple)</item>
-            </list>
-            <p>en perspective : le web sémantique</p>
-          </div>
-        </div>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Ce que propose la TEI pour les entités-nommées</head>
-            <div type="slide">
-              <head>Balisage générique</head>
-              <p>Pour signaler la présence des noms propres ou de références nominales dans un texte</p>
-              <list>
-                <item><gi>name</gi> nom quelconque</item>
-                <item><gi>rs</gi> chaîne de référence</item>
-              </list>
-              <p>Où des attributs tels que <att>ref</att> permettent de pointer vers une description de rérence.</p>
-            </div>
-          </div>
-          <div type="slide">
-            <head>Balisage plus spécifique</head>
-            <list>
-              <item><gi>persName</gi> nom de personne</item>
-              <item><gi>orgName</gi> nom de personne</item>
-              <item><gi>placeName</gi> nom de lieu</item>
-            </list>
-          </div>
-        </div>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>La classe <ident>model.nameLike</ident></head>
-            <p>Regroupe les éléments qui se rapportent tous à un nom de personne ou de lieu</p>
-            <list>
-              <item>agents (<gi>name</gi>, <gi>orgName</gi>, <gi>persName</gi>)</item>
-              <item>lieux (<gi>place</gi>, <gi>country</gi>, <gi>district</gi>...)</item>
-            </list>
-            <p>Chacun avec des propriétés de nommage, des traits, des états, des événements, des relations.</p>
-          </div>
-          <div type="slide">
-            <head>La classe <ident>model.nameLike</ident></head>
-            <p>L’élément <gi>person</gi> peut être instancié à l’intérieur d’un élément <gi>persList</gi> pour créer par exemple un fichier d’autorité dans le cadre d’un projet.</p>
-            <p>La classe <ident>model.namelike</ident> (comme un nom) regroupe des éléments qui se rapportent tous à un nom de personne ou de lieu. Les éléments appartenant à cette classe y figurent. On peut voir que c’est une super-classe qui est composée de plusieurs classes qui comprennent des éléments comme <gi>persname</gi>, <gi>name</gi>, etc.</p>
-            <p>Comme il s’agit d’une classe, tous les éléments qui appartiennent à cette classe disposent de certaines propriétés.</p>
-          </div>
-        </div>
-      </div>
-      <div type="slide" type="part" xml:id="par2">
-        <head>Les formes du nom</head>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Les formes du nom</head>
-            <p>exemple de personne</p>
-            <list>
-              <item>La forme du nom peut être fournie au moyen de l’élément <gi>persName</gi></item>
-              <item>Cet élément est répétable</item>
-            </list>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-<person xml:id="ArnMag">
-  <persName xml:lang="is">Árni Magnússon</persName>
-  <persName xml:lang="da">Arne Magnusson</persName>
-  <persName xml:lang="la">Arnas Magnæus</persName>
-</person>
-</egXML>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-<orgName type="voluntary"
-  ref="tag:projectname.org,2012:PAS1">Pennsyla. Abolition Society</orgName>
-</egXML>
-          </div>
-          <div type="slide">
-            <head>Les formes du nom</head>
-            <p>L’association avec la classe <gi>person</gi> est basée sur la hiérarchie de l’élément XML (inclusion). L’association est implicite.</p>
-            <p>Pour indiquer plusieurs formes du nom distinctes, cet élément est répétable. Agrégation : une instance de la classe <gi>person</gi> possède une ou plusieurs instances (ou "composants") de la classe cible, ici <gi>persName</gi></p>
-            <p><hi rend="italic"
-              >p. e.</hi> pour les formes langagières, la forme du nom autorisée, etc.</p>
-            <p>ici, c’est la conjonction de l’élément et de l’attribut <att>full</att> qui permet de typer la forme du nom.</p>
-            <p>Par exemple contraindre la fourniture d’une forme autorisée du nom, d’une langue, etc.</p>
-            <p>Ou au contraire autoriser son absence.</p>
-          </div>
-        </div>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Composantes du nom</head>
-            <list>
-              <item><code>forename</code> prénom</item>
-              <item><code>surname</code> nom de famille</item>
-              <item><code>nameLink</code>, <code>roleName</code>, <code>genName</code></item>
-            </list>
-            <p><att>full</att> indique si le nom est donné dans une forme normalisée</p>
-            <p><att>sort</att> spécifie l’ordre des composantes du nom entre elles</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <persName ref="tag:projectname.org,2012:pn9">
-                <forename sort="2">Sergei</forename>
-                <forename sort="3" type="patronym">Mikhailovic</forename>
-                <surname sort="1">Uspensky</surname>
-              </persName>
-            </egXML>
-            </div>
-          <div type="slide">
-            <head>Composantes du nom</head>
-            <p>De la même façon que tout à l’heure, il peut y avoir plusieurs manières de traiter les composantes du nom :</p>
-            <p><gi>forename</gi>, <gi>surname</gi>, etc.</p>
-            <p>nom propre, prénom, particules, titres, etc.</p>
-            <p><ident>model.persNamePart</ident> groupe les éléments qui font partie d’un nom de personne.</p>
-            <p>Comporte un certain nombre d’éléments qui permettent à l’encodeur de fournir une sous-structure détaillée pour la désignation des noms propres.</p>
-            <p><gi>addName</gi> (additional name) continet une composante additionnelle du nom, telle qu’un surnom, un épithète, un alias ou n’importe quelle autre phrase descriptive utilisée dans un nom de personne.</p>
-            <p><gi>forename</gi> contient un prénom, ou un nom de baptême.</p>
-            <p><gi>genName</gi> (generational name component) contient une composante de nom utilisée pour distinguer des personnes de même nom sur la base de leur âge relatif ou de générations.</p>
-            <p><gi>nameLink</gi> (name link) contient une phrase de connexion ou un lien entre des parties du nom mais qui ne sont pas regardés comme en faisant partie, comme van der, of.</p>
-            <p><gi>roleName</gi> contient une composante du nom qui indique que le référent a un rôle particulier ou une position dans la société, comme un titre d’office ou un rang.</p>
-            <p><gi>surname</gi> contient un nom de famille (inherited), par opposition à un nom de baptème, un prénom ou un surnom.</p>
-            <p><ident>att.personal</ident> (attributs pour les composantes du nom, mais pas nécessairement) attributs communs pour les éléments qui font partie habituellement d’un nom.</p>
-            <p>
-              <gi>roleName</gi> qui peut par exemple être typé : Nobiliaire, honorifique, grade, épithète</p>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <persName ref="tag:projectname.org,2012:DUDO1">
-    <roleName type="honorific" full="abb">Mme</roleName>
-    <nameLink>de la</nameLink>
-    <surname>Rochefoucault</surname>
-  </persName>
-</egXML>
-          </div>
-        </div>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Liens vers des données d’autorité</head>
-            <list>
-              <item><att>key</att> pour fournir un identifiant externe</item>
-              <item><att>ref</att> pour une référence au moyen d’une URI</item>
-            </list>
-            <p>On privilégiera dans des notices d’autorité, une approche qui s’appuie sur un élément introduit récemment dans le modèle de contenu de <gi>person</gi>, <gi>org</gi> et <gi>place</gi></p>
-            <list>
-              <item><gi>idno</gi></item>
-            </list>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-<person>
-  <persName>
-    <roleName type="honorific" full="abb">Mme</roleName>
-    <nameLink>de la</nameLink>
-    <surname>Rochefoucault</surname>
-  </persName>
-  <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16377695t</idno>
-</person>
-</egXML>
-          </div>
-          <div type="slide">
-            <head>Liens vers des données d’autorité</head>
-            <p><ident>att.canonical</ident> provides attributes which can be used to associate a representation such as a name or title with canonical information about the object being named or referenced.</p>
-            <p><att>key</att> provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind.</p>
-            <p><att>ref</att> (reference) provides an explicit means of locating a full definition for the entity being named by means of one or more URIs.</p>
-            <p><ident>att.naming</ident> provides attributes common to elements which refer to named persons, places, organizations etc.</p>
-            <p><att>role</att> may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place.</p>
-            <p><att>nymRef</att> (reference to the canonical name) provides a means of locating the canonical form (nym) of the names associated with the object named by the element bearing it.</p>
-            <p><ident>att.responsibility</ident> provides attributes indicating who is responsible for something asserted by the markup and the degree of certainty associated with it.</p>
-            <p><att>resp</att> (responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber.</p>
-            <p><att>cert</att> (certainty) signifies the degree of certainty associated with the intervention or interpretation.</p>
-          </div>
-        </div>
-      </div>
-      <div type="slide" type="part" xml:id="part3">
-        <head>Le modèle de conceptuel</head>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Le modèle conceptuel</head>
-            <p>La TEI fournit trois éléments génériques, et quelques-uns plus spécifiques. Elle identifie trois classes principales d’information :</p>
-            <list>
-              <item><hi>traits</hi> des caractéristiques ou des traits</item>
-              <item><hi>states</hi> des caractéristiques ou des états qui se maintiennent seulement pendant une durée définie</item>
-              <item><hi>event</hi> des événements qui peuvent conduire à un changement d’état</item>
-            </list>
-          </div>
-          <div type="slide">
-            <head>Le modèle conceptuel</head>
-            <p>Le périmètres des caractéristiques pouvant affecter une entité nommée est très vaste.</p>
-            <p>La TEI fournit trois éléments génériques, et quelques-uns plus spécifiques. Elle identifie trois classes principales d’information :</p>
-            <list type="unordered">
-              <item>des <hi rend="italic">traits (traits)</hi>, qui en général ne changent pas au cours du temps</item>
-              <item>des <hi rend="italic">états (states)</hi> qui sont seulement vrai une période de temps donnée</item>
-              <item>des <hi rend="italic">événements (events)</hi> ou incidents qui peuvent conduire à un changement d’état ou moins fréquemment de trait.</item>
-            </list>
-          </div>
-        </div>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Éléments biographiques et prosopographiques</head>
-            <p>Ce module fournit également des éléments pour la représentation d’information à caractère biographique, historique ou proposographique sur la personne, les lieux, ou l’organisation à laquelle un nom fait référence.</p>
-            <p> > production de fichier d’autorité ou collection d’information biographiques</p>
-            <list>
-              <item></item>
-            </list>
-          </div>
-          <div type="slide">
-            <head>Éléments biographiques et prosopographiques</head>
-            <p>Là encore, TEI propose une stratégie flexible où l’encodeur peut puiser selon selon l’approche adaptée à ses besoins.</p>
-            <p>Principes de base</p>
-            <p>Les informations concernant les personnes, les lieux, et les organisations sont comprennent une série d’assertions relatives :</p>
-            <list type="unordered">
-              <item>à des caractéristiques ou <hi rend="italic">traits (traits)</hi>, qui en général ne changent pas au cours du temps</item>
-              <item>à des caractéristiques ou <hi rend="italic">états (states)</hi> qui sont seulement vrai une période de temps donnée</item>
-              <item>des <hi rend="italic">événements (events)</hi> ou incidents qui peuvent conduire à un changement d’état ou moins fréquemment de trait.</item>
-            </list>
-            <div type="slide">
-              <head>Traits</head>
-              <p>Traits, typiquement indépendants du vouloir de la personne, ou de ses actions. Peuvent être d’ordre physiques, sexe, couleur des yeux, ou culturels, ethniques, croyance…</p>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <trait type="ethnicity" key="alb">
-    <label>Ethnicity</label>
-    <desc>Ethnic Albanian.</desc>
-  </trait>
-</egXML>
-            </div>
-            <div type="slide">
-              <head>États</head>
-              <p>Les états incluent par exemple le statut marital, le lieu de résidence et la position ou l’occupation.</p>
-              <p>Durée définie, c’est-à-dire un début et une fin.</p>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <state type="office" from="1777-04-07"
-  to="1780-07-12">Procureur</state>
-</egXML>
-            </div>
-          </div>
-        </div>
-        <div type="slide" type="slide">
-          <div type="slide">
-            <head>Traits</head>
-            <p>Contiennent une description du statut ou de la qualité attribuée à une personne, un lieu ou une organisation qui typiquement, mais pas nécessairement, est indépendante du vouloir ou de l’action du porteur et habituellement n’est pas spécifique à une période de temps.</p>
-            <list>
-              <item><gi>sex</gi> le sexe d’une personne</item>
-              <item><gi>nationality</gi> contient une description informelle de la nationalité passée ou présente</item>
-            </list>
-            
-          </div>
-          <div type="slide">
-            <p><gi>trait</gi> contient une description de statut ou de qualité d’une personne, d’un lieu ou typiquement d’une organisation, mais pas nécessairement, indépendamment des actions de la personne, et habituellement indépendant du temps.</p>
-          </div>
-        </div>
-        <div type="slide" type="slide">
-          <div type="slide">
-            <head>États</head>
-            <p>Les <hi>états</hi> décrivent certains statuts ou qualités attribuées à une personne, à des lieux, ou des organisations généralement à un moment donné ou spécifique à une période de temps.</p>
-            <list>
-              <item><gi>faith</gi> spécifie la foi, la religion ou les croyances d’une personne</item>
-              <item><gi>langKnowledge</gi> (language knowledge) résume la connaissance linguistique d’une personne à un moment donné</item>
-              <item><gi>socecStatus</gi> (socio-economic status) contient une description ifnromelle du statut économique ou social perçu</item>
-              <item><gi>age</gi> spécifie l’âge d’une personne.</item>
-              <item><gi>occupation</gi> contient une description informelle de l’activité d’une personne ou de son emploi</item>
-              <item><gi>residence</gi> décrit les résidences présente ou passées d’une personne</item>
-              <item><gi>affiliation</gi> contient une description informelle de l’affiliation d’une personne à une organisation</item>
-              <item><gi>floruit</gi> information sur la période d’activité d’une personne</item>
-              <item><gi>education</gi> contient une description du niveau d’éducation d’une personne</item>
-            </list>
-          </div>
-          <div type="slide">
-            <p><gi>state</gi> contient une description de statut ou de qualité attribuée à une personne, un lieu ou une organisation, souvent à un moment spécifique dans le temps ou dans une période de temps.</p>
-            <p>La classe <ident>model.persStateLike</ident> contient des éléments décrivant des caractéristiques physiques ou sociales construites.</p>
-            
-          </div>
-        </div>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Événements</head>
-            <list>
-              <item><gi>birth</gi></item>
-              <item><gi>death</gi></item>
-              <item><gi>event</gi></item>
-              <item><gi>listeEvent</gi></item>
-            </list>
-          </div>
-          <div type="slide">
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <person xml:id="WM">
-    <event type="marriage" when="1859-04-26">
-      <label>Marriage</label>
-      <desc>
-        <name type="person" ref="#WM">William Morris</name> and <name type="person"
-        ref="http://en.wikipedia.org/wiki/Jane_Burden">Jane Burden</name> were
-        married at <name type="place">St Michael's Church, Ship Street, Oxford</name> on
-        <date when="1859-04-26">26 April 1859</date>. The wedding was
-        conducted by Morris's friend <name type="person" ref="#RWD">R. W.
-        Dixon</name> with <name type="person" ref="#CBF">Charles
-        Faulkner</name> as
-        the best man. The bride was given away by her father,
-        <name type="person" ref="#RB">Robert Burden</name>.
-        According to the account that <name type="person"
-        ref="http://en.wikipedia.org/wiki/Edward_Burne-Jones">Burne-Jones</name>
-        gave <name type="person" ref="#JWM">Mackail</name>
-        <quote>M. said to Dixon beforehand <said>Mind
-        you don't call her Mary</said> but he did</quote>. The entry in the
-        Register reads: <quote>William Morris, 25, Bachelor Gentleman, 13
-        George Street, son of William Morris decd. Gentleman. Jane Burden,
-        minor, spinster, 65 Holywell Street, d. of Robert Burden,
-        Groom.</quote> The witnesses were Jane's parents and Faulkner. None of
-        Morris's family attended the ceremony. Morris presented Jane with a
-        plain gold ring bearing the London hallmark for 1858. She gave her
-        husband a double-handled antique silver cup.</desc>
-        <bibl>J. W. Mackail, <title>The Life of William Morris</title>, 1899.</bibl>
-    </event>
-  </person>
-</egXML>
-            <p>Contiennent des données relatives à n’importe quelle événement significatif associé à une personne, un lieu ou une organisation.</p>
-          </div>
-          <div type="slide">
-            <p><att>where</att> pour indiquer le lieu en pointant vers un élément <gi>place</gi></p>
-            <p><gi>listEvent</gi> pour structurer</p>
-            
-            <p><ident>att.responsibility</ident> provides attributes indicating who is responsible for something asserted by the markup and the degree of certainty associated with it.</p>
-            <p><att>cert</att> (certainty) signifies the degree of certainty associated with the intervention or interpretation.</p>
-            <p><att>resp</att> (responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber.</p>
-            <p>att.editLike provides attributes describing the nature of an encoded scholarly intervention or interpretation of any kind.</p>
-            <p><att>evidence</att> indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation. Suggested values include: 1] internal; 2] external; 3] conjecture</p>
-            <p><ident>att.source</ident> provides attributes for pointing to the source of a bibliographic reference.</p>
-            <p><att>source</att> provides a pointer to the bibliographical source from which a quotation or citation is drawn.</p>
-          </div>
-        </div>
-        <div type="slide" type="slide">
-          <div type="slide">
-            <head>Exemple d’événement</head>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <event xml:id="eMBB" from="1955-12-01"
-                to="1956-12-20">
-                <label>Montgomery Bus Boycott</label>
-                <desc>A political and social protest campaign against 
-                  the policy of racial segregation on the public transit 
-                  system of the city of <placeName ref="#MONT">Montgomery
-                  </placeName>.</desc>
-              </event>
-            </egXML>
-          </div>
-        </div>
-        <div type="slide" type="slide" xml:lang="fr">
-          <div type="slide">
-            <head>Relations</head>
-            <p>
-              <gi>listRelation</gi> fournit des informations sur les relations identifiées parmi les personnes, les lieux et les organisations, soit informellement en prose, soit exprimées formellement sous forme de liens de relation.</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <listRelation>
-                <relation name="parent" active="#P1 #P2"
-                  passive="#P3 #P4"/>
-                <relation name="spouse" mutual="#P1 #P2"/>
-                <relation type="social" name="employer"
-                  active="#P1" passive="#P3 #P4"/>
-              </listRelation>
-            </egXML>
-          </div>
-        </div>
-      -->
+
