@@ -2,44 +2,7 @@
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
-   	<!--  <fileDesc>
-      <titleStmt>
-        <title>Le travail de l’éditeur, suite : encodage des notes ; balisage des entités nommées
-          (et description de ces entités)</title>
-      </titleStmt>
-      <editionStmt>
-        <edition>
-          <date>décembre 2017</date>
-        </edition>
-      </editionStmt>
-      <publicationStmt>
-        <distributor><persName xml:id="FC">Florence Clavaud</persName> (Archives nationales et
-          Centre Jean-Mabillon de l'Ecole nationale des chartes)</distributor>
-        <availability>
-          <p>Placé sous licence CC-BY</p>
-        </availability>
-        <date>2017-12-04</date>
-      </publicationStmt>
-      
-      <sourceDesc>
-        <p>Autres cours rédigés pour des interventions précédentes, notamment pour la formation
-          donnée fin 2016 et début 2017 dans le cadre du séminaire PSL</p>
-      </sourceDesc>
-      
-      
-      
-    </fileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Document rédigé pour servir pendant une formation sur TEI; document retabli a partir de
-          la version PDF d'un originel perdu</p>
-      </projectDesc>
-    </encodingDesc>
-    <revisionDesc>
-      <change when="2017-12">Relectures et modifications par Florence</change>
-      <change when="2017-11-13">Encodage TEI retabli par Lou</change>
-      <change when="2011-03">Première rédaction par Florence</change>
-    </revisionDesc>-->
+   
         <fileDesc>
             <titleStmt>
                 <title>TEI et l'analyse linguistique et textuelle</title>
@@ -383,19 +346,7 @@
 	  </list>
 	</div>
 
-    <!--  	<div  type="slide">
-	  <head>Exercice</head>
-	  <list>
-	    <item>Encoder à la main en parties du discours un petit bout d'un de vos fichiers TEI</item>
-	    <item>Si possible, expliciter les parties du discours par :
-	       <list>
-		 <item>soit : un <gi>interpGrp</gi></item>
-		 <item>soit des structures de traits</item>
-	       </list>
-	    </item>
-	  </list>
-	</div>
--->
+   
       </body>
     </text>
 </TEI>
