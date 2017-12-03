@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="testaments.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T60">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament olographe de Lucien Pierre Armand Debain, mort pour la France à Vitry-le-François (Marne), le 16 novembre 1915.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Papier à lettre blanc, 4 pages, dim. 18 x 14 cm, encre ; enveloppe, dim. 10 x 14,5 cm, encre.                    
+                    Cote aux Archives nationales :  MC/ET/LXXXIX/2343, minute du 13 janvier 1916 </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body><div type="will">
+           <pb facs="debain-1.jpg"/>
+            
+            <dateline>Nevers, le <date when="1914-08-12"></date>12 août 1914<lb/>
+            (trait horizontal)<lb/>
+            
+            </dateline><p>Ceci est mon testament, écrit en<lb/>
+            toute sérénité, la veille de mon<lb/>
+            départ pour la guerre contre l’Allemagne.<lb/>
+            (trait horizontal)<lb/>
+            
+            </p><p>Je soussigné, Debain Lucien Pierre<lb/>
+            Armand laisse à ma femme née Helene<lb/>
+            Cartault toute notre fortune ainsi<lb/>
+            constituée <lb/> </p><list>
+                <item>1°) Un lot d’obligations de chemin de<lb/>
+                    fer Français, placées au nominatif<lb/>
+                    et déposées à la Banque de France<lb/>
+                    à Nevers. Ces obligations ont<lb/>
+                    été apportées en dot par ma femme.<lb/> </item>
+                <item>2°) Quelques valeurs (Russe, Roumaine  [...]<lb/> 
+                    Panama, etc.) déposées au 
+                    
+                    <pb facs="debain-2.jpg"/>
+                    
+                    Comptoir d’escompte à Nevers. <lb/></item> <item>3°) Quelques valeurs à mon compte<lb/>
+                        chez Monsieur Chabert agent de<lb/>
+                        change à Paris, 10 rue Vivienne.<lb/></item></list><p>
+            
+            
+            </p><dateline>A Nevers, <date when="1914-08-12"></date>12 août 1914<lb/>
+            
+            </dateline><signed>A. Debain<lb/>
+            Capitaine au bataillon d’Infanterie.
+          
+            </signed></div><div type='envelope'><pb facs="debain-3.jpg"/><p>
+            
+            </p><p>Ci-inclus mon testament<lb/>
+            
+            </p><signed>A. Debain</signed>
+        
+           
+        </div>           </body>
+    </text>
+</TEI>

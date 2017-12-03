@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="testaments.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T96">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament olographe de Marcel Étienne, mort pour la France à Dugny (Meuse), le 3 mai 1916.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Papier à lettre quadrillé, 2 pages, dim. 12,3 x 19,4 cm, encre ; enveloppe, dim. 10 x 14,7 cm, encre, 5 cachets.
+                    Cote aux Archives nationales :  MC/ET/XXXIII/1865, minute du 7 novembre 1916 </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <facsimile>
+        <surface n="1" type="will-page">
+            <graphic xml:id="etienne1JPG" url="etienne-1.jpg"/>
+            <graphic xml:id="etienne1TIFF" url="etienne-1.tiff"/>
+        </surface>
+        <surface n="2" type="will-envelope-recto">
+            <graphic xml:id="etienne2" url="etienne-2.jpg"/>
+            <graphic xml:id="etienne2TIFF" url="etienne-2.tiff"/>
+        </surface>
+        <surface n="3" type="will-envelope-verso">
+            <graphic xml:id="etienne3" url="etienne-3.jpg"/>
+            <graphic xml:id="etienne3TIFF" url="etienne-3.tiff"/>
+        </surface>
+    </facsimile>
+    
+    <text>
+        <body>
+            
+            <div type="will">
+                <pb facs="simmonet-1.jpg"/>
+                
+                <dateline><placeName>Chartres</placeName> <date when="1915-06-25">25 Juin 1915</date></dateline>
+                
+                <head>Ceci est mon testament.</head>
+                
+                <p>Je lègue tou<choice><sic>t</sic><corr>s</corr></choice> mes biens<supplied>, </supplied> meubles et<lb/>
+                    immeubles<supplied>, </supplied> à Mesdemoiselles <persName>Blanche<lb/>
+                    Adrien</persName> et <persName>Marguerite Adrien</persName><supplied>.</supplied></p>
+                
+                <p>Fait à <placeName>Chartres</placeName> <date when="1915-06-25">le 25 Juin 1915</date></p>
+                
+                <signed><seg type="signature"><persName>Etienne Marcel</persName></seg></signed>
+            </div>
+            
+            
+            <div type="envelope">
+                <pb facs="etienne-3.jpg"/>
+                <p>À ouvrir après décès<lb/>
+                    et devant notaire</p><metamark rend="cross" function="emphasis" />
+                <p><persName>Mesdemoiselles<lb/>
+                    Blanche <supplied>Adrien</supplied></persName>&amp; <persName>Marguerite Adrien</persName> </p>
+            </div>           
+            
+        </body>
+    </text>
+</TEI>

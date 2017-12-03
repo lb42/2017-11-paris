@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="testaments.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T60">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament olographe de Lucien Pierre Armand Debain, mort pour la France à Vitry-le-François (Marne), le 16 novembre 1915.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Papier à lettre blanc, 4 pages, dim. 18 x 14 cm, encre ; enveloppe, dim. 10 x 14,5 cm, encre.                    
+                    Cote aux Archives nationales :  MC/ET/LXXXIX/2343, minute du 13 janvier 1916 </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <facsimile>
+        <surface n="1" type="will-page">
+            <graphic xml:id="debain1JPG" url="debain-1.jpg"/>
+            <graphic xml:id="debain1TIFF" url="debain-1.tiff"/>
+        </surface>
+        <surface n="2" type="will-page">
+            <graphic xml:id="debain2JPG" url="debain-2.jpg"/>
+            <graphic xml:id="debain2TIFF" url="debain-2.tiff"/>
+        </surface>
+        <surface n="3" type="will-envelope-recto">
+            <graphic xml:id="debain3JPG" url="debain-3.jpg"/>
+            <graphic xml:id="debain3TIFF" url="debain-3.tiff"/>
+        </surface>
+        <surface n="4" type="will-envelope-verso">
+            <graphic xml:id="debain4JPG" url="debain-4.jpg"/>
+            <graphic xml:id="debain4TIFF" url="debain-4.tiff"/>
+        </surface>
+    </facsimile>
+    
+    <text>
+        <body>
+            <div type="will">
+                <pb facs="debain-1.jpg"/>
+                
+                <dateline>
+                    <placeName>Nevers</placeName>, <date when="1914-08-12">le 12 août 1914</date>
+                </dateline>
+                
+                <p>Ceci est mon testament, écrit en<lb/>
+                    toute sérénité, la veille de mon<lb/>
+                    départ pour la guerre contre l’Allemagne.</p>
+                
+                <metamark rend="horizontal-line" function="separating"/>
+                
+                <p>Je soussigné, Debain Lucien Pierre<lb/>
+                    Armand laisse à ma femme née Helene<lb/>
+                    Cartault toute notre fortune ainsi<lb/>
+                    constituée </p><metamark rend="horizontal-line" function="separating"/> 
+               
+                <list>
+                        <item>1°) Un lot d’obligations de chemin de<lb/>
+                            fer Français, placées au nominatif<lb/>
+                            et déposées à la Banque de France<lb/>
+                            à Nevers. Ces obligations ont<lb/>
+                            été apportées en dot par ma femme.<lb/>
+                        </item>
+                        <item>
+                            2°) Quelques valeurs (Russe, Roumaine, <unclear reason="quite-illegible"/>
+                            Panama, etc.) déposées au 
+                            <pb facs="debain-2.jpg"/>
+                            Comptoir d’escompte à Nevers. <lb/>
+                        </item>
+                        <item>
+                            3°) Quelques valeurs à mon compte<lb/>
+                            chez Monsieur Chabert agent de<lb/>
+                            change à Paris. 10 rue Vivienne.<lb/>
+                        </item>
+                </list>
+                
+
+                <dateline>A <placeName>Nevers</placeName>, <date when="1914-08-12">12 août 1914</date><lb/></dateline>
+                
+                <signed>
+                    <seg type="signature">
+                        <persName>A. Debain</persName><lb/>
+                        Capitaine au bataillon d’Infanterie.
+                    </seg>
+                </signed>
+            </div>
+            
+            <div type="envelope">
+                <pb facs="debain-3.jpg"/>
+                <p rend="center">Ci-inclus mon testament</p>
+                <signed><seg type="signature"><persName> A. Debain</persName></seg></signed>
+            </div>           
+        </body>
+    </text>
+</TEI>

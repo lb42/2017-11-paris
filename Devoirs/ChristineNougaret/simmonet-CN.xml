@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="testaments.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T27">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament olographe d’Émile Simonnet, mort pour la France à Zeitenlik (Grèce), le 30 juin 1916.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Papier à lettre blanc, 2 pages, dim. 17,7 x 10,5 cm, encre.                    
+                    Cote aux Archives nationales :  MC/ET/LXXXIX/2370, minute du 9 avril 1919 </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body><div type="will">
+          
+
+<pb facs="simonnet-1.jpg"/>
+
+<p>Partant à la guerre et si <lb/>
+en cas de non retour, je désire<lb/>
+que mes dernières volontés soient<lb/>
+respectées.<lb/>
+
+</p><p>Je <choice><sic>legs</sic><corr>lègue</corr></choice> à <subst>
+    <del>ma f[biffé]</del>
+    <add>Madame</add>
+    </subst>  <lb/>
+Emilie Simonnet (ma femme<lb/>
+légitime)<lb/></p><list>
+    <item>1° tous meubles <subst>
+        <del>et[biffé]</del><add>,</add>
+    </subst> objets et accessoires<lb/>
+        de ménage dans mon logement<lb/>
+        du 3, Rue de l’Annonciation.</item><item>2° tous mes titres qui sont en mon<lb/>
+            nom et en dépôt à l’Agence<lb/>
+            B du Crédit Lyonnais à Paris<lb/>
+            31, Rue Vivienne.<lb/></item>
+</list><p>
+</p><dateline>Paris, le <date when="1914-08-02">2 Août 1914</date><lb/>
+</dateline><signed>Emil Simonnet</signed>
+           
+        </div>           </body>
+    </text>
+</TEI>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="testaments.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T27">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testament olographe d’Émile Simonnet, mort pour la France à Zeitenlik (Grèce), le 30 juin 1916.</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher></publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Papier à lettre blanc, 2 pages, dim. 17,7 x 10,5 cm, encre.                    
+                    Cote aux Archives nationales :  MC/ET/LXXXIX/2370, minute du 9 avril 1919 </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <facsimile>
+        <surface n="1" type="will-page">
+            <graphic xml:id="simmonet1JPG" url="simmonet-1.jpg"/>
+            <graphic xml:id="simmonet1TIFF" url="simmonet-1.tiff"/>
+        </surface>
+    </facsimile>
+    
+    <text>
+        <body>
+            <div type="will">
+                
+                <pb facs="simmonet-1.jpg"/>
+              
+                <p><!-- Il y a un trait au début du paragrapge mais la balise <metamark> n'est acceptée ni à l'intérieur du paragraphe ni avant-->
+                    <seg rend="horizontal-line"/>Partant à la guerre<choice><sic>et si</sic><corr>, </corr></choice> <lb/>
+                    en cas de non retour, je désire<lb/>
+                    que mes dernières volontés soient<lb/>
+                    respectées.</p><metamark rend="horizontal-line" function="separating"/>
+               
+                <p>Je <choice><sic>legs</sic><corr>lègue</corr></choice> à <choice><sic>ma</sic><corr/></choice> <subst><del>f</del><add>M</add></subst>adame<lb/>
+                    Emilie Simonnet (ma femme<lb/>
+                    légitime)
+                </p> <metamark rend="horizontal-line" function="separating"/>
+                <list>
+                    <item>1° tous meubles <subst><del><unclear reason="quite-illegible"/></del><add>et</add></subst>, objets et accessoires<lb/>
+                            de ménage dans mon logement<lb/>
+                            du 3, Rue de l’Annonciation.<lb/>
+                    </item> 
+                    <item> 2° tous mes titres qui sont en mon<lb/>
+                            nom et en dépôt à l’Agence<lb/>
+                            B.<supplied> </supplied>du Crédit Lyonnais à Paris<lb/>
+                            31, Rue Vivienne.
+                    </item>
+                    <metamark rend="horizontal-line" function="separating"/>
+                </list>
+                
+                <dateline><placeName>Paris</placeName>, <date when="1914-08-02">le 2 Août 1914</date></dateline><lb/>
+                
+                <metamark rend="horizontal-line" function="separating"/>
+               
+                <signed><seg type="signature"><persName>Emil Simonnet</persName></seg></signed>
+                
+            </div>           
+        </body>
+    </text>
+</TEI>
