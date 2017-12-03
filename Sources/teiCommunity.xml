@@ -39,6 +39,7 @@
           <item>Une spécification technique ?</item>
           <item>Un gabarit pour la construction des spécifications techniques ?</item>
         </list>
+        <p rend="box">http://books.openedition.org/oep/1237</p>
       </div>
       <div type="slide" xml:lang="fr">
         <head>Naissance de la Text Encoding Initiative</head>
@@ -52,6 +53,36 @@
           <graphic height="55%" url="../../tei-fr/Talks/Graphics/1987-11-vassar.png"/>
           <head>Vassar College, Poughkeepsie</head>
         </figure>
+      </div>
+      <div xml:lang="fr">
+        <head>Vous souvenez-vous de l’an 1987 ?</head>
+        <p>La Text Encoding Initiative est née dans un monde très différent... <list
+          rend="pause">
+          <item>C'était l'été de <title>Joe le taxi</title>, premier tube de Vanessa
+            Paradis...</item>
+          <!--https://youtu.be/l5XO5ieikfw-->
+          <item rend="pause">le world wide web n’existait pas</item>
+          <item rend="pause">le tunnel sous la manche était en construction</item>
+          <item rend="pause">un état nommé l’Union Soviétique venait de lancer une station
+            spatiale appelée "Mir" .. et de subir un désastre à Tchernobyl</item>
+          <item rend="pause">l’informatique sérieuse s’éffectuait uniquement sur les grosses
+            machines dites <soCalled>mainframes </soCalled></item>
+        </list></p>
+      </div>
+      <div xml:lang="fr">
+        <head>…mais aussi dans un monde un peu familier…</head>
+        <list>
+          <item>Les disciplines "linguistique de corpus" et "intelligence artificielle" avaient
+            établi la nécessité de travailler avec des ressources numérisées et à grande
+            échelle </item>
+          <item>Des avancées en traitement de texte commençaient à avoir un effet sur la
+            lexicographie et les systèmes de gestion documentaire (TeX, Scribe,
+            tRoff..)</item>
+          <item>L’ Internet existait, et les théories sur comment en profiter d'une manière
+            <q>hypertextuelle</q> abondaient </item>
+          <item>On confrontait déjà les problèmes de pérennisation des données et
+            d'incompatabilités technologiques (ex. les CD).</item>
+        </list>
       </div>
       <div type="slide" xml:lang="fr">
         <head>Les enjeux de la TEI</head>
@@ -92,12 +123,13 @@
           <p>Le <ref target="http://www.tei-c.org/index.xml">Consortium TEI</ref> se compose de :</p>
           <list>
             <item><ref target="http://www.tei-c.org/Activities/Council/"
-              >Le Technical council</ref></item>
+              >Le Technical Council</ref> (conseil scientifique)</item>
             <item><ref target="http://www.tei-c.org/Activities/Workgroups/">Groupes de travail (Workgroup)</ref></item>
             <item><ref target="http://www.tei-c.org/Board/"
-              >Le Board</ref></item>
-            <item><ref target="http://www.tei-c.org/Activities/SIG/">Les Special Interest Group (SIG)</ref></item>
-            <item>Sa communauté d’utilisateurs</item>
+              >Le Board</ref> (conseil administratif)</item>
+            <item><ref target="http://www.tei-c.org/Activities/SIG/">Les Special Interest Group (SIG)</ref>
+            (instances auto-organisants) </item>
+            <item>(mais surtout) Sa communauté d’utilisateurs</item>
           </list>
         
       </div>
@@ -110,13 +142,15 @@
       <div type="slide">
    
           <head>Devenir membre</head>
-          <p>La Text Encoding Initiative étant une organisation à but non lucratif, vous pouvez <ref target="http://members.tei-c.org/Join">devenir membre.</ref></p>
+          <p>La Text Encoding Initiative étant une organisation à but non lucratif, vous pouvez 
+            <ref target="http://members.tei-c.org/Join">devenir membre</ref> pour ...</p>
           <list>
-            <head>Bénéfice de l’adhésion</head>
-            <item>Manifester son soutien</item>
-            <item>Participer aux décisions et aux orientations</item>
-            <item>Bénéficier de services communautaires (par exemple <ref target="http://tapasproject.org">TAPAS</ref>) ou de tarifs négociés pour des logiciels</item>
-            <item>Participer à la <ref target="http://www.tei-c.org/Membership/Meetings/">conférence annuelle</ref> (TEI annual Conference and Members’Meeting)</item>
+             <item>manifester son soutien</item>
+            <item>participer aux elections au Council et Board, et ainsi aux décisions et aux orientations
+              </item>
+            <item>bénéficier de services communautaires 
+              (par exemple <ref target="http://tapasproject.org">TAPAS</ref>) ou de tarifs négociés pour des logiciels</item>
+            <item>participer à la <ref target="http://www.tei-c.org/Membership/Meetings/">conférence annuelle</ref> (TEI annual Conference and Members’Meeting)</item>
           </list>
         
       </div>

@@ -173,7 +173,7 @@
             
             
             <label>14h45-15h15</label><item>Exercice teiHeader  <ref target="Sources/ex04-header.xml">Source</ref> ;
-            <ref target="Travaux/ex04-header.pdf">Source</ref>
+            <ref target="Travaux/ex04-header.pdf">PDF</ref>
           </item>
           <label>15h15 - 16h</label>
           <item resp="#FC">Un aperçu rapide des méthodes d’analyse linguistique et textuelle <!--(je veux dire, de
@@ -203,7 +203,7 @@
             Un peu de XPath, un peu de XSLT  <ref target="Travaux/ex06-xslt.pdf">PDF</ref>; <ref target="Sources/ex06-xslt.xml">Source</ref></item>
           <label>15h–15h30</label>
           <item resp="#LB">Welcome to the TEI community (<ref target="Sources/teiCommunity.xml"
-              >source</ref>; <ref target="Diapos/teiCommunity.html">HTML</ref>; <ref
+              >source</ref>; <!--<ref target="Diapos/teiCommunity.html">HTML</ref>; --><ref
               target="Diapos/teiCommunity.pdf">PDF</ref> ) </item>
           <label>15h30 – 16h30 </label>
           <item resp="#FC">Prise en main de l’interface de transcription de la plateforme collaborative</item>
