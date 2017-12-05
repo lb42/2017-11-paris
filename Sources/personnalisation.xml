@@ -74,25 +74,26 @@
           <item>un lexique commun</item>
           <item>un respect de l’autonomie</item>
         </list>
-        <p>La standardisation ne doit pas signifier « fais comme moi » ; elle veut dire « explique-moi
-          ce que tu fais. »</p>
+        <p>La standardisation ne doit pas signifier « fais comme moi » ; elle veut dire
+          « explique-moi ce que tu fais. »</p>
       </div>
       <div type="slide" xml:lang="fr">
         <head>… d’où les variations TEI</head>
         <p>Par exemple : éléments pour description bibliographique : On a le choix entre <list>
-          <item><gi>bibl</gi> qui contient n’importe quel mélange de composants bibliographiques
-            … ou aucun</item>
-          <item><gi>biblStruct</gi> qui contient une sélection prédéfinie d’éléments, strictement
-            structurés</item>
-          <item><gi>biblFull</gi> qui est modélisé sur le <gi>fileDesc</gi> du TEI Header</item>
-        </list>
+            <item><gi>bibl</gi> qui contient n’importe quel mélange de composants bibliographiques …
+              ou aucun</item>
+            <item><gi>biblStruct</gi> qui contient une sélection prédéfinie d’éléments, strictement
+              structurés</item>
+            <item><gi>biblFull</gi> qui est modélisé sur le <gi>fileDesc</gi> du TEI Header</item>
+          </list>
         </p>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <bibl xml:id="MK_73">Sturm, U. &amp; Drang, F. : <title>Musikalische Katastrophe</title>.
             (Berlin, W. de Gruyter, 1973)</bibl>
-        </egXML><egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+        </egXML>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
           <bibl xml:id="MK73"><author key="U. Sturm (1884-1919)"><persName>
-            <surname>>Sturm</surname><forename>Ulbricht</forename></persName></author>
+                <surname>>Sturm</surname><forename>Ulbricht</forename></persName></author>
             <author>Drang, F.</author>
             <title xml:lang="de" level="m">Musikalische Katastrophe </title>
             <pubPlace>Berlin</pubPlace>
@@ -100,21 +101,21 @@
             <date>1973</date></bibl>
         </egXML>
       </div>
-      
-      
+
+
       <div>
         <head>La pérsonnalisation</head>
         <p><figure>
-          <graphic url="../../tei-fr/Talks/Graphics/SGMLuser.png" height="75%"/>
-          <head>Extrait du ICAME Journal, 1992</head>
-        </figure></p>
+            <graphic url="../../tei-fr/Talks/Graphics/SGMLuser.png" height="75%"/>
+            <head>Extrait du ICAME Journal, 1992</head>
+          </figure></p>
         <cb/>
         <p>Le système TEI fournit un gabarit ou un kit lego pour la construction d'un système
           d'encodage bien adapté aux besoins de l'utilisateur, qui reste en même temps
           compréhensible par d'autres personnes ou systèmes, et dans lequel les modifications
           éventuelles se déclarent clairement.</p>
       </div>
-      
+
       <div>
         <head>Il n'y a pas de &#x201C;TEI dtd&#x201D;</head>
         <list type="unordered">
@@ -127,27 +128,28 @@
           <item>on peut y mélanger des éléments nouveaux, ou bien natifs ou bien d'autres
             standards</item>
         </list>
-        <p rend="box">Un encodage TEI représente une modélisation spécifique de l’univers textuel</p>
-        
+        <p rend="box">Un encodage TEI représente une modélisation spécifique de l’univers
+          textuel</p>
+
       </div>
-      
-      
-      
+
+
+
       <div type="slide" xml:lang="fr">
         <head>Un système modulaire de modélisation</head>
-      
-        <p>Tout projet souhaitant profiter de la TEI doit donc faire des choix pour modéliser son projet par moyen d'un <term>schéma</term> TEI
-          ce qui n'est pas un science exacte ...  <list>
+
+        <p>Tout projet souhaitant profiter de la TEI doit donc faire des choix pour modéliser son
+          projet par moyen d'un <term>schéma</term> TEI ce qui n'est pas un science exacte ... <list>
             <item>la définition du schéma s’opère au moyen d’aller-retour avec les sources
-                textuelles</item>
+              textuelles</item>
             <item>première modélisation à partir d’un échantillon représentatif</item>
             <item>ensuite, correction ou renforcement du contrôle lors du passage à l’échelle</item>
-            <item>Le processus d’élaboration du modèle est souvent donc un processus incrémentiel de 
-              <soCalled>trial and error</soCalled></item>
+            <item>Le processus d’élaboration du modèle est souvent donc un processus incrémentiel de
+                <soCalled>trial and error</soCalled></item>
           </list></p>
-        
+
       </div>
-     
+
       <div type="slide" xml:lang="fr">
         <head>De quoi a-t-on besoin ?</head>
         <list>
@@ -155,14 +157,14 @@
             choix éditoriaux</item>
           <item>quelque chose qui permette de <hi>définir un sous-ensemble</hi> de la TEI</item>
           <item>quelque chose qui permette de <hi>générer un schéma</hi> pour contrôler la validité
-            de nos documents : c-a-d        <list>
-          <item>quelles balises sont disponibles</item>
-          <item>dans quels contextes</item>
-          <item>avec quels attributs</item>
-          <item>avec quelles valeurs</item>
-          <item>sous quelles conditions</item>
-        </list></item>
-       
+            de nos documents : c-a-d <list>
+              <item>quelles balises sont disponibles</item>
+              <item>dans quels contextes</item>
+              <item>avec quels attributs</item>
+              <item>avec quelles valeurs</item>
+              <item>sous quelles conditions</item>
+            </list></item>
+
           <item>d’<hi>outils</hi> informatiques pour transformer et gérer nos données</item>
         </list>
       </div>
@@ -205,9 +207,11 @@
           <item>La TEI est composé de 23 <term>modules</term></item>
           <item>Chaque module déclare plusieurs <term>éléments</term> et quelques
               <term>classes</term>
-          <list><item>une <term>classe d'attribut</term> définit un ensemble d'attributs</item>
-            <item>une <term>classe modele</term> regroupe des éléments ayant les memes propriétés
-            structurals</item></list></item>
+            <list>
+              <item>une <term>classe d'attribut</term> définit un ensemble d'attributs</item>
+              <item>une <term>classe modele</term> regroupe des éléments ayant les memes propriétés
+                structurals</item>
+            </list></item>
           <item>Un élément déclare les classes desquelles il est membre</item>
         </list>
       </div>
@@ -217,7 +221,7 @@
         <head>ODD: les éléments de base</head>
         <p>Un document ODD est un document XML-TEI comme tous les autres; comportant un en-tête TEI,
           un élément <gi>body</gi>, <gi>back</gi> etc, mais aussi enrichi d'un élément
-            <gi>schemaSpec</gi> qui  contient plusieurs déclarations. </p>
+            <gi>schemaSpec</gi> qui contient plusieurs déclarations. </p>
         <list>
           <item><gi>schemaSpec</gi> définit et identifie un schéma</item>
           <item><gi>moduleRef</gi> fournit un ensemble de spécifications d’éléments en faisant
@@ -235,22 +239,23 @@
             <p>Le module <ident>tagdocs</ident>, qui sert au modèle TEI à produire ses spécifications formelles mais dont peut se servir pour préciser les spécifications.</p>
           </div>-->
       </div>
-      
-      <div type="slide" xml:lang="fr">  
+
+      <div type="slide" xml:lang="fr">
         <head>Sélection des modules : <gi>moduleRef</gi></head>
         <list>
           <item>L'attribut <att>key</att> doit identifier un module TEI</item>
           <item>L'attribut <att>source</att> indique la version du module, si nécessaire</item>
-          <item>Par défaut, tous les éléments spécifiés par le module sont inclus à moins que...
-            <list>
-              <item>l'attribut <att>include</att> fournisse une liste  des éléments spécifiques, ou</item>
-              <item>l'attribut <att>except</att> fournisse une liste des éléments à exclure</item></list>
+          <item>Par défaut, tous les éléments spécifiés par le module sont inclus à moins que... <list>
+              <item>l'attribut <att>include</att> fournisse une liste des éléments spécifiques,
+                ou</item>
+              <item>l'attribut <att>except</att> fournisse une liste des éléments à exclure</item>
+            </list>
           </item>
         </list>
       </div>
-      
-      
-      
+
+
+
       <!--<div type="slide" xml:lang="fr">
         <div>
           <head>Organisation de la TEI (rappel)</head>
@@ -334,14 +339,14 @@
           </div>
         </div>
       </div>-->
-      
+
       <div>
         <head>Par exemple ... </head>
         <p> Supposons un projet de transcription collaborative, où nous souhaitons utiliser <list>
-          <item>une gamme très réduite des balises TEI</item>
-          <item>une liste très contrainte de possibilités de valeur pour quelques attributs</item>
-          <item>un élément pas encore prévu par la TEI</item>
-        </list></p>
+            <item>une gamme très réduite des balises TEI</item>
+            <item>une liste très contrainte de possibilités de valeur pour quelques attributs</item>
+            <item>un élément pas encore prévu par la TEI</item>
+          </list></p>
         <p rend="box">L'usage d'un schéma XML pour renforcer ces contraintes simplifie énormément la
           création d'une interface ergonomique, bien adaptée aux utilisateurs prévus</p>
       </div>
@@ -371,12 +376,12 @@
                   include="teiHeader fileDesc titleStmt 
                   publicationStmt sourceDesc"/>
                 <moduleRef key="textstructure" include="TEI text body div"/>
-                <élémentRef key="ab"/>
-                <élémentRef key="pb"/>
-                <élémentRef key="unclear"/>
-                <élémentRef key="hi"/>
-                <élémentRef key="name"/>
-                <élémentRef key="title"/>
+                <elementRef key="ab"/>
+                <elementRef key="pb"/>
+                <elementRef key="unclear"/>
+                <elementRef key="hi"/>
+                <elementRef key="name"/>
+                <elementRef key="title"/>
                 <classRef key="att.global.rendition" except="rendition style"/>
                 <classSpec type="atts" ident="att.declaring" mode="delete"/>
                 <classSpec type="atts" ident="att.edition" mode="delete"/>
@@ -456,16 +461,16 @@
           <item>nous ajoutons une spécification pour un élément non-TEI, appartenant à une autre
             espace de nommage </item>
           <item>cette spécification comporte <list>
-            <item>une description</item>
-            <item>une indication des classes TEI auxquelles l'élément appartiendrait</item>
-            <item>une indication de son contenu possible</item>
-          </list>
+              <item>une description</item>
+              <item>une indication des classes TEI auxquelles l'élément appartiendrait</item>
+              <item>une indication de son contenu possible</item>
+            </list>
           </item>
         </list>
       </div>
-      
-      
-       <!-- <div>
+
+
+      <!-- <div>
           <head>Sélection des modules</head>
           <p>Par exemple, dans le cadre d’un projet éditorial consistant à publier une collection de
             matériaux manuscrits sous la forme d’un corpus, chaque source manuscrite devant faire
@@ -486,19 +491,19 @@
         </div>
       </div>-->
       <div type="slide" xml:lang="fr">
-          <head>Référence à des modules</head>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <schemaSpec ident="monSchema"
-              source="http://www.tei-c.org/release/xml/tei/odd/p5subset.xml">
-              <moduleRef key="tei"/>
-              <moduleRef key="core"/>
-              <moduleRef key="header"/>
-              <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7 group"/>
-              <moduleRef key="namesdates" include="persName placeName"/>
-            </schemaSpec>
-          </egXML>
-       </div>
-     <!-- <div type="slides">
+        <head>Référence à des modules</head>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <schemaSpec ident="monSchema"
+            source="http://www.tei-c.org/release/xml/tei/odd/p5subset.xml">
+            <moduleRef key="tei"/>
+            <moduleRef key="core"/>
+            <moduleRef key="header"/>
+            <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7 group"/>
+            <moduleRef key="namesdates" include="persName placeName"/>
+          </schemaSpec>
+        </egXML>
+      </div>
+      <!-- <div type="slides">
           <head>Référence à des modules</head>
           <p>L’architecture de la TEI permet une personnalisation plus détaillée au sein de chaque
             module. Il est possible de supprimer des éléments, de restreindre la liste des
@@ -529,50 +534,30 @@
               <gi>attDef</gi> pour l’ajouter à la liste <gi>attList</gi> de l’élément concerné.</p>
         </div>
       </div>
-   -->   <div type="slide" xml:lang="fr">
-       
-          <head>Contraindre la valeur d’un attribut</head>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <schemaSpec ident="monSchema"
-              source="http://www.tei-c.org/release/xml/tei/odd/p5subset.xml">
-              <moduleRef key="tei"/>
-              <moduleRef key="core"/>
-              <moduleRef key="header"/>
-              <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7 group"/>
-              <élémentSpec ident="title" mode="change">
-                <attList>
-                  <attDef ident="type" mode="change">
-                    <valList mode="replace" type="closed">
-                      <valItem ident="biography"/>
-                      <valItem ident="introduction"/>
-                    </valList>
-                  </attDef>
-                </attList>
-              </élémentSpec>
-            </schemaSpec>
-          </egXML>
-        
-      </div>
+   -->
       <div type="slide" xml:lang="fr">
-       
-          <head>Contraindre la valeur d’un attribut</head>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <attDef ident="agent" mode="change" usage="req">
-              <datatype minOccurs="1" maxOccurs="unbounded">
-                <dataRef key="teidata.enumerated"/>
-              </datatype>
-              <valList type="closed" mode="replace">
-                <valItem ident="fire"/>
-                <valItem ident="moisture"/>
-                <valItem ident="rubbing"/>
-                <valItem ident="smoke"/>
-                <valItem ident="tear"/>
-                <valItem ident="water"/>
-                <valItem ident="unknown"/>
-              </valList>
-            </attDef>
-          </egXML>
-        
+
+        <head>Contraindre la valeur d’un attribut</head>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <attDef ident="agent" mode="change" usage="req">
+            <datatype minOccurs="1" maxOccurs="unbounded">
+              <dataRef key="teidata.enumerated"/>
+            </datatype>
+            <valList type="closed" mode="replace">
+              <valItem ident="fire">
+                <desc xml:lang="fr">endommagé par le feu</desc>
+              </valItem>
+              <valItem ident="moisture"/>
+              <valItem ident="rubbing"/>
+              <valItem ident="smoke"/>
+              <valItem ident="tear"/>
+              <valItem ident="water"/>
+              <valItem ident="unknown"/>
+            </valList>
+          </attDef>
+        </egXML>
+      </div>
+      
         <!--<div>
           <head>Contraindre la valeur d’un attribut</head>
           <p>Il est souvent utile de contraindre les valeurs possibles d’un attribut au moyen d’un
@@ -589,39 +574,38 @@
           <p>Ici j’utilise également une spécification rng pour définir la cardinalité.</p>
           <p>Bientôt remplacé par une déclaration entièrement fournie en ODD</p>
         </div>-->
-      </div>
-      <div type="slide" xml:lang="fr">
-           <head>Modification des classes</head>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <classSpec ident="att.internetMedia" type="atts" mode="change" module="tei">
-              <attList>
-                <attDef ident="mimeType" mode="change">
-                  <valList type="closed" mode="replace">
-                    <valItem ident="image/jpg"/>
-                    <valItem ident="application/pdf"/>
-                    <valItem ident="application/tei+xml"/>
-                    <valItem ident="application/xml"/>
-                  </valList>
-                </attDef>
-              </attList>
-            </classSpec>
-          </egXML>
-        </div>
-       <!-- <div>
+       <!--<div type="slide" xml:lang="fr">
+        <head>Modification des classes</head>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <classSpec ident="att.internetMedia" type="atts" mode="change" module="tei">
+            <attList>
+              <attDef ident="mimeType" mode="change">
+                <valList type="closed" mode="replace">
+                  <valItem ident="image/jpg"/>
+                  <valItem ident="application/pdf"/>
+                  <valItem ident="application/tei+xml"/>
+                  <valItem ident="application/xml"/>
+                </valList>
+              </attDef>
+            </attList>
+          </classSpec>
+        </egXML>
+      </div>-->
+      <!-- <div>
           <head>Modification des classes</head>
           <p>Le mode modification peut également s’appliquer à des classes. Dans cet exemple, nous
             avons remplacé à l’aide de Roma un ensemble de valeurs d’attributs pour tout attribut
             membre de la classe att.internetMedia.</p>
         </div>-->
-     
+
       <div type="slide" xml:lang="fr">
-       
-          <head>Les différentes manières de personnaliser la TEI</head>
-          <list type="ordered">
-            <item>rédiger une spécification de haut niveau</item>
-            <item>utiliser les sous-modules de la TEI et spécifier dans ces sous-ensembles les
-              fonctionnalités à activer</item>
-          </list>
+
+        <head>Les différentes manières de personnaliser la TEI</head>
+        <list type="ordered">
+          <item>rédiger une spécification de haut niveau</item>
+          <item>utiliser les sous-modules de la TEI et spécifier dans ces sous-ensembles les
+            fonctionnalités à activer</item>
+        </list>
         <!--  <div>
             <head>Les différentes manières de personnaliser la TEI</head>
             <p>Il est possible de personnaliser la TEI en supprimant des modules un certain nombre
@@ -641,23 +625,23 @@
             <p>Dans tous les cas, ne pas tout prendre</p>
             <p>Des schemas de base déjà disponibles que l’on peut augmenter ou réduire.</p>
           </div>-->
-        </div>
-      
-    
-        <div type="slide" xml:lang="fr">
-            <head>Le processeur ODD</head>
-            <p>Le processeur ODD, sera un outil logiciel capable</p>
-            <list type="unordered">
-              <item>d’assembler les composants référencés de la TEI</item>
-              <item>résoudre des déclarations multiples</item>
-              <item>vérifier la validité</item>
-              <item>émettre un schema dans un ou plusieurs langages formels</item>
-              <item>produire un document XML avec la documentation des composants</item>
-            </list>
-        
-       </div>
-      
-      
+      </div>
+
+
+      <div type="slide" xml:lang="fr">
+        <head>Le processeur ODD</head>
+        <p>Le processeur ODD, sera un outil logiciel capable</p>
+        <list type="unordered">
+          <item>d’assembler les composants référencés de la TEI</item>
+          <item>résoudre des déclarations multiples</item>
+          <item>vérifier la validité</item>
+          <item>émettre un schema dans un ou plusieurs langages formels</item>
+          <item>produire un document XML avec la documentation des composants</item>
+        </list>
+<p rend="box">oXygen peut le faire... mais il y a aussi Roma</p>
+      </div>
+
+
     </body>
     <!--<back>
       <div type="title" xml:lang="fr">
